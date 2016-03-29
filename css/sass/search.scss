@@ -2,34 +2,52 @@
  * Search
  */
 .search {
-	margin-right: 20px;
+
+	.icon-and-input {
+		display: inline-block;
+		background-color: none;
+		border: none;
+		box-sizing: border-box;
+		vertical-align: middle;
+		
+	
+	}
+
+	.icon {
+		color: #999;
+		display: inline-block;
+		font-size: 20px;
+		padding-right: 5px;
+
+	}
+
+	.input {
+		height: 30px;
+		border: none;
+		font-size: 20px;
+		font-style: italic;
+		font-weight: lighter;
+		 
+	}
+
+	.div-button {
+		display: inline-block;
+	}
+
+	.button {
+			background-color: #FF7300;
+	    color: #FFF;
+	    border: none;
+	    border-radius: 4px;
+	    height: 36px;
+	    padding-left: 10px;
+	    padding-right: 10px;
+	}
+
+	.button:hover {
+		background-color: #F07108;
+	}
+
+
 }
-
-.search-bar {
-	display: inline-block;
-}
-
-
-.search-input-button {
-	opacity: 0.5;
-}
-
-.search-input {
-	border: yellow 1px solid;
-}
-
-.div-search-button {
-	float: right;
-}
-
-.search-button,
-.search-button:hover {
-		background-color: #FF7300;
-    color: #FFF;
-    border: none;
-    border-radius: 3px;
-}
-
-
-
 
