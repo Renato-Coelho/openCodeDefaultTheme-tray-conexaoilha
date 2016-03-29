@@ -3,12 +3,83 @@
  */
  
 .header {
-    padding-top: 20px;
-    padding-bottom: 10px;
-    
-    .header-customer {
-        text-transform: uppercase;
-        font-size: 0.87em;
-        padding-top: 7px;
+		background-color: #0043E3;
+		border: blue dotted 1px;
+        height: 140px;
+
+
+    .logo {
+    	width: 230px;
+    	max-height: 100%;
+    	display: inline-block;
+    	margin-right: 20px;
+    	padding-top: 5px;
+        padding-bottom: 4px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
+
+    .header-search {
+    	background-color: green;
+    	display: inline-block;
+    }
+
+    .customer {
+        color: #FFF;
+    	display: inline-block;
+        float: right;
+        margin-right: 10px;
+    }
+
+    .customer nav {
+        margin-top: 5px;
+        margin-right: 10px;
+    }
+
+    .customer li {
+        display: inline;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .customer li  a {
+        color: #FFF;
+    }
+
+    .shopping-cart-all {
+        position: relative;
+    }
+
+    .shopping-cart {
+        width: 70px;
+        height: 70px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .tag-shopping-cart {
+        width: 20px;
+        height: 20px;
+        background-color: #FF7300;
+        border-radius: 3px;
+        text-align: center;
+        position: absolute;
+        top: 7px;
+        right: 35px;
+        padding: 1px;
+        font-size: 13px;
+    }
+
+    .current-price {
+        text-align: center;
+        font-size: 10px;
+        font-style: italic;
+        font-weight: lighter;
+        padding-top: 5px;
+    }
+
+
+
+
+  
 }

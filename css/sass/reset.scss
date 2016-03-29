@@ -2,6 +2,11 @@
  * Tray Commerce Reset
  */
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 // bootstrap .container conflict
 .page-content .container {
     width: auto;

@@ -2,18 +2,30 @@
 {% element 'snippets/messages' %}
 -->
 
-<header class="header">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-4 text-left">
-                <a class="brand" href="{{ links.home }}" title="{{ store.name }}">{{ store.name }}</a>
-            </div>
-            <div class="hidden-xs col-sm-4 header-customer text-right">
-                {% element 'snippets/customer' %}
-            </div>
-            <div class="col-xs-12 col-sm-4 text-right">
-                {% element 'snippets/search' %}
-            </div>
-        </div>
+<header class="header frame-center">
+    
+
+    <div class="logo">
+        <a  href="{{ links.home }}" title="{{ store.name }}">
+            <img src="{{ asset('img/logo.png') }}">
+        </a>
     </div>
+
+    <div class="header-search">
+        {% element 'snippets/search' %}
+    </div>
+
+    <div class="customer">
+        {% element 'snippets/customer' %}
+
+    </div>
+<!--
+    <div class="hidden-xs col-sm-4 header-customer text-right">
+        {% element 'snippets/customer' %}
+    </div>
+
+    <div class="col-xs-12 col-sm-4 text-right">
+        {% element 'snippets/search' %}
+    </div>
+-->
 </header>

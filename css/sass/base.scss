@@ -3,11 +3,12 @@
  */
 
 $primary-color: #25282A;
-$primary-font: "Oswald", sans-serif;
+$primary-font:  'Geneva', 'Helvetica', sans-serif;
 
 body {
     background: #fff;
     color: $primary-color;
+    font-family: $primary-font;
 }
 
 // adaptive images
@@ -30,4 +31,13 @@ img {
 
 .vspace-lg {
     margin-bottom: 20px;
+}
+
+
+//// BY_CONNECTION_ISLAND ////
+.frame-center {
+	margin: 0 auto;
+	width: 975px;
+	border: solid 5px #ccc;
+    box-sizing: border-box;
 }

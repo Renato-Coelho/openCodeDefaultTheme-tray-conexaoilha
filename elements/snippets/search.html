@@ -1,13 +1,20 @@
 <form role="form" action="{{ links.search }}">
     <input type="hidden" name="loja" value="{{ store.id }}">
-    <div class="row">
-        <div class="col-xs-10">
-            <input type="search" placeholder="Buscar na loja" name="palavra_busca">
-        </div>
-        <div class="col-xs-2">
-            <button class="search-button">
-                <span class="glyphicon glyphicon-search"></span>
-            </button>
-        </div>
-    </div>
+
+        <div class="search">
+
+            <div class="search-bar">
+
+                 <span class="glyphicon glyphicon-search"></span>
+                <input type="search" class="search-input" placeholder="Encontre Aqui" name="palavra_busca">
+            </div>
+
+            <div class="div-search-button">
+                <button class="search-button">
+                   Pesquisar
+                </button>
+            </div>
+
+        </div>    
+    
 </form>

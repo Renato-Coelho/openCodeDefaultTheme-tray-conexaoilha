@@ -1,1 +1,348 @@
-.page-content .container{width:auto}#miniad,.bLeft,.bRight,.bottom,.leftCorner2,.stripe,.topBorder{display:none}#ProdAbas,#ProdAbas .aberta,#ProdAbas .aberta a,#ProdAbas li,#ProdAbas li a,#col3D,#colFotos,#colVideo,#direita,#esquerda,#foto_p,#title,#visualAbas,#visualAbas li,#visualAbas li a,.container,.container2,.container3,.prodBox,.visitados{background:0 0;border:0}#visualAbas{display:block;width:auto}#visualAbas li{display:inline-block;float:none}#col3D,#colFotos,#colVideo{display:block;width:auto}#foto_p{width:auto}#ProdAbas,#ProdBlock{display:block;width:auto}body{background:#fff;color:#25282A}img{height:auto;max-width:100%}.vspace-lg,.vspace-sm,.vspace-xs{overflow:hidden;margin-bottom:5px}.vspace-sm{margin-bottom:10px}.vspace-lg{margin-bottom:20px}a,a:hover{color:#25282A}h1,h2,h3,h4,h5,h6{font-family:Oswald,sans-serif;font-weight:400;text-transform:uppercase}.header{padding-top:20px;padding-bottom:10px}.header .header-customer{text-transform:uppercase;font-size:.87em;padding-top:7px}.footer{border-top:1px solid #25282A;margin-top:30px;padding-top:30px}.footer a{font:300 .9em Oswald,sans-serif;text-transform:uppercase}.footer .footer-title{font:700 1.1em Oswald,sans-serif;text-transform:uppercase}.address{color:#666;font:300 .9em Oswald,sans-serif;padding:70px 0;text-align:center;text-transform:uppercase}.address .address-name{color:#25282A;font-size:1.3em}.banner{margin:0 auto;text-align:center}.brand{display:block;font:700 2em/1em Oswald,sans-serif;text-transform:uppercase;padding:0 0 10px 10px}.brand:active,.brand:hover{text-decoration:none}.news-button{background:#25282A;color:#fff;font:300 1em Oswald,sans-serif;text-transform:uppercase}.news-button:hover{background:#000;color:#fff}.product{opacity:.7;filter:alpha(opacity=70);text-align:center;-webkit-transition:opacity .4s;-o-transition:opacity .4s;transition:opacity .4s;margin-bottom:30px}.product:hover{opacity:1;filter:alpha(opacity=100)}.product>a{display:block;position:relative;text-decoration:none}.product .product-image img{margin:0 auto;width:180px}.product .product-image img[src*=loading]{width:48px}.product .product-name{color:#333;width:100%}.product .product-name h3{font:400 1em Oswald,sans-serif;text-transform:uppercase;-ms-text-overflow:clip;text-overflow:clip;white-space:nowrap;overflow:hidden}.product .product-price span{background:#000;background:rgba(0,0,0,.6);color:#fff;font-size:.8em;padding:3px 17px}.page-product .breadcrumb{display:inline-block;text-align:left}.page-product .product-safe{text-align:right;margin-top:-20px}.page-product .product-id{float:right}.page-product .product-title{margin:10px 0 0}.page-product .product-links{text-align:center}.page-product .product-links>a{display:block;border-right:1px #ccc solid;border-bottom:1px #ccc solid;text-decoration:none;text-transform:uppercase;padding:3px}.page-product .product-details,.page-product .product-labels{clear:both}.page-product .products-related{text-align:center;margin:10px 0}.page-product .products-related .related-title{text-align:left;margin:0 0 10px}.page-product .products-related .related-image{display:inline-block}.page-product .no-padding{padding:0}@media screen and (max-width:600px){.page-product .product-id{float:none}.page-product .produto-calcular-frete{display:none}.page-product #ProdAbas{background:#f1f1f1}.page-product #ProdAbas .aberta,.page-product #ProdAbas li{float:none}.page-product #ProdAbas li+li{border-top:1px solid #ccc}.page-product #formasPagto img{max-width:60px}}.search-button,.search-button:hover{color:#25282A}.showcase-title{font:700 1.8em Oswald,sans-serif;color:#25282A;text-align:center;text-transform:uppercase}
+/*
+ * Tray Commerce Reset
+ */
+* {
+  margin: 0;
+  padding: 0; }
+
+.page-content .container {
+  width: auto; }
+
+.bottom,
+.topBorder,
+.leftCorner2,
+.bLeft,
+.bRight,
+#miniad,
+.stripe {
+  display: none; }
+
+.container,
+.container2,
+.container3,
+#title,
+#esquerda,
+#direita,
+#visualAbas,
+#visualAbas li,
+#visualAbas li a,
+#foto_p,
+#colFotos,
+#colVideo,
+#col3D,
+#ProdAbas,
+.prodBox,
+#ProdAbas li,
+#ProdAbas .aberta,
+#ProdAbas li a,
+#ProdAbas .aberta a,
+.visitados {
+  background: none;
+  border: 0; }
+
+#visualAbas {
+  display: block;
+  width: auto; }
+
+#visualAbas li {
+  display: inline-block;
+  float: none; }
+
+#colFotos,
+#colVideo,
+#col3D {
+  display: block;
+  width: auto; }
+
+#foto_p {
+  width: auto; }
+
+#ProdAbas,
+#ProdBlock {
+  display: block;
+  width: auto; }
+
+/**
+ * Base / Settings
+ */
+body {
+  background: #fff;
+  color: #25282A;
+  font-family: "Geneva", "Helvetica", sans-serif; }
+
+img {
+  height: auto;
+  max-width: 100%; }
+
+.vspace-xs,
+.vspace-sm,
+.vspace-lg {
+  overflow: hidden;
+  margin-bottom: 5px; }
+
+.vspace-sm {
+  margin-bottom: 10px; }
+
+.vspace-lg {
+  margin-bottom: 20px; }
+
+.frame-center {
+  margin: 0 auto;
+  width: 975px;
+  border: solid 5px #ccc;
+  box-sizing: border-box; }
+
+/**
+ * Typography
+ */
+a,
+a:hover {
+  color: #25282A; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Geneva", "Helvetica", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+/**
+ * Header
+ */
+.header {
+  background-color: #0043E3;
+  border: blue dotted 1px;
+  height: 140px; }
+  .header .logo {
+    width: 230px;
+    max-height: 100%;
+    display: inline-block;
+    margin-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    padding-left: 20px;
+    padding-right: 20px; }
+  .header .header-search {
+    background-color: green;
+    display: inline-block; }
+  .header .customer {
+    color: #FFF;
+    display: inline-block;
+    float: right;
+    margin-right: 10px; }
+  .header .customer nav {
+    margin-top: 5px;
+    margin-right: 10px; }
+  .header .customer li {
+    display: inline;
+    font-size: 16px;
+    font-weight: bold; }
+  .header .customer li a {
+    color: #FFF; }
+  .header .shopping-cart-all {
+    position: relative; }
+  .header .shopping-cart {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    margin-top: 10px; }
+  .header .tag-shopping-cart {
+    width: 20px;
+    height: 20px;
+    background-color: #FF7300;
+    border-radius: 3px;
+    text-align: center;
+    position: absolute;
+    top: 7px;
+    right: 35px;
+    padding: 1px;
+    font-size: 13px; }
+  .header .current-price {
+    text-align: center;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: lighter;
+    padding-top: 5px; }
+
+/**
+ * Footer
+ */
+.footer {
+  border-top: 1px solid #25282A;
+  margin-top: 30px;
+  padding-top: 30px; }
+  .footer a {
+    font: 300 0.9em "Geneva", "Helvetica", sans-serif;
+    text-transform: uppercase; }
+  .footer .footer-title {
+    font: bold 1.1em "Geneva", "Helvetica", sans-serif;
+    text-transform: uppercase; }
+
+/**
+ * Address
+ */
+.address {
+  color: #666;
+  font: 300 0.9em "Geneva", "Helvetica", sans-serif;
+  padding: 70px 0;
+  text-align: center;
+  text-transform: uppercase; }
+  .address .address-name {
+    color: #25282A;
+    font-size: 1.3em; }
+
+/**
+ * Banners
+ */
+.banner {
+  margin: 0 auto;
+  text-align: center; }
+
+/**
+ * Brand
+ */
+.brand {
+  display: block;
+  font: bold 2em/1em "Geneva", "Helvetica", sans-serif;
+  text-transform: uppercase;
+  padding: 0 0 10px 10px;
+  vertical-align: middle;
+  color: #fff; }
+  .brand:hover, .brand:active {
+    text-decoration: none; }
+
+/**
+ * Newsletter
+ */
+.news-button {
+  background: #25282A;
+  color: #fff;
+  font: 300 1em "Geneva", "Helvetica", sans-serif;
+  text-transform: uppercase; }
+  .news-button:hover {
+    background: #000;
+    color: #fff; }
+
+/**
+ * Product
+ */
+.product {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  text-align: center;
+  -webkit-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+  margin-bottom: 30px; }
+  .product:hover {
+    opacity: 1;
+    filter: alpha(opacity=100); }
+  .product > a {
+    display: block;
+    position: relative;
+    text-decoration: none; }
+  .product .product-image img {
+    margin: 0 auto;
+    width: 180px; }
+  .product .product-image img[src*='loading'] {
+    width: 48px; }
+  .product .product-name {
+    color: #333;
+    width: 100%; }
+    .product .product-name h3 {
+      font: 400 1em "Geneva", "Helvetica", sans-serif;
+      text-transform: uppercase;
+      -ms-text-overflow: clip;
+      text-overflow: clip;
+      white-space: nowrap;
+      overflow: hidden; }
+  .product .product-price span {
+    background: #000;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 0.8em;
+    padding: 3px 17px; }
+
+.page-product .breadcrumb {
+  display: inline-block;
+  text-align: left; }
+.page-product .product-safe {
+  text-align: right;
+  margin-top: -20px; }
+.page-product .product-id {
+  float: right; }
+.page-product .product-title {
+  margin: 10px 0 0; }
+.page-product .product-links {
+  text-align: center; }
+  .page-product .product-links > a {
+    display: block;
+    border-right: 1px #ccc solid;
+    border-bottom: 1px #ccc solid;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 3px; }
+.page-product .product-labels, .page-product .product-details {
+  clear: both; }
+.page-product .products-related {
+  text-align: center;
+  margin: 10px 0; }
+  .page-product .products-related .related-title {
+    text-align: left;
+    margin: 0 0 10px; }
+  .page-product .products-related .related-image {
+    display: inline-block; }
+.page-product .no-padding {
+  padding: 0; }
+@media screen and (max-width: 600px) {
+  .page-product .product-id {
+    float: none; }
+  .page-product .produto-calcular-frete {
+    display: none; }
+  .page-product #ProdAbas {
+    background: #f1f1f1; }
+    .page-product #ProdAbas li, .page-product #ProdAbas .aberta {
+      float: none; }
+    .page-product #ProdAbas li + li {
+      border-top: 1px solid #ccc; }
+  .page-product #formasPagto img {
+    max-width: 60px; } }
+
+/**
+ * Search
+ */
+.search {
+  margin-right: 20px; }
+
+.search-bar {
+  display: inline-block; }
+
+.search-input-button {
+  opacity: 0.5; }
+
+.search-input {
+  border: yellow 1px solid; }
+
+.div-search-button {
+  float: right; }
+
+.search-button,
+.search-button:hover {
+  background-color: #FF7300;
+  color: #FFF;
+  border: none;
+  border-radius: 3px; }
+
+/**
+ * Showcase
+ */
+.showcase-title {
+  font: bold 1.8em "Geneva", "Helvetica", sans-serif;
+  color: #25282A;
+  text-align: center;
+  text-transform: uppercase; }
+
+/*# sourceMappingURL=theme.min.css.map */

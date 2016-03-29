@@ -1,8 +1,35 @@
 /**
  * Search
  */
+.search {
+	margin-right: 20px;
+}
+
+.search-bar {
+	display: inline-block;
+}
+
+
+.search-input-button {
+	opacity: 0.5;
+}
+
+.search-input {
+	border: yellow 1px solid;
+}
+
+.div-search-button {
+	float: right;
+}
 
 .search-button,
 .search-button:hover {
-    color: $primary-color;
+		background-color: #FF7300;
+    color: #FFF;
+    border: none;
+    border-radius: 3px;
 }
+
+
+
+

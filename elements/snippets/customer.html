@@ -1,13 +1,32 @@
-<ul>
-    {% if customer.logged %}
-    <li>Olá {{ customer.name }}</li>
-    {% else %}
-    <li><a href="{{ links.login }}">Login</a></li>
-    <li><a href="{{ links.sign_in }}">Crie sua conta</a></li>
-    {% endif %}
-    <li>
-        <a class="glyphicon glyphicon-shopping-cart" href="{{ links.cart }}">
-            <span data-cart="amount">{{ cart.amount }}</span> itens no carrinho
+<nav>
+    <ul>
+        
+        {% if customer.logged %}
+            <li>Olá {{ customer.name }}</li>
+
+        {% else %}
+            <li>
+                <a href="{{ links.login }}">Login</a>
+            </li>
+
+            <li> | </li>
+            <li>
+                <a href="{{ links.sign_in }}">Cadastrar</a>
+            </li>
+        
+        {% endif %}
+
+    </ul>
+</nav>
+
+<div class="shopping-cart-all">
+    <div class="shopping-cart">
+        <a href="{{ links.cart }}">
+                <img src="{{ asset('img/cart.png') }}">
         </a>
-    </li>
-</ul>
+    </div>
+    <span class="tag-shopping-cart" data-cart="amount"></span>
+    <div class="current-price">
+        R$ <span data-cart="price"></span>
+    </div>
+ </div>   
