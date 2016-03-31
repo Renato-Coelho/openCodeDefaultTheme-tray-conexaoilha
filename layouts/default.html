@@ -20,6 +20,8 @@
     {% endif %}
 </head>
 <body>
+
+
     <div class="frame-global">
         {{ googleTagManager.top(pages.current, tagManagerData) }}
             
@@ -38,9 +40,9 @@
 
 
         
-        <div class="nav-top content">
+        <nav class="nav-menu">
             {% element 'snippets/categories_menu' %}
-        <div>        
+        </nav>        
 
         <section style="margin-top: 50px" class="content">
             {{ content_for_layout }}

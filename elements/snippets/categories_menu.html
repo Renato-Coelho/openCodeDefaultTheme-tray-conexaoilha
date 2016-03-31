@@ -1,17 +1,20 @@
-<ul class="menu">
-	{% for category in categories %}
-		{% set children = category.children %}
-		<li>
-			<a href="{{ category.link }}">{{ category.name }}</a>
-			{% if children %}
-				<ul class="menu-children">
-					{% for child in children %}
-						<li>
-							<a href="{{ child.link }}">{{ child.name }}</a>
-						</li>
-					{% endfor%}
-				</ul>
-			{% endif %}
-		</li>
-	{% endfor %}
-</ul>
+{% set _width  =  100/categories|length %}
+
+
+	<ul class="menu">
+		{% for category in categories %}
+			{% set children = category.children %}
+			<li style="width: {{_width}}%">
+				<a href="{{ category.link }}">{{ category.name }}</a>
+				{% if children %}
+					<ul class="menu-children">
+						{% for child in children %}
+							<li>
+								<a href="{{ child.link }}">{{ child.name }}</a>
+							</li>
+						{% endfor%}
+					</ul>
+				{% endif %}
+			</li>
+		{% endfor %}
+	</ul>
