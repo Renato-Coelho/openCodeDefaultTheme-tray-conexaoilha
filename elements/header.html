@@ -1,29 +1,25 @@
 <!--
 {% element 'snippets/messages' %}
 -->
-
-<header class="header frame-center">
+<header class="header">
     
-    <div class="header-container">
-        
-        <div class="logo">
-            <a  href="{{ links.home }}" title="{{ store.name }}">
-                <img src="{{ asset('img/logo.png') }}">
-            </a>
-        </div>
-        
-        <div class="ext-container-header-search">        
-            <div class="container-header-search">
-                <div class="header-search">
-                    {% element 'snippets/search' %}
-                </div>
-            </div>
-        </div>
-        
-        <div class="customer">
-            {% element 'snippets/customer' %}
 
-        </div>
+    <div class="logo">
+        <a  href="{{ links.home }}" title="{{ store.name }}">
+            <img class="logo-image" src="{{ asset('img/logo.png') }}">
+        </a>
+    </div>
 
-    </div>    
+    
+    
+    <div class="search">        
+        {% element 'snippets/search' %}
+    </div>
+    
+    <div class="customer">
+        {% element 'snippets/customer' %}
+
+    </div>
+
+
 </header>

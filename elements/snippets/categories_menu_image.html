@@ -1,0 +1,28 @@
+<ul class="menu">
+{% for category in categories %}
+    {% if loop.index <= limit or not limit %}
+    {% set children = category.children %}
+    <li>
+        <a href="{{ category.link }}">{{ category.name }}</a>
+        {% if children %}
+            <ul class="menu-children">
+            {% if category.images %}
+                <figure class="category-submenu-image">
+                    <img src="{{ category.images[0] }}" alt="{{ category.name }}">           
+                </figure>
+            {% else %}
+                <figure class="category-submenu-image">
+                    <img src="http://fakeimg.pl/160x220/444/fff" alt="{{ category.name }}">
+                </figure>
+            {% endif %}
+            {% for child in children %}
+                <li>
+                    <a href="{{ child.link }}">{{ child.name }}</a>
+                </li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+    </li>
+    {% endif %}
+{% endfor %}
+</ul>

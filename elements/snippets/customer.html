@@ -1,32 +1,35 @@
-<nav>
-    <ul>
-        
-        {% if customer.logged %}
-            <li>Olá {{ customer.name }}</li>
+<div class="customer-status">
+    <nav>
+        <ul>
+            
+            {% if customer.logged %}
+                <li>Olá {{ customer.name }}</li>
 
-        {% else %}
-            <li>
-                <a href="{{ links.login }}">Login</a>
-            </li>
+            {% else %}
+                <li>
+                    <a href="{{ links.login }}">Login</a>
+                </li>
 
-            <li> | </li>
-            <li>
-                <a href="{{ links.sign_in }}">Cadastrar</a>
-            </li>
-        
-        {% endif %}
+                <li> | </li>
+                <li>
+                    <a href="{{ links.sign_in }}">Cadastrar</a>
+                </li>
+            
+            {% endif %}
 
-    </ul>
-</nav>
-
-<div class="shopping-cart-all">
-    <div class="shopping-cart">
-        <a href="{{ links.cart }}">
-                <img src="{{ asset('img/cart.png') }}">
-        </a>
-    </div>
-    <span class="tag-shopping-cart" data-cart="amount"></span>
-    <div class="current-price">
-        R$ <span data-cart="price"></span>
-    </div>
- </div>   
+        </ul>
+    </nav>
+</div>
+<div class="cart">
+        <div class="cart-art">
+            <a href="{{ links.cart }}">
+                    <img class="image" src="{{ asset('img/cart.png') }}">
+            </a>
+            
+            <span class="tag" data-cart="amount"></span>
+        </div>    
+        <div class="price">
+            R$ <span data-cart="price"></span>
+        </div>
+</div>    
+ 

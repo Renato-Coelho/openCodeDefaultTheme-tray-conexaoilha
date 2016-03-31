@@ -35,9 +35,100 @@ img {
 
 
 //// BY_CONNECTION_ISLAND ////
-.frame-center {
+
+.frame-global {
 	margin: 0 auto;
 	width: 975px;
-	border: solid 2px #ccc;
     box-sizing: border-box;
+    border: none;
+
 }
+
+.content {
+    width: auto;
+    height: auto;
+}
+
+
+
+//// Categories List with submenu list
+.nav-top {
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    display: block;
+}
+
+
+.menu {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    background-color: #FF7300;
+    opacity: 1;
+}
+.menu li {
+    display: inline-block;
+    position: relative;
+    background-color: #FF7300;
+    color: #fff;
+    border: none;
+}
+
+.menu li a {
+    background-color: #FF7300;
+    color: #fff;
+    border: none;
+}
+
+
+.menu-children {
+    display: none;
+    position: absolute;
+    top: 17px;
+    left: 0;
+    width: 200px;
+    z-index: 9999;
+    padding: 10px;
+    overflow: auto;
+    background: #FF7300;
+    color: #fff;
+
+}
+
+
+.menu li:hover .menu-children {
+    display: block;
+}
+.category-submenu-image {
+    float: left;
+    margin: 0 10px 0 0;
+}
+.menu .menu-children li {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

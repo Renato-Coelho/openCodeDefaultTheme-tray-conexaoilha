@@ -1,19 +1,13 @@
-<aside class="col-sm-2">
-    <div id="dive7rLeftTop"></div>
-
+<nav>
     {% if 'central_' in pages.current %}
         {% element 'snippets/menu_central' %}
     {% else %}
-        <h3>Categorias</h3>
         {% element 'snippets/categories_list' %}
     {% endif %}
 
-    <div id="dive7rLeftMiddle"></div>
-    <div id="dive7rLeftBottom"></div>
-
-    {% if banner.side %}
+    <!-- {% if banner.side %}
         <div class="banner banner-side">
             {{ banner.side }}
         </div>
-    {% endif %}
-</aside>
+    {% endif %} -->
+</nav>

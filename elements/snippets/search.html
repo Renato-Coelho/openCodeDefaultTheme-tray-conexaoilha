@@ -1,20 +1,17 @@
-<form role="form" action="{{ links.search }}">
-    <input type="hidden" name="loja" value="{{ store.id }}">
+<div class="search-bar">
+    <form role="form" action="{{ links.search }}">
+        <input type="hidden" name="loja" value="{{ store.id }}">
 
-        <div class="search">
+                <div class="icon-and-input">
 
-            <div class="icon-and-input">
+                     <span class="glyphicon glyphicon-search icon"></span>
+                    <input type="search" class="input" placeholder="Encontre aqui..." name="palavra_busca">
 
-                 <span class="glyphicon glyphicon-search icon"></span>
-                <input type="search" class="input" placeholder="Encontre aqui..." name="palavra_busca">
-            </div>
+                </div>
 
-            <div class="div-button">
-                <button class="button">
-                   Pesquisar
-                </button>
-            </div>
+                
+                <button class="button">Pesquisar</button>
+                
 
-        </div>    
-    
-</form>
+    </form>
+</div>
