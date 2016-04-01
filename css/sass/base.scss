@@ -1,9 +1,11 @@
 /**
  * Base / Settings
  */
-
 $primary-color: #25282A;
-$primary-font:  'Geneva', 'Helvetica', sans-serif;
+$orange-tone: #FF7300;
+
+
+$primary-font: 'Myriad Set Pro',' Geneva', 'Helvetica', 'Verdana', sans-serif;
 
 body {
     background: #fff;
@@ -35,11 +37,8 @@ img {
 
 
 //// BY_CONNECTION_ISLAND ////
-
-.frame-global {
-	margin: 0 auto;
-	width: 975px;
-    border: none;
+.ci-container {
+    padding: 0 15%;
 
 }
 

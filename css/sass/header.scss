@@ -2,100 +2,98 @@
  * Header
  */
  
-.header {
-    box-sizing: border-box;
-	background-color: #546e7a;
+.header { 
     height: 140px;
-    border: none;
     border-bottom: 2px solid #FFF;
     
-    .logo {
-    	display: inline-block;
+    .header-container {
+        background-color: #546e7a;
         height: 100%;
-        float: left;
         
-        .logo-image {
-            width: 200px;
-            height: 114px;
-            padding: auto 15px;
-            margin-top: 10px;
-            margin-left: 10px;
-
-        }      
-    }
-
-    .search {
-        display: inline-block;
-        height: 100%;
-        float: left;
-        margin-left: 104px;
-    }
-
-    .customer {
-        float: right;
-        height: 100%;
-        .customer-status {
+        .logo {
         	display: inline-block;
-            color: #FFF;
-            margin-right: 10px;
+            height: 100%;
+            float: left;
+            
+            .logo-image {
+                width: 200px;
+                height: 114px;
+            }      
+        }
 
-            nav {
-                margin-top: 5px;
-                margin-right: 10px;
-            }
+        .search {
+            display: inline-block;
+            height: 100%;
+            float: left;
+            margin-left: 104px;
+        }
 
-            li {
-                display: inline;
-                font-size: 16px;
-                font-weight: bold;
-            }
-
-            li  a {
+        .customer {
+            float: right;
+            height: 100%;
+            .customer-status {
+            	display: inline-block;
                 color: #FFF;
-                text-decoration: none;
-                text-shadow: 1px 1px 1px black;
-            }
+                margin-right: 10px;
 
-            li  a:hover {
-                border-bottom: #FF7300 solid 2px;
-            }
-        }  
-        
-        .cart {
-            .cart-art {
-                position: relative;
-                text-align: center;
-                .image {
-                    width: 70px;
-                    height: 70px;
-                    margin-top: 10px;
-                }   
+                nav {
+                    margin-top: 5px;
+                    margin-right: 10px;
+                }
 
-                .tag {
-                    position: absolute;
-                    right: 40px;
-                    top: 8px;
-                    width: 20px;
-                    height: 20px;
-                    background-color: #FF7300;
-                    color: #FFF;
-                    border-radius: 4px;
-                    text-align: center;
-                    padding: 1px;
-                    font-size: 13px;
+                li {
+                    display: inline;
+                    font-size: 16px;
                     font-weight: bold;
                 }
-            }        
-            .price {
-                text-align: center;
-                font-size: 12px;
-                font-style: italic;
-                font-weight: lighter;
-                margin-top: 7px;
-                color: #FFF;
-                border-radius: 50px;
-            }
+
+                li  a {
+                    color: #FFF;
+                    text-decoration: none;
+                    text-shadow: 1px 1px 1px black;
+                }
+
+                li  a:hover {
+                    border-bottom: #FF7300 solid 2px;
+                }
+            }  
             
-        }
-    }
+            .cart {
+                .cart-art {
+                    position: relative;
+                    text-align: center;
+                    .image {
+                        width: 70px;
+                        height: 70px;
+                        margin-top: 10px;
+                    }   
+
+                    .tag {
+                        position: absolute;
+                        right: 40px;
+                        top: 8px;
+                        width: 20px;
+                        height: 20px;
+                        background-color: #FF7300;
+                        color: #FFF;
+                        border-radius: 4px;
+                        text-align: center;
+                        padding: 1px;
+                        font-size: 13px;
+                        font-weight: bold;
+                    }
+                }        
+                .price {
+                    text-align: center;
+                    font-size: 12px;
+                    font-style: italic;
+                    font-weight: lighter;
+                    margin-top: 7px;
+                    color: #FFF;
+                    border-radius: 50px;
+                }
+                
+            }
+        }    
+    }   
 }

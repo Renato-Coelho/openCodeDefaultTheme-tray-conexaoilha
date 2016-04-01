@@ -1,25 +1,23 @@
 <!--
 {% element 'snippets/messages' %}
 -->
-<header class="header">
-    
+<header class="header ci-container">
+        
+    <div class="header-container">
+        <div class="logo">
+            <a  href="{{ links.home }}" title="{{ store.name }}">
+                <img class="logo-image" src="{{ asset('img/logo.png') }}">
+            </a>
+        </div>
 
-    <div class="logo">
-        <a  href="{{ links.home }}" title="{{ store.name }}">
-            <img class="logo-image" src="{{ asset('img/logo.png') }}">
-        </a>
+        <div class="search">        
+            {% element 'snippets/search' %}
+        </div>
+        
+        <div class="customer">
+            {% element 'snippets/customer' %}
+
+        </div>
     </div>
-
-    
-    
-    <div class="search">        
-        {% element 'snippets/search' %}
-    </div>
-    
-    <div class="customer">
-        {% element 'snippets/customer' %}
-
-    </div>
-
 
 </header>

@@ -6,7 +6,12 @@
     <!-- [if IE]<meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {{ tray.styles }}
+    
+<!-- 
     <link rel="stylesheet" href="{{ asset('css/bootstrap/bootstrap.min.css') }}">
+-->    
+
+
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald:400,300,700">
     <link rel="stylesheet" href="{{ asset('css/theme.min.css') }}">
     {{ tray.scripts }}
@@ -22,7 +27,7 @@
 <body>
 
 
-    <div class="frame-global">
+    
         {{ googleTagManager.top(pages.current, tagManagerData) }}
             
         {% if utils.is_mobile %}
@@ -30,6 +35,8 @@
         {% else %}
             {% element 'header' %}
         {% endif %}
+
+    <div class="ci-container">
 
         {% if pages.current == 'home' and banner.home %}
             <div class="banner banner-home">
