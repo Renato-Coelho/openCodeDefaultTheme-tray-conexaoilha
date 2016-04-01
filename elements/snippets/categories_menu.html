@@ -1,6 +1,6 @@
 {% set _width  =  100/categories|length %}
 
-
+<nav>
 	<ul class="menu">
 		{% for category in categories %}
 			{% set children = category.children %}
@@ -18,3 +18,4 @@
 			</li>
 		{% endfor %}
 	</ul>
+</nav>
