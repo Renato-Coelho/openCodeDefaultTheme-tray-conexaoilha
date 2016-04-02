@@ -42,7 +42,7 @@ img {
 
 }
 
-.content {
+.contentForLayout-firstColor {
     background-color: rgba(255, 127, 0, 0.05);
      //#FF6D00;
 }
@@ -53,91 +53,4 @@ img {
 .nav-top {
     top: 0;
 }
-
-.nav-menu {
-    
-}
-
-
-.menu {
-    background-color: #FF7300;
-}
-.menu li {
-    display: inline-block;
-    position: relative;
-    background-color: #FF7300;
-    color: #fff;
-    padding: 8px 0; 
-    text-align: center;
-    float: left;
-}
-
-// .menu li ~ li {
-//     border-left: #FFF solid 1px;
-// }
-
-.menu li a {
-    color: #FFF;
-    border: none;
-    padding: auto;
-}
-
-.menu-children {
-    display: none;
-    position: absolute;
-    top: 25px;
-    left: 0;
-    width: 200px;
-    z-index: 9999;
-    padding: 10px;
-    overflow: auto;
-    background-color: #FF7300;
-    font-size: 12px;
-    color: #FF7300;
-
-    transition: all 0.5s ease-in-out;
-
-}
-
-.menu li:hover .menu-children {
-    display: block;
-    transition: all 0.5s ease-in-out;
-}
-
-.menu-children li {
-    display: block;
-    background: #fff;
-    font-size: 12px;
-    float: none;
-    border-bottom: 1px solid #FF7300;
-
-
-    a {
-        color: #FF7300;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

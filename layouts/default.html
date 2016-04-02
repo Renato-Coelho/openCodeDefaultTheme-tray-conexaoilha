@@ -47,19 +47,22 @@
 
 
         
-        <div class="ci-container">
-            {% element 'snippets/categories_menu' %}
-        </div>        
+        
+        {% element 'snippets/categories_menu' %}
+                
 
         
             
          
-    <div class="ci-container">
+    
 
 
-        <section class="content">
+        <section class="contentForLayout-firstColor ci-container">
             {{ content_for_layout }}
-        </section>    
+        </section>
+
+
+        <div class="ci-container">    
         
         {% element 'snippets/tagcloud' %}
         {% element 'snippets/history' %}

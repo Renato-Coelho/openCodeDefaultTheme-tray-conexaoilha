@@ -1,7 +1,7 @@
 {% set _width  =  100/categories|length %}
 
-<nav>
-	<ul class="menu">
+<nav class="menu-main ci-container">
+	<ul>
 		{% for category in categories %}
 			{% set children = category.children %}
 			<li style="width: {{_width}}%">
