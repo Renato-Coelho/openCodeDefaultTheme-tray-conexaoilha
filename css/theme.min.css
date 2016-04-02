@@ -394,26 +394,29 @@ h6 {
       padding: auto;
       text-shadow: 1px 1px 1px #111; }
     .categories-menu .menu li .menu-children {
+      box-sizing: border-box;
       display: none;
       position: absolute;
-      top: 25px;
+      top: 30px;
       left: 0;
-      width: 200px;
       z-index: 9999;
-      padding: 10px;
+      width: 100%;
       overflow: auto;
       background-color: #FF7300;
       font-size: 12px;
-      color: #FF7300; }
+      color: #FF7300;
+      padding: 16px;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px; }
       .categories-menu .menu li .menu-children li {
         display: block;
         background: #fff;
         font-size: 12px;
         float: none;
-        border-bottom: 1px solid #FF7300; }
+        border-bottom: 3px solid #FF7300; }
         .categories-menu .menu li .menu-children li a {
-          color: #FF7300;
-          text-shadow: none; }
+          text-shadow: none;
+          color: #FF7300; }
 
 .categories-menu li:hover .menu-children {
   display: block;
