@@ -7,6 +7,7 @@
   border: none; }
 
 a {
+  text-decoration: none;
   color: inherit; }
 
 .page-content .container {
@@ -72,7 +73,7 @@ a {
 body {
   background: #fff;
   color: #25282A;
-  font-family: "Myriad Set Pro", " Geneva", "Helvetica", "Verdana", sans-serif; }
+  font-family: "Verdana", "Myriad Set Pro", " Geneva", "Helvetica", "Verdana", sans-serif; }
 
 img {
   height: auto;
@@ -107,6 +108,7 @@ img {
   position: relative;
   background-color: #FF7300;
   color: #fff;
+  padding: 8px 0;
   text-align: center;
   float: left; }
 
@@ -155,7 +157,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Myriad Set Pro", " Geneva", "Helvetica", "Verdana", sans-serif;
+  font-family: "Verdana", "Myriad Set Pro", " Geneva", "Helvetica", "Verdana", sans-serif;
   font-weight: 400;
   text-transform: uppercase; }
 
@@ -199,34 +201,34 @@ h6 {
           text-shadow: 1px 1px 1px black; }
         .header .header-container .customer .customer-status li a:hover {
           border-bottom: #FF7300 solid 2px; }
-      .header .header-container .customer .cart .cart-art {
-        position: relative;
-        text-align: center; }
-        .header .header-container .customer .cart .cart-art .image {
-          width: 70px;
-          height: 70px;
-          margin-top: 10px; }
-        .header .header-container .customer .cart .cart-art .tag {
-          position: absolute;
-          right: 40px;
-          top: 8px;
-          width: 20px;
-          height: 20px;
-          background-color: #FF7300;
-          color: #FFF;
-          border-radius: 4px;
+      .header .header-container .customer .cart {
+        padding-right: 25px; }
+        .header .header-container .customer .cart .cart-art {
+          position: relative;
+          text-align: center; }
+          .header .header-container .customer .cart .cart-art .image {
+            width: 70px;
+            height: 70px;
+            margin-top: 10px; }
+          .header .header-container .customer .cart .cart-art .tag {
+            position: absolute;
+            right: 36px;
+            top: 12px;
+            width: 20px;
+            height: 20px;
+            background-color: #FF7300;
+            color: #FFF;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: bold; }
+        .header .header-container .customer .cart .price {
           text-align: center;
-          padding: 1px;
-          font-size: 13px;
-          font-weight: bold; }
-      .header .header-container .customer .cart .price {
-        text-align: center;
-        font-size: 12px;
-        font-style: italic;
-        font-weight: lighter;
-        margin-top: 7px;
-        color: #FFF;
-        border-radius: 50px; }
+          font-size: 12px;
+          font-style: italic;
+          font-weight: lighter;
+          margin-top: 7px;
+          color: #FFF;
+          border-radius: 50px; }
 
 /**
  * Footer
@@ -236,10 +238,10 @@ h6 {
   margin-top: 30px;
   padding-top: 30px; }
   .footer a {
-    font: 300 0.9em "Myriad Set Pro", " Geneva", "Helvetica", "Verdana", sans-serif;
+    font: 300 0.9em "Verdana", "Myriad Set Pro", " Geneva", "Helvetica", "Verdana", sans-serif;
     text-transform: uppercase; }
   .footer .footer-title {
-    font: bold 1.1em "Myriad Set Pro", " Geneva", "Helvetica", "Verdana", sans-serif;
+    font: bold 1.1em "Verdana", "Myriad Set Pro", " Geneva", "Helvetica", "Verdana", sans-serif;
     text-transform: uppercase; }
 
 /**
@@ -247,7 +249,7 @@ h6 {
  */
 .address {
   color: #666;
-  font: 300 0.9em "Myriad Set Pro", " Geneva", "Helvetica", "Verdana", sans-serif;
+  font: 300 0.9em "Verdana", "Myriad Set Pro", " Geneva", "Helvetica", "Verdana", sans-serif;
   padding: 70px 0;
   text-align: center;
   text-transform: uppercase; }
@@ -267,7 +269,7 @@ h6 {
  */
 .brand {
   display: block;
-  font: bold 2em/1em "Myriad Set Pro", " Geneva", "Helvetica", "Verdana", sans-serif;
+  font: bold 2em/1em "Verdana", "Myriad Set Pro", " Geneva", "Helvetica", "Verdana", sans-serif;
   text-transform: uppercase;
   padding: 0 0 10px 10px;
   vertical-align: middle;
@@ -281,7 +283,7 @@ h6 {
 .news-button {
   background: #25282A;
   color: #fff;
-  font: 300 1em "Myriad Set Pro", " Geneva", "Helvetica", "Verdana", sans-serif;
+  font: 300 1em "Verdana", "Myriad Set Pro", " Geneva", "Helvetica", "Verdana", sans-serif;
   text-transform: uppercase; }
   .news-button:hover {
     background: #000;
@@ -314,7 +316,7 @@ h6 {
     color: #333;
     width: 100%; }
     .product .product-name h3 {
-      font: 400 1em "Myriad Set Pro", " Geneva", "Helvetica", "Verdana", sans-serif;
+      font: 400 1em "Verdana", "Myriad Set Pro", " Geneva", "Helvetica", "Verdana", sans-serif;
       text-transform: uppercase;
       -ms-text-overflow: clip;
       text-overflow: clip;
@@ -416,7 +418,7 @@ h6 {
  * Showcase
  */
 .showcase-title {
-  font: bold 1.8em "Myriad Set Pro", " Geneva", "Helvetica", "Verdana", sans-serif;
+  font: bold 1.8em "Verdana", "Myriad Set Pro", " Geneva", "Helvetica", "Verdana", sans-serif;
   color: #25282A;
   text-align: center;
   text-transform: uppercase; }

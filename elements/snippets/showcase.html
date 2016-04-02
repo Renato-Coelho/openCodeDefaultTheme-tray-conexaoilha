@@ -6,10 +6,11 @@
         </div>
     {% endif %}
 
-    <div class="row">
+    <div style="padding-top: 50px" class="row">
         {% for product in products %}
 
-            <div class="col-sm-4 product">
+            <div style="width: 32.75%;
+display: inline-block" class="col-sm-4 product">
                 {% element 'snippets/product' {"product": product} %}
             </div>
 

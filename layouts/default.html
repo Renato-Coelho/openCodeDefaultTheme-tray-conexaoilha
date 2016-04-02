@@ -54,7 +54,12 @@
         
             
          
-    <div class="ci-container">    
+    <div class="ci-container">
+
+
+        <section class="content">
+            {{ content_for_layout }}
+        </section>    
         
         {% element 'snippets/tagcloud' %}
         {% element 'snippets/history' %}

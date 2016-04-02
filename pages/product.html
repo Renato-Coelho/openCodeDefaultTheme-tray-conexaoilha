@@ -120,7 +120,7 @@
     <h3 class="related-title">Produtos Relacionados</h3>
     <div class="row">
         {% for related in product.related_products %}
-          <div class="col-sm-4 product">
+          <div style="width: 32.75%; display: inline-block" class="col-sm-4 product">
               {% element 'snippets/product' {"product": related} %}
           </div>
         {% if loop.index is divisible by(3) %}
