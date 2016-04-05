@@ -1,13 +1,15 @@
 /**
  * Search
  */
-.search-bar {
+.searchBar {
 	padding: 2px;
 	background-color: #fff;
 	border-radius: 4px;
-	margin-top: 50px;
+	height: 34px;
 
-	.icon-and-input {
+	
+
+	.iconAndInput {
 		display: inline-block;
 		background-color: none;
 		border: none;
@@ -50,6 +52,7 @@
 	    height: 30px;
 	    padding-left: 10px;
 	    padding-right: 10px;
+	    float: right;
 	}
 
 	.button:hover {

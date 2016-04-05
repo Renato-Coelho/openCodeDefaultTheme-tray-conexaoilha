@@ -3,20 +3,21 @@
 -->
 <header class="header ci-container">
         
-    <div class="header-container">
-        <div class="logo">
+    <div class="headerContent">
+        <div class="logoContainer">
             <a  href="{{ links.home }}" title="{{ store.name }}">
-                <img class="logo-image" src="{{ asset('img/logo.png') }}">
+                <img class="logoImage" src="{{ asset('img/logo.png') }}">
             </a>
         </div>
-
-        <div class="search">        
-            {% element 'snippets/search' %}
-        </div>
         
-        <div class="customer">
-            {% element 'snippets/customer' %}
-
+        <div class="searchCostumer">
+            <div class="search">        
+                {% element 'snippets/search' %}
+            </div>
+            
+            <div class="customer">
+                {% element 'snippets/customer' %}
+            </div>
         </div>
     </div>
 

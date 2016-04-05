@@ -20,7 +20,11 @@
 
             .menu-children {
                 box-sizing: border-box;
-                display: none;
+                
+
+                opacity: 0;
+                transition: opacity 0.4s ease-out;
+
                 position: absolute;
                 top: 30px;
                 left: 0;
@@ -53,8 +57,8 @@
 }
 
 
-.categories-menu li:hover .menu-children {
+.menu li:hover .menu-children {
     display: block;
-    transition: all 0.5s ease-in-out;
+    opacity: 1;
 }
 

@@ -4,7 +4,9 @@
 * {
   margin: 0;
   padding: 0;
-  border: none; }
+  border: none;
+  outline: none;
+  box-sizing: border-box; }
 
 a {
   text-decoration: none;
@@ -122,69 +124,80 @@ h6 {
  */
 .header {
   height: 140px; }
-  .header .header-container {
+  .header .headerContent {
     background-color: #546e7a;
     height: 100%; }
-    .header .header-container .logo {
+    .header .headerContent .logoContainer {
       display: inline-block;
+      width: 200px;
       height: 100%;
       float: left; }
-      .header .header-container .logo .logo-image {
-        width: 200px;
-        height: 114px; }
-    .header .header-container .search {
-      display: inline-block;
+      .header .headerContent .logoContainer .logoImage {
+        width: 192px;
+        height: 120px;
+        min-width: 192px;
+        min-height: 120px; }
+    .header .headerContent .searchCostumer {
+      width: 80%;
       height: 100%;
-      float: left;
-      margin-left: 140px; }
-    .header .header-container .customer {
       float: right;
-      height: 100%; }
-      .header .header-container .customer .customer-status {
+      display: inline-block; }
+      .header .headerContent .searchCostumer .search {
         display: inline-block;
-        color: #FFF;
-        margin-right: 10px; }
-        .header .header-container .customer .customer-status nav {
-          margin-top: 5px;
+        height: 100%;
+        width: 80%;
+        float: left;
+        padding-right: 15%;
+        padding-left: 15%; }
+      .header .headerContent .searchCostumer .customer {
+        float: right;
+        width: 20%;
+        display: inline-block; }
+        .header .headerContent .searchCostumer .customer .customer-status {
+          display: inline-block;
+          color: #FFF;
           margin-right: 10px; }
-        .header .header-container .customer .customer-status li {
-          display: inline;
-          font-size: 16px;
-          font-weight: bold; }
-        .header .header-container .customer .customer-status li a {
-          color: #FFF;
-          text-decoration: none;
-          text-shadow: 1px 1px 1px black; }
-        .header .header-container .customer .customer-status li a:hover {
-          border-bottom: #FF7300 solid 2px; }
-      .header .header-container .customer .cart {
-        padding-right: 25px; }
-        .header .header-container .customer .cart .cart-art {
-          position: relative;
-          text-align: center; }
-          .header .header-container .customer .cart .cart-art .image {
-            width: 70px;
-            height: 70px;
-            margin-top: 10px; }
-          .header .header-container .customer .cart .cart-art .tag {
-            position: absolute;
-            right: 36px;
-            top: 12px;
-            width: 20px;
-            height: 20px;
-            background-color: #FF7300;
-            color: #FFF;
-            border-radius: 4px;
-            font-size: 13px;
+          .header .headerContent .searchCostumer .customer .customer-status nav {
+            margin-top: 5px;
+            margin-right: 10px; }
+          .header .headerContent .searchCostumer .customer .customer-status li {
+            display: inline;
+            font-size: 16px;
             font-weight: bold; }
-        .header .header-container .customer .cart .price {
-          text-align: center;
-          font-size: 12px;
-          font-style: italic;
-          font-weight: lighter;
-          margin-top: 7px;
-          color: #FFF;
-          border-radius: 50px; }
+          .header .headerContent .searchCostumer .customer .customer-status li a {
+            color: #FFF;
+            text-decoration: none;
+            text-shadow: 1px 1px 1px black; }
+          .header .headerContent .searchCostumer .customer .customer-status li a:hover {
+            border-bottom: #FF7300 solid 2px; }
+        .header .headerContent .searchCostumer .customer .cart {
+          padding-right: 25px; }
+          .header .headerContent .searchCostumer .customer .cart .cart-art {
+            position: relative;
+            text-align: center; }
+            .header .headerContent .searchCostumer .customer .cart .cart-art .image {
+              width: 70px;
+              height: 70px;
+              margin-top: 10px; }
+            .header .headerContent .searchCostumer .customer .cart .cart-art .tag {
+              position: absolute;
+              right: 36px;
+              top: 12px;
+              width: 20px;
+              height: 20px;
+              background-color: #FF7300;
+              color: #FFF;
+              border-radius: 4px;
+              font-size: 13px;
+              font-weight: bold; }
+          .header .headerContent .searchCostumer .customer .cart .price {
+            text-align: center;
+            font-size: 12px;
+            font-style: italic;
+            font-weight: lighter;
+            margin-top: 7px;
+            color: #FFF;
+            border-radius: 50px; }
 
 /**
  * Footer
@@ -333,17 +346,17 @@ h6 {
 /**
  * Search
  */
-.search-bar {
+.searchBar {
   padding: 2px;
   background-color: #fff;
   border-radius: 4px;
-  margin-top: 50px; }
-  .search-bar .icon-and-input {
+  height: 34px; }
+  .searchBar .iconAndInput {
     display: inline-block;
     background-color: none;
     border: none;
     float: left; }
-  .search-bar .icon {
+  .searchBar .icon {
     color: #999;
     display: inline-block;
     font-size: 20px;
@@ -351,22 +364,23 @@ h6 {
     float: left;
     padding-left: 6px;
     margin-top: 3px; }
-  .search-bar .input {
+  .searchBar .input {
     display: inline-block;
     height: 30px;
     border: none;
     font-size: 20px;
     font-style: italic;
     color: #FF7300; }
-  .search-bar .button {
+  .searchBar .button {
     background-color: #FF7300;
     color: #FFF;
     border: none;
     border-radius: 4px;
     height: 30px;
     padding-left: 10px;
-    padding-right: 10px; }
-  .search-bar .button:hover {
+    padding-right: 10px;
+    float: right; }
+  .searchBar .button:hover {
     background-color: #F07108; }
 
 /**
@@ -395,7 +409,8 @@ h6 {
       text-shadow: 1px 1px 1px #111; }
     .categories-menu .menu li .menu-children {
       box-sizing: border-box;
-      display: none;
+      opacity: 0;
+      transition: opacity 0.4s ease-out;
       position: absolute;
       top: 30px;
       left: 0;
@@ -418,8 +433,8 @@ h6 {
           text-shadow: none;
           color: #FF7300; }
 
-.categories-menu li:hover .menu-children {
+.menu li:hover .menu-children {
   display: block;
-  transition: all 0.5s ease-in-out; }
+  opacity: 1; }
 
 /*# sourceMappingURL=theme.min.css.map */

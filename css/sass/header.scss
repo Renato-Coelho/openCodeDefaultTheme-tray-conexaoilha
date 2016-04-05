@@ -5,93 +5,106 @@
 .header { 
     height: 140px;
     
-    .header-container {
+    .headerContent {
         background-color: #546e7a;
         height: 100%;
 
-        .logo {
+        .logoContainer {
         	display: inline-block;
+            width: 200px;
             height: 100%;
             float: left;
             
-            .logo-image {
-                width: 200px;
-                height: 114px;
+            .logoImage {
+                width: 192px;
+                height: 120px;
+                min-width: 192px;
+                min-height: 120px;
+               
             }      
         }
-
-        .search {
-            display: inline-block;
+        
+        .searchCostumer {
+            width: 80%;
             height: 100%;
-            float: left;
-            margin-left: 140px;
-        }
-
-        .customer {
             float: right;
-            height: 100%;
-            .customer-status {
-            	display: inline-block;
-                color: #FFF;
-                margin-right: 10px;
+            display: inline-block;
+            .search {
+                display: inline-block;
+                height: 100%;
+                width: 80%;
+                float: left;
+                padding-right: 15%;
+                padding-left: 15%;
+            }
 
-                nav {
-                    margin-top: 5px;
-                    margin-right: 10px;
-                }
-
-                li {
-                    display: inline;
-                    font-size: 16px;
-                    font-weight: bold;
-                }
-
-                li  a {
+            .customer {
+                float: right;
+                width: 20%;
+                display: inline-block;
+                .customer-status {
+                	display: inline-block;
                     color: #FFF;
-                    text-decoration: none;
-                    text-shadow: 1px 1px 1px black;
-                }
+                    margin-right: 10px;
 
-                li  a:hover {
-                    border-bottom: #FF7300 solid 2px;
-                }
-            }  
-            
-            .cart {
-                padding-right: 25px;
-                .cart-art {
-                    position: relative;
-                    text-align: center;
-                    .image {
-                        width: 70px;
-                        height: 70px;
-                        margin-top: 10px;
-                    }   
+                    nav {
+                        margin-top: 5px;
+                        margin-right: 10px;
+                    }
 
-                    .tag {
-                        position: absolute;
-                        right: 36px;
-                        top: 12px;
-                        width: 20px;
-                        height: 20px;
-                        background-color: #FF7300;
-                        color: #FFF;
-                        border-radius: 4px;
-                        font-size: 13px;
+                    li {
+                        display: inline;
+                        font-size: 16px;
                         font-weight: bold;
                     }
-                }        
-                .price {
-                    text-align: center;
-                    font-size: 12px;
-                    font-style: italic;
-                    font-weight: lighter;
-                    margin-top: 7px;
-                    color: #FFF;
-                    border-radius: 50px;
-                }
+
+                    li  a {
+                        color: #FFF;
+                        text-decoration: none;
+                        text-shadow: 1px 1px 1px black;
+                    }
+
+                    li  a:hover {
+                        border-bottom: #FF7300 solid 2px;
+                    }
+                }  
                 
+                .cart {
+                    padding-right: 25px;
+                    .cart-art {
+                        position: relative;
+                        text-align: center;
+                        .image {
+                            width: 70px;
+                            height: 70px;
+                            margin-top: 10px;
+                        }   
+
+                        .tag {
+                            position: absolute;
+                            right: 36px;
+                            top: 12px;
+                            width: 20px;
+                            height: 20px;
+                            background-color: #FF7300;
+                            color: #FFF;
+                            border-radius: 4px;
+                            font-size: 13px;
+                            font-weight: bold;
+                        }
+                    }        
+                    .price {
+                        text-align: center;
+                        font-size: 12px;
+                        font-style: italic;
+                        font-weight: lighter;
+                        margin-top: 7px;
+                        color: #FFF;
+                        border-radius: 50px;
+                    }
+                    
+                }
             }
-        }    
+        }        
     }   
 }
