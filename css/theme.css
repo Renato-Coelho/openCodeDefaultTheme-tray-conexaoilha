@@ -69,55 +69,13 @@ a {
   display: block;
   width: auto; }
 
-/**
- * Base / Settings
- */
 body {
   background: #fff;
   color: #25282A;
   font-family: "Verdana", "Myriad Set Pro", " Geneva", "Helvetica", "Verdana", sans-serif; }
 
-img {
-  height: auto;
-  max-width: 100%; }
-
-.vspace-xs,
-.vspace-sm,
-.vspace-lg {
-  overflow: hidden;
-  margin-bottom: 5px; }
-
-.vspace-sm {
-  margin-bottom: 10px; }
-
-.vspace-lg {
-  margin-bottom: 20px; }
-
 .ci-container {
-  padding: 0 15%; }
-
-.contentForLayout-firstColor {
-  background-color: rgba(255, 127, 0, 0.05); }
-
-.nav-top {
-  top: 0; }
-
-/**
- * Typography
- */
-a,
-a:hover {
-  color: #25282A; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Verdana", "Myriad Set Pro", " Geneva", "Helvetica", "Verdana", sans-serif;
-  font-weight: 400;
-  text-transform: uppercase; }
+  padding: 0 5%; }
 
 /**
  * Header
@@ -232,6 +190,51 @@ h6 {
 .banner {
   margin: 0 auto;
   text-align: center; }
+
+.categories-menu {
+  background-color: #FF7300; }
+  .categories-menu .menu li {
+    display: inline-block;
+    position: relative;
+    background-color: #FF7300;
+    color: #fff;
+    padding: 8px 0;
+    text-align: center;
+    float: left; }
+    .categories-menu .menu li a {
+      color: #FFF;
+      border: none;
+      padding: auto;
+      text-shadow: 1px 1px 1px #111; }
+    .categories-menu .menu li .menu-children {
+      box-sizing: border-box;
+      opacity: 0;
+      transition: opacity 0.4s ease-out;
+      position: absolute;
+      top: 30px;
+      left: 0;
+      z-index: 9999;
+      width: 100%;
+      overflow: auto;
+      background-color: #FF7300;
+      font-size: 12px;
+      color: #FF7300;
+      padding: 16px;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px; }
+      .categories-menu .menu li .menu-children li {
+        display: block;
+        background: #fff;
+        font-size: 12px;
+        float: none;
+        border-bottom: 3px solid #FF7300; }
+        .categories-menu .menu li .menu-children li a {
+          text-shadow: none;
+          color: #FF7300; }
+
+.menu li:hover .menu-children {
+  display: block;
+  opacity: 1; }
 
 /**
  * Brand
@@ -392,49 +395,4 @@ h6 {
   text-align: center;
   text-transform: uppercase; }
 
-.categories-menu {
-  background-color: #FF7300; }
-  .categories-menu .menu li {
-    display: inline-block;
-    position: relative;
-    background-color: #FF7300;
-    color: #fff;
-    padding: 8px 0;
-    text-align: center;
-    float: left; }
-    .categories-menu .menu li a {
-      color: #FFF;
-      border: none;
-      padding: auto;
-      text-shadow: 1px 1px 1px #111; }
-    .categories-menu .menu li .menu-children {
-      box-sizing: border-box;
-      opacity: 0;
-      transition: opacity 0.4s ease-out;
-      position: absolute;
-      top: 30px;
-      left: 0;
-      z-index: 9999;
-      width: 100%;
-      overflow: auto;
-      background-color: #FF7300;
-      font-size: 12px;
-      color: #FF7300;
-      padding: 16px;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px; }
-      .categories-menu .menu li .menu-children li {
-        display: block;
-        background: #fff;
-        font-size: 12px;
-        float: none;
-        border-bottom: 3px solid #FF7300; }
-        .categories-menu .menu li .menu-children li a {
-          text-shadow: none;
-          color: #FF7300; }
-
-.menu li:hover .menu-children {
-  display: block;
-  opacity: 1; }
-
-/*# sourceMappingURL=theme.min.css.map */
+/*# sourceMappingURL=theme.css.map */
