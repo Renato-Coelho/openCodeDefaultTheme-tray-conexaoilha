@@ -4,3 +4,6 @@ $orange-tone: #FF7300;
 
 // fonts
 $primary-font: 'Verdana', 'Myriad Set Pro',' Geneva', 'Helvetica', 'Verdana', sans-serif;
+
+// media queries
+$mqMobile: "(min-width: 980px)";	// using... >> @media #{$mqMobile} {}

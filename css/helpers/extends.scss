@@ -1,0 +1,16 @@
+%adaptiveImage {
+	height: auto;
+	max-width: 100%;
+}
+
+
+
+
+%imageReplacement {
+	text-indent: -9999px;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	font-size: 0;
+	color: transparent;
+}
+// using... >		@extend %imageReplacement;

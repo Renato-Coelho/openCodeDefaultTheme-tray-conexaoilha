@@ -1,4 +1,8 @@
-@mixin adaptiveImage {
-    height: auto;
-    max-width: 100%;
+
+// just a example
+@mixin defaultBorder($borderRadius: .5em) {
+	border-radius:  $border-radius;
+	-o-border-radius: $border-radius;
+	-ms-border-radius: $border-radius;
+	-webkit-border-radius: $border-radius;
 }
