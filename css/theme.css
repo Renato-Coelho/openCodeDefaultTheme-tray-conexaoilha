@@ -28,7 +28,8 @@ body {
   .header .headerContent {
     background-color: #546e7a;
     height: 100%;
-    border-top: #FF7300 solid 2px; }
+    border-top: #FF7300 solid 2px;
+    border-bottom: #FFF solid 2px; }
     .header .headerContent .logoContainer {
       display: inline-block;
       width: 200px;
@@ -137,7 +138,7 @@ body {
 
 .categories-menu {
   background-color: #FF7300; }
-  .categories-menu .menu li ~ li {
+  .categories-menu .menu li.menuLi ~ li.menuLi {
     border-left: solid 1px #fff; }
   .categories-menu .menu li {
     display: inline-block;
@@ -149,37 +150,37 @@ body {
       display: inline-block;
       width: 100%;
       height: 100%;
+      font-size: 18px;
       background-color: #FF7300;
       color: #FFF;
       padding: 8px 0;
       text-shadow: 1px 1px 1px #111;
       transition: background-color 0.3s linear; }
-      .categories-menu .menu li a:hover {
-        background-color: #f06c00; }
     .categories-menu .menu li .menu-children {
       width: 100%;
       opacity: 0;
       position: absolute;
-      top: 36px;
+      top: 34px;
       left: 0;
       z-index: 9999;
       overflow: auto;
       background-color: #FF7300;
       font-size: 12px;
-      color: #FF7300;
       padding: 16px;
       border-bottom-left-radius: 4px;
       border-bottom-right-radius: 4px;
       transition: opacity 0.4s ease-out; }
       .categories-menu .menu li .menu-children li {
         display: block;
-        font-size: 12px;
-        float: none;
-        border-bottom: 3px solid #FF7300; }
+        float: none; }
         .categories-menu .menu li .menu-children li a {
-          background-color: #FFF;
+          border: solid #FFF 1px;
+          border-radius: 4px;
           text-shadow: none;
-          color: #FF7300; }
+          font-size: 14px;
+          color: #FFF;
+          margin-bottom: 6px;
+          background-color: #eb6a00; }
 
 .menu li:hover .menu-children {
   display: block;
