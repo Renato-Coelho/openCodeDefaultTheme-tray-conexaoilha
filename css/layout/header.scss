@@ -4,11 +4,10 @@
  
 .header { 
     height: 140px;
-    
     .headerContent {
         background-color: #546e7a;
         height: 100%;
-
+        border-top: $orange-tone solid 2px;
         .logoContainer {
         	display: inline-block;
             width: 200px;
