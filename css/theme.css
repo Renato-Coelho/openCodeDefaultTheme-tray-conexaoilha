@@ -24,87 +24,100 @@ body {
   max-width: 1024px;
   margin: 0 auto; }
 
-/**
- * Header
- */
-.header {
-  height: 140px; }
-  .header .headerContent {
-    background-color: #546e7a;
-    height: 100%;
-    border-top: #FF7300 solid 2px;
-    border-bottom: #FFF solid 2px; }
-    .header .headerContent .logoContainer {
+header {
+  height: 140px;
+  padding: .5em;
+  background-color: #546E7A;
+  border-top: #FF7300 solid 0.125em;
+  border-bottom: #FFF solid .125em; }
+  header .logo {
+    max-width: 192px;
+    max-height: 120px;
+    float: left;
+    display: inline-block; }
+  header .search {
+    padding: 2px;
+    background-color: #fff;
+    border-radius: 4px;
+    height: 34px; }
+    header .search .iconAndInput {
       display: inline-block;
-      width: 200px;
-      height: 100%;
+      background-color: none;
+      border: none;
       float: left; }
-      .header .headerContent .logoContainer .logoImage {
-        width: 192px;
-        height: 120px;
-        min-width: 192px;
-        min-height: 120px; }
-    .header .headerContent .searchCostumer {
-      width: 80%;
-      height: 100%;
-      float: right;
-      display: inline-block; }
-      .header .headerContent .searchCostumer .search {
-        display: inline-block;
-        height: 100%;
-        width: 80%;
-        float: left;
-        padding-right: 15%;
-        padding-left: 15%; }
-      .header .headerContent .searchCostumer .customer {
-        float: right;
-        width: 20%;
-        display: inline-block; }
-        .header .headerContent .searchCostumer .customer .customer-status {
-          display: inline-block;
-          color: #FFF;
-          margin-right: 10px; }
-          .header .headerContent .searchCostumer .customer .customer-status nav {
-            margin-top: 5px;
-            margin-right: 10px; }
-          .header .headerContent .searchCostumer .customer .customer-status li {
-            display: inline;
-            font-size: 16px;
-            font-weight: bold; }
-          .header .headerContent .searchCostumer .customer .customer-status li a {
-            color: #FFF;
-            text-decoration: none;
-            text-shadow: 1px 1px 1px black; }
-          .header .headerContent .searchCostumer .customer .customer-status li a:hover {
-            border-bottom: #FF7300 solid 2px; }
-        .header .headerContent .searchCostumer .customer .cart {
-          padding-right: 25px; }
-          .header .headerContent .searchCostumer .customer .cart .cart-art {
-            position: relative;
-            text-align: center; }
-            .header .headerContent .searchCostumer .customer .cart .cart-art .image {
-              width: 70px;
-              height: 70px;
-              margin-top: 10px; }
-            .header .headerContent .searchCostumer .customer .cart .cart-art .tag {
-              position: absolute;
-              right: 36px;
-              top: 12px;
-              width: 20px;
-              height: 20px;
-              background-color: #FF7300;
-              color: #FFF;
-              border-radius: 4px;
-              font-size: 13px;
-              font-weight: bold; }
-          .header .headerContent .searchCostumer .customer .cart .price {
-            text-align: center;
-            font-size: 12px;
-            font-style: italic;
-            font-weight: lighter;
-            margin-top: 7px;
-            color: #FFF;
-            border-radius: 50px; }
+    header .search .icon {
+      color: #FF7300;
+      display: inline-block;
+      font-size: 20px;
+      padding-right: 8px;
+      float: left;
+      padding-left: 6px;
+      margin-top: 3px; }
+    header .search .input {
+      display: inline-block;
+      height: 30px;
+      border: none;
+      font-size: 20px;
+      font-style: italic;
+      color: #FF7300; }
+    header .search .button {
+      background-color: #FF7300;
+      color: #FFF;
+      border: none;
+      border-radius: 4px;
+      height: 30px;
+      padding-left: 10px;
+      padding-right: 10px;
+      float: right; }
+    header .search .button:hover {
+      background-color: #F07108; }
+
+.customerStatus {
+  display: inline;
+  color: #FFF;
+  margin-right: 10px; }
+  .customerStatus nav {
+    margin-top: 5px;
+    margin-right: 10px; }
+  .customerStatus li {
+    display: inline;
+    font-size: 16px;
+    font-weight: bold; }
+  .customerStatus li a {
+    color: #FFF;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px black; }
+  .customerStatus li a:hover {
+    border-bottom: #FF7300 solid 2px; }
+
+.cart {
+  padding-right: 25px; }
+  .cart .cart-art {
+    position: relative;
+    text-align: center; }
+    .cart .cart-art .image {
+      width: 70px;
+      height: 70px;
+      margin-top: 10px; }
+    .cart .cart-art .tag {
+      position: absolute;
+      right: 36px;
+      top: 12px;
+      width: 20px;
+      height: 20px;
+      background-color: #FF7300;
+      color: #FFF;
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: bold; }
+  .cart .price {
+    text-align: center;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: 7px;
+    color: #FFF;
+    border-radius: 50px; }
 
 /**
  * Footer
@@ -299,46 +312,6 @@ body {
       border-top: 1px solid #ccc; }
   .page-product #formasPagto img {
     max-width: 60px; } }
-
-/**
- * Search
- */
-.searchBar {
-  padding: 2px;
-  background-color: #fff;
-  border-radius: 4px;
-  height: 34px; }
-  .searchBar .iconAndInput {
-    display: inline-block;
-    background-color: none;
-    border: none;
-    float: left; }
-  .searchBar .icon {
-    color: #999;
-    display: inline-block;
-    font-size: 20px;
-    padding-right: 8px;
-    float: left;
-    padding-left: 6px;
-    margin-top: 3px; }
-  .searchBar .input {
-    display: inline-block;
-    height: 30px;
-    border: none;
-    font-size: 20px;
-    font-style: italic;
-    color: #FF7300; }
-  .searchBar .button {
-    background-color: #FF7300;
-    color: #FFF;
-    border: none;
-    border-radius: 4px;
-    height: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
-    float: right; }
-  .searchBar .button:hover {
-    background-color: #F07108; }
 
 /**
  * Showcase
