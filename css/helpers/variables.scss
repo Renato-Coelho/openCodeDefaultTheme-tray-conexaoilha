@@ -1,9 +1,10 @@
 // colors
-$primary-color: #25282A;
-$orange-tone: #FF7300;
+$primaryColor: blue;
+$orangeTone: #FF7300;
+$darkGreen: #546e7a;
 
 // fonts
-$primary-font: 'Verdana', 'Myriad Set Pro',' Geneva', 'Helvetica', 'Verdana', sans-serif;
+$primaryFont: 'Verdana', 'Myriad Set Pro',' Geneva', 'Helvetica', 'Verdana', sans-serif;
 
 // media queries
 $mqMobile: "(min-width: 980px)";	// using... >> @media #{$mqMobile} {}

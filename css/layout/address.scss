@@ -3,13 +3,13 @@
  */
 .address {
     color: #666;
-    font: 300 0.9em $primary-font;
+    font: 300 0.9em $primaryFont;
     padding: 70px 0;
     text-align: center;
     text-transform: uppercase;
     
     .address-name {
-        color: $primary-color;
+        color: $primaryColor;
         font-size: 1.3em;
     }
 }
