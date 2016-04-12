@@ -12,13 +12,17 @@ a {
   text-decoration: none;
   color: inherit; }
 
+html {
+  font-size: 100%; }
+
 body {
   background: #fff;
   color: blue;
   font-family: "Verdana", "Myriad Set Pro", " Geneva", "Helvetica", "Verdana", sans-serif; }
 
-.ci-container {
-  padding: 0 5%; }
+.outerContainer {
+  max-width: 1024px;
+  margin: 0 auto; }
 
 /**
  * Header

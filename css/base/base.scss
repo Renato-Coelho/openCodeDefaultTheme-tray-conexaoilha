@@ -1,12 +1,14 @@
-
-
-body {
-    background: #fff;
-    color: $primaryColor;
-    font-family: $primaryFont;
+html {
+	font-size: 100%;
 }
 
-.ci-container {
-    padding: 0 5%;
+body {
+  background: #fff;
+  color: $primaryColor;
+  font-family: $primaryFont;
+}
 
+.outerContainer {
+  max-width: 1024px;
+  margin: 0 auto;
 }
