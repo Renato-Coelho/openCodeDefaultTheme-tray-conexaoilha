@@ -2,15 +2,19 @@
 {% element 'snippets/messages' %}
 -->
 <header class="outerContainer">
+  <div class="logoContainer">
     <a  href="{{ links.home }}" title="{{ store.name }}">
         <img class="logo" src="{{ asset('img/logo.png') }}">
     </a>
-    
-    
-        {% element 'snippets/search' %}
-    
+  </div>
+ 
+  <div class="searchContainer"> 
+      {% element 'snippets/search' %}
+  </div>
 
-    
-        <!-- {% element 'snippets/customer' %} -->
+  <div class="customerContainer">  
+    <!-- {% element 'snippets/customer' %} -->
+    oi
+  </div>    
     
 </header>

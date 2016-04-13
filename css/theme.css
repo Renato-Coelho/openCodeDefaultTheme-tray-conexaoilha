@@ -48,96 +48,112 @@ header {
   background-color: #546E7A;
   border-top: #FF7300 solid 0.125em;
   border-bottom: #FFF solid .125em; }
-  header .logo {
-    max-width: 192px;
-    max-height: 120px;
-    float: left;
-    display: inline-block; }
-  header .search {
+  header .logoContainer {
     display: inline-block;
-    padding: 2px;
-    background-color: #fff;
-    border-radius: 4px;
-    height: 34px;
-    margin-left: 10%; }
-    header .search .iconAndInput {
-      display: inline-block;
-      background-color: none;
-      border: none;
-      float: left; }
-    header .search .icon {
-      color: #FF7300;
-      display: inline-block;
-      font-size: 20px;
-      padding-right: 8px;
-      float: left;
-      padding-left: 6px;
-      margin-top: 3px; }
-    header .search .input {
-      display: inline-block;
-      height: 30px;
-      border: none;
-      font-size: 20px;
-      font-style: italic;
-      color: #FF7300; }
-    header .search .button {
-      background-color: #FF7300;
-      color: #FFF;
-      border: none;
+    height: 100%;
+    width: 25%;
+    box-sizing: border-box;
+    float: left; }
+    header .logoContainer .logo {
+      max-width: 192px;
+      max-height: 120px;
+      display: inline-block; }
+  header .searchContainer {
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    float: left; }
+    header .searchContainer .search {
+      padding: 2px;
+      background-color: #fff;
       border-radius: 4px;
-      height: 30px;
-      padding-left: 10px;
-      padding-right: 10px;
-      float: right; }
-    header .search .button:hover {
-      background-color: #F07108; }
-
-.customerStatus {
-  display: inline;
-  color: #FFF;
-  margin-right: 10px; }
-  .customerStatus nav {
-    margin-top: 5px;
-    margin-right: 10px; }
-  .customerStatus li {
-    display: inline;
-    font-size: 16px;
-    font-weight: bold; }
-  .customerStatus li a {
-    color: #FFF;
-    text-decoration: none;
-    text-shadow: 1px 1px 1px black; }
-  .customerStatus li a:hover {
-    border-bottom: #FF7300 solid 2px; }
-
-.cart {
-  padding-right: 25px; }
-  .cart .cart-art {
-    position: relative;
-    text-align: center; }
-    .cart .cart-art .image {
-      width: 70px;
-      height: 70px;
-      margin-top: 10px; }
-    .cart .cart-art .tag {
-      position: absolute;
-      right: 36px;
-      top: 12px;
-      width: 20px;
-      height: 20px;
-      background-color: #FF7300;
+      height: 34px;
+      box-sizing: border-box;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto; }
+      header .searchContainer .search .iconAndInput {
+        display: inline-block;
+        background-color: none;
+        border: none;
+        float: left; }
+      header .searchContainer .search .icon {
+        color: #FF7300;
+        display: inline-block;
+        font-size: 20px;
+        padding-right: 8px;
+        padding-left: 6px;
+        margin-top: 3px; }
+      header .searchContainer .search .input {
+        display: inline-block;
+        height: 30px;
+        border: none;
+        font-size: 20px;
+        font-style: italic;
+        color: #FF7300;
+        width: 9em; }
+      header .searchContainer .search .button {
+        background-color: #FF7300;
+        color: #FFF;
+        border: none;
+        border-radius: 4px;
+        height: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        float: right; }
+      header .searchContainer .search .button:hover {
+        background-color: #F07108; }
+  header .customerContainer {
+    display: inline-block;
+    height: 100%;
+    width: 25%;
+    float: left; }
+    header .customerContainer .customerStatus {
+      display: inline;
       color: #FFF;
-      border-radius: 4px;
-      font-size: 13px;
-      font-weight: bold; }
-  .cart .price {
-    text-align: center;
-    font-size: 12px;
-    font-style: italic;
-    font-weight: lighter;
-    margin-top: 7px;
-    color: #FFF;
-    border-radius: 50px; }
+      margin-right: 10px; }
+      header .customerContainer .customerStatus nav {
+        margin-top: 5px;
+        margin-right: 10px; }
+      header .customerContainer .customerStatus li {
+        display: inline;
+        font-size: 16px;
+        font-weight: bold; }
+      header .customerContainer .customerStatus li a {
+        color: #FFF;
+        text-decoration: none;
+        text-shadow: 1px 1px 1px black; }
+      header .customerContainer .customerStatus li a:hover {
+        border-bottom: #FF7300 solid 2px; }
+    header .customerContainer .cart {
+      padding-right: 25px; }
+      header .customerContainer .cart .cart-art {
+        position: relative;
+        text-align: center; }
+        header .customerContainer .cart .cart-art .image {
+          width: 70px;
+          height: 70px;
+          margin-top: 10px; }
+        header .customerContainer .cart .cart-art .tag {
+          position: absolute;
+          right: 36px;
+          top: 12px;
+          width: 20px;
+          height: 20px;
+          background-color: #FF7300;
+          color: #FFF;
+          border-radius: 4px;
+          font-size: 13px;
+          font-weight: bold; }
+      header .customerContainer .cart .price {
+        text-align: center;
+        font-size: 12px;
+        font-style: italic;
+        font-weight: lighter;
+        margin-top: 7px;
+        color: #FFF;
+        border-radius: 50px; }
 
 /**
  * Footer
