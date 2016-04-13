@@ -30,6 +30,9 @@ a {
   text-decoration: none;
   color: inherit; }
 
+ol, ul, li {
+  list-style: none; }
+
 html {
   font-size: 100%; }
 
@@ -67,10 +70,11 @@ header {
     header .searchContainer .search {
       padding: 2px;
       background-color: #fff;
-      border-radius: 4px;
+      border-radius: 25px;
       height: 34px;
       box-sizing: border-box;
       width: 80%;
+      margin-top: 40px;
       margin-left: auto;
       margin-right: auto; }
       header .searchContainer .search .iconAndInput {
@@ -97,35 +101,30 @@ header {
         background-color: #FF7300;
         color: #FFF;
         border: none;
-        border-radius: 4px;
+        border-radius: 25px;
         height: 30px;
         padding-left: 10px;
         padding-right: 10px;
         float: right; }
       header .searchContainer .search .button:hover {
-        background-color: #F07108; }
+        background-color: #f06c00; }
   header .customerContainer {
     display: inline-block;
     height: 100%;
     width: 25%;
     float: left; }
-    header .customerContainer .customerStatus {
-      display: inline;
+    header .customerContainer nav.customerStatus {
       color: #FFF;
-      margin-right: 10px; }
-      header .customerContainer .customerStatus nav {
-        margin-top: 5px;
-        margin-right: 10px; }
-      header .customerContainer .customerStatus li {
+      float: right; }
+      header .customerContainer nav.customerStatus li {
         display: inline;
-        font-size: 16px;
         font-weight: bold; }
-      header .customerContainer .customerStatus li a {
-        color: #FFF;
-        text-decoration: none;
-        text-shadow: 1px 1px 1px black; }
-      header .customerContainer .customerStatus li a:hover {
-        border-bottom: #FF7300 solid 2px; }
+        header .customerContainer nav.customerStatus li a {
+          color: #FFF;
+          text-decoration: none;
+          text-shadow: 1px 1px 1px black; }
+          header .customerContainer nav.customerStatus li a:hover {
+            border-bottom: #FF7300 solid 0.125em; }
     header .customerContainer .cart {
       padding-right: 25px; }
       header .customerContainer .cart .cart-art {

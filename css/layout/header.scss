@@ -5,7 +5,6 @@ header {
   border-top: $orangeTone solid .125em;
   border-bottom: #FFF solid .125em;
   
-  
   .logoContainer {
     display: inline-block;
     height: 100%;
@@ -28,16 +27,16 @@ header {
     float: left;
 
     .search {
-       
+      $borderRadius: 25px; 
       padding: 2px;
       background-color: #fff;
-      border-radius: 4px;
+      border-radius: $borderRadius;
       height: 34px;
       box-sizing: border-box;
       width: 80%;
+      margin-top: 40px;
       margin-left: auto;
       margin-right: auto; 
-
 
       .iconAndInput {
           display: inline-block;
@@ -51,7 +50,6 @@ header {
           display: inline-block;
           font-size: 20px;
           padding-right: 8px;
-          
           padding-left: 6px;
           margin-top: 3px;
 
@@ -76,10 +74,10 @@ header {
 
 
       .button {
-          background-color: #FF7300;
+          background-color: $orangeTone;
           color: #FFF;
           border: none;
-          border-radius: 4px;
+          border-radius: $borderRadius;
           height: 30px;
           padding-left: 10px;
           padding-right: 10px;
@@ -87,7 +85,7 @@ header {
       }
 
       .button:hover {
-          background-color: #F07108;
+          background-color: darken($orangeTone, 3);
       }
     }
   }  
@@ -98,31 +96,24 @@ header {
     width: 25%;
     float: left;
     
-    .customerStatus {
-      display: inline;
+    nav.customerStatus {
       color: #FFF;
-      margin-right: 10px;
-
-      nav {
-        margin-top: 5px;
-        margin-right: 10px;
-      }
+      float: right;
 
       li {
         display: inline;
-        font-size: 16px;
         font-weight: bold;
-      }
 
-      li  a {
-        color: #FFF;
-        text-decoration: none;
-        text-shadow: 1px 1px 1px black;
-      }
+        a {
+          color: #FFF;
+          text-decoration: none;
+          text-shadow: 1px 1px 1px black;
 
-      li a:hover {
-        border-bottom: $orangeTone solid 2px;
-      }
+          &:hover {
+            border-bottom: $orangeTone solid .125em;    
+          }
+        }
+      }  
     }  
 
     .cart {
@@ -139,18 +130,18 @@ header {
         }   
 
         .tag {
-            position: absolute;
-            right: 36px;
-            top: 12px;
-            width: 20px;
-            height: 20px;
-            background-color: #FF7300;
-            color: #FFF;
-            border-radius: 4px;
-            font-size: 13px;
-            font-weight: bold;
+          position: absolute;
+          right: 36px;
+          top: 12px;
+          width: 20px;
+          height: 20px;
+          background-color: #FF7300;
+          color: #FFF;
+          border-radius: 4px;
+          font-size: 13px;
+          font-weight: bold;
         }
-    }
+      }
 
       .price {
         text-align: center;
@@ -161,10 +152,8 @@ header {
         color: #FFF;
         border-radius: 50px;
       }
-    
     }// cart
   } // customerContainer
-
 }// header      
     
       
