@@ -1,14 +1,15 @@
 {% if banner.showcase %}
-    <div class="banner banner-showcase">
-        {{ banner.showcase }}
-    </div>
+  <div class="banner banner-showcase">
+    {{ banner.showcase }}
+  </div>
 {% endif %}
 
 {% set products = Products({
-    'filter': 'featured'
+  'filter': 'featured'
 }) %}
 
-{% element 'snippets/showcase' {
-    
-    "products": products
-} %}
+<div class="">
+	{% element 'snippets/showcase' {
+	  "products": products
+	} %}
+</div>
