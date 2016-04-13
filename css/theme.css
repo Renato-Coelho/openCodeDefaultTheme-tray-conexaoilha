@@ -126,18 +126,20 @@ header {
           header .customerContainer nav.customerStatus li a:hover {
             border-bottom: #FF7300 solid 0.125em; }
     header .customerContainer .cart {
-      padding-right: 25px; }
+      float: right;
+      clear: right;
+      margin-right: 20px;
+      margin-top: 10px; }
       header .customerContainer .cart .cart-art {
-        position: relative;
-        text-align: center; }
+        position: relative; }
         header .customerContainer .cart .cart-art .image {
           width: 70px;
-          height: 70px;
-          margin-top: 10px; }
+          height: 70px; }
         header .customerContainer .cart .cart-art .tag {
           position: absolute;
-          right: 36px;
-          top: 12px;
+          right: 0;
+          top: 0;
+          text-align: center;
           width: 20px;
           height: 20px;
           background-color: #FF7300;
@@ -150,7 +152,7 @@ header {
         font-size: 12px;
         font-style: italic;
         font-weight: lighter;
-        margin-top: 7px;
+        margin-top: 3px;
         color: #FFF;
         border-radius: 50px; }
 

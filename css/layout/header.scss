@@ -117,22 +117,24 @@ header {
     }  
 
     .cart {
-      padding-right: 25px;
+      float: right;
+      clear: right;
+      margin-right: 20px;
+      margin-top: 10px;
 
       .cart-art {
         position: relative;
-        text-align: center;
         
         .image {
           width: 70px;
           height: 70px;
-          margin-top: 10px;
         }   
 
         .tag {
           position: absolute;
-          right: 36px;
-          top: 12px;
+          right: 0;
+          top: 0;
+          text-align: center;
           width: 20px;
           height: 20px;
           background-color: #FF7300;
@@ -148,7 +150,7 @@ header {
         font-size: 12px;
         font-style: italic;
         font-weight: lighter;
-        margin-top: 7px;
+        margin-top: 3px;
         color: #FFF;
         border-radius: 50px;
       }
