@@ -37,6 +37,7 @@ header {
       margin-top: 40px;
       margin-left: auto;
       margin-right: auto;
+      transition: all .25s linear;
 
       &:hover {
         box-shadow: 0 0 .2rem .2rem $orangeTone;
@@ -162,7 +163,11 @@ header {
 }// header      
     
       
-  
+ /// Class handled by base.js
+
+ .searchHighlighting {
+  box-shadow: 0 0 .2rem .2rem $orangeTone;
+ } 
 
   
 

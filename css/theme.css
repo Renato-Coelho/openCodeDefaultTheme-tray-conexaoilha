@@ -76,7 +76,8 @@ header {
       width: 80%;
       margin-top: 40px;
       margin-left: auto;
-      margin-right: auto; }
+      margin-right: auto;
+      transition: all .25s linear; }
       header .searchContainer .search:hover {
         box-shadow: 0 0 0.2rem 0.2rem #FF7300; }
       header .searchContainer .search .iconAndInput {
@@ -157,6 +158,9 @@ header {
         margin-top: 3px;
         color: #FFF; }
 
+.searchHighlighting {
+  box-shadow: 0 0 0.2rem 0.2rem #FF7300; }
+
 /**
  * Footer
  */
@@ -191,19 +195,19 @@ header {
   margin: 0 auto;
   text-align: center; }
 
-.categories-menu {
+.categoriesMenu {
   background-color: #FF7300;
-  height: 40px;
+  height: 41px;
   border-bottom: solid white .125rem; }
-  .categories-menu .menu li.menuLi ~ li.menuLi {
+  .categoriesMenu .menu li.menuLi ~ li.menuLi {
     border-left: solid 1px #fff; }
-  .categories-menu .menu li {
+  .categoriesMenu .menu li {
     display: inline-block;
     position: relative;
     color: #fff;
     text-align: center;
     float: left; }
-    .categories-menu .menu li a {
+    .categoriesMenu .menu li a {
       display: inline-block;
       width: 100%;
       height: 100%;
@@ -213,7 +217,8 @@ header {
       padding: 8px 0;
       text-shadow: 1px 1px 1px #111;
       transition: background-color 0.3s linear; }
-    .categories-menu .menu li .menu-children {
+    .categoriesMenu .menu li .menu-children {
+      display: none;
       width: 100%;
       opacity: 0;
       position: absolute;
@@ -227,10 +232,10 @@ header {
       border-bottom-left-radius: 4px;
       border-bottom-right-radius: 4px;
       transition: opacity 0.4s ease-out; }
-      .categories-menu .menu li .menu-children li {
+      .categoriesMenu .menu li .menu-children li {
         display: block;
         float: none; }
-        .categories-menu .menu li .menu-children li a {
+        .categoriesMenu .menu li .menu-children li a {
           border: solid #FFF 1px;
           border-radius: 4px;
           text-shadow: none;
@@ -365,9 +370,10 @@ header {
   background-attachment: fixed; }
 
 .showcase-title {
-  font: bold 1.8em "Verdana", "Myriad Set Pro", " Geneva", "Helvetica", "Verdana", sans-serif;
-  color: blue;
+  font: bold 1.4rem "Verdana", "Myriad Set Pro", " Geneva", "Helvetica", "Verdana", sans-serif;
+  font-weight: lighter;
+  color: white;
   text-align: center;
-  text-transform: uppercase; }
+  padding: 2rem auto; }
 
 /*# sourceMappingURL=theme.css.map */

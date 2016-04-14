@@ -1,6 +1,12 @@
 {% if products|length > 0 %}
 
-    <div style="padding-top: 75px" class="row">
+    <!-- {% if showcaseTitle %}
+        <div class="showcase">
+            <h4 class="showcase-title">{{ showcaseTitle }} </h4>
+        </div>
+    {% endif %} -->
+
+    <div class="row">
         {% for product in products %}
 
             <div style="width: 32.75%;

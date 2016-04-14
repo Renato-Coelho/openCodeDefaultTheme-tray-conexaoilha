@@ -1,6 +1,6 @@
-.categories-menu {
+.categoriesMenu {
     background-color: $orangeTone;
-    height: 40px;
+    height: 41px;
     border-bottom: solid white .125rem;
 
     .menu {
@@ -30,6 +30,7 @@
 
 
             .menu-children {
+                display: none;
                 width: 100%;
                 opacity: 0;
                 position: absolute;
