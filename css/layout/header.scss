@@ -79,13 +79,14 @@ header {
 
 
       .button {
+          font-weight: bold;
           background-color: $orangeTone;
           color: #FFF;
           border: none;
           border-radius: $borderRadius;
           height: 30px;
-          padding-left: 10px;
-          padding-right: 10px;
+          padding-left: 7px;
+          padding-right: 7px;
           float: right;
       }
 
