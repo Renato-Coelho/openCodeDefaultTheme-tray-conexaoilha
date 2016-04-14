@@ -246,8 +246,8 @@ header {
           background-color: #eb6a00; }
 
 .menu li:hover .menu-children {
-  display: block;
-  opacity: 1; }
+  opacity: 1;
+  display: block; }
 
 /**
  * Brand
