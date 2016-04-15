@@ -6,6 +6,28 @@
     .menu {
         li.menuLi ~ li.menuLi {
             border-left: solid 1px #fff;
+
+            &:before {
+                content:'';
+                background-color: $orangeTone;
+                width: 8px;
+                height: 8px;
+                position: absolute;
+                top: 0px;
+                left: -5px;
+                z-index: 100000;
+            }
+
+            &:after {
+                content:'';
+                background-color: $orangeTone;
+                width: 8px;
+                height: 8px;
+                position: absolute;
+                bottom: 0;
+                left: -5px;
+                z-index: 100000;
+            }    
         }
 
         li {
@@ -24,7 +46,10 @@
                 color: #FFF;
                 padding: 8px 0;
                 text-shadow: 1px 1px 1px #111; // #546e7a
-                transition: background-color 0.3s linear;
+                transition: background-color 0.4s ease-in-out;
+                position: relative;
+
+                
             }
 
 
