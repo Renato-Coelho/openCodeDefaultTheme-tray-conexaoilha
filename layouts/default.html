@@ -3,14 +3,11 @@
 <head>
     {{ html.charset() }}
     {{ tray.meta }}
-    <!-- [if IE]<meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <!--
+        [if IE]<meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]
+    -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {{ tray.styles }}
-    
-<!-- 
-    <link rel="stylesheet" href="{{ asset('css/bootstrap/bootstrap.min.css') }}">
--->    
-
 
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald:400,300,700">
     <link rel="stylesheet" href="{{ asset('css/theme.css') }}">
@@ -25,63 +22,29 @@
     {% endif %}
 </head>
 <body>
-
-
-    
         {{ googleTagManager.top(pages.current, tagManagerData) }}
-            
-        {% if utils.is_mobile %}
-            {% element 'mobile/header' %}
-        {% else %}
-            {% element 'header' %}
-        {% endif %}
-
-    
-<!-- 
-        {% if pages.current == 'home' and banner.home %}
-            <div class="banner banner-home">
-                {{ banner.home }}
-            </div>
-        {% endif %} -->
-
-
-
+                    
         
+        <!-- HEADER -->
+        {% element 'header' %}
         
+        <!-- CATEGORIES <navigation> -->
         {% element 'snippets/categories_menu' %}
-
-        <section class="contentForLayout-firstColor outerContainer">
+        
+        <!-- SHOWCASE -->
+        <section class="outerContainer">
             {{ content_for_layout }}
         </section>
-
-
-        <div class="outerContainer">    
         
-        {% element 'snippets/tagcloud' %}
-        {% element 'snippets/history' %}
+        <!-- NEWS -->
+        {% element 'snippets/newsletter' %}
 
-        {% if banner.bottom %}
-            <div class="banner banner-bottom">
-                {{ banner.bottom }}
-            </div>
-        {% endif %}
+        <footer class="outerContainer footerTest">
+        </footer>
 
-        {% if utils.is_mobile %}
-            {% element 'mobile/footer' %}
-        {% else %}
-            {% element 'footer' %}
-        {% endif %}
 
-        {% if banner.footer %}
-            <div class="banner banner-footer">
-                {{ banner.footer }}
-            </div>
-        {% endif %}
-
-        {% if pages.current == 'home' %}
-            {{ banner.popup ~ banner.floating }}
-        {% endif %}
-
+            
+        {% element 'snippets/tagcloud' %} 
         {% element 'snippets/modal' %}
 
         {{ googleTagManager.bottom(pages.current, tagManagerData) }}
@@ -89,9 +52,7 @@
         {{ html.script('dist/application.min.js?' ~ utils.assets_version) }}
 
         {% element 'snippets/pageview' %}
-
-    </div>    
-</div>
+   
 <script src="{{ asset('js/base.js') }}"></script> 
 </body>
 </html>

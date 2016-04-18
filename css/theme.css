@@ -285,14 +285,55 @@ header {
 /**
  * Newsletter
  */
-.news-button {
-  background: blue;
-  color: #fff;
-  font: 300 1em "Verdana", "Myriad Set Pro", " Geneva", "Helvetica", "Verdana", sans-serif;
-  text-transform: uppercase; }
-  .news-button:hover {
-    background: #000;
-    color: #fff; }
+.news {
+  height: 50px;
+  background-color: #FF7300;
+  padding: 8px;
+  position: relative; }
+  .news:before {
+    content: "";
+    background-image: url(../img/letter.svg);
+    background-size: 80% 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .news .button,
+  .news .email {
+    height: 34px;
+    border-radius: .125rem; }
+  .news .button {
+    background-color: #00ae00;
+    float: right;
+    color: #FFF;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: white solid 2px; }
+  .news .email {
+    float: right;
+    margin-right: 10px;
+    width: 250px;
+    text-align: center;
+    color: green;
+    font-size: 1em;
+    transition: box-shadow 0.25s linear; }
+    .news .email:focus {
+      box-shadow: 0 0 .125rem .125rem #00ae00; }
+  .news .phrase {
+    color: white;
+    float: right;
+    margin-right: 15px;
+    font-size: 1rem;
+    position: relative;
+    top: 6px; }
+
+.footerTest {
+  height: 550px;
+  background-color: #555; }
 
 /**
  * Product
@@ -388,7 +429,9 @@ header {
   background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
   background-color: #282828;
   background-size: 16px 16px;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  padding-top: 30px;
+  padding-bottom: 30px; }
 
 .showcase-title {
   font: bold 1.4rem "Verdana", "Myriad Set Pro", " Geneva", "Helvetica", "Verdana", sans-serif;
