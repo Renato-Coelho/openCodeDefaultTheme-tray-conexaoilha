@@ -14,6 +14,26 @@
 
   <div class="customerContainer">  
     {% element 'snippets/customer' %}
-  </div>    
+  </div>
+
+
+  <!-- MOBILE -->
+
+  <span class="menuButton glyphicon glyphicon-list"></span>
+  
+    <img class="mbLogo" src="{{ asset('img/logo_short.png') }}">
+    <h1 class="storeTitle">Conexão <span class="i">I</span>lha</h1>
+
+
+
+  <div class="mbCart">
+        <a href="{{ links.cart }}">
+                <img class="image" src="{{ asset('img/cart.png') }}">
+        </a>
+        
+        <span class="tag" data-cart="amount"></span>    
+  
+  </div>
+
     
 </header>

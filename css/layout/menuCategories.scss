@@ -3,6 +3,10 @@
     height: 41px;
     border-bottom: solid white .125rem;
 
+    @media (max-width: 767px) {
+        display: none;
+    }
+
     .menu {
         li.menuLi ~ li.menuLi {
             border-left: solid 1px #fff;

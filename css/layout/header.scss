@@ -4,6 +4,11 @@ header {
   background-color: $darkGreen;
   border-top: $orangeTone solid .125em;
   border-bottom: #FFF solid .125em;
+
+  @media (max-width: 767px) {
+    height: 50px;
+    padding: .25em;
+  }
   
   .logoContainer {
     display: inline-block;
@@ -17,6 +22,10 @@ header {
       max-height: 120px;
       display: inline-block;
     }
+
+    @media (max-width: 767px) {
+      display: none;
+    }
   }  
   
   .searchContainer {
@@ -25,6 +34,10 @@ header {
     width: 50%;
     box-sizing: border-box;
     float: left;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
 
     .search {
       $borderRadius: 25px; 
@@ -101,6 +114,10 @@ header {
     height: 100%;
     width: 25%;
     float: left;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
     
     nav.customerStatus {
       color: #FFF;
@@ -168,7 +185,87 @@ header {
 
  .searchHighlighting {
   box-shadow: 0 0 .2rem .2rem $orangeTone;
- } 
+ }
+
+
+ /******** MOBILE ********/ 
+ .menuButton {
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  @media (max-width: 767px) {
+    display: inline-block;
+    position: relative;
+    float: left;
+    color: white;
+    border: white 1px solid;
+    border-radius: 4px;
+    padding: 3px;
+    height: 34px;
+    width: 34px;
+    font-size: 24px;
+  }
+ }
+ 
+
+
+ @media (min-width: 768px) {
+  .mbLogo,
+  .storeTitle,
+  .mbCart {
+    display: none;
+  }
+ }
+
+ @media (max-width: 767px) {
+  .mbLogo,
+  .storeTitle,
+  .mbCart {
+    display: inline-block;
+  }
+
+  .mbLogo {
+    width: 34px;
+    height: 34px;
+  }
+
+  .storeTitle {
+    color: white;
+
+    .i {
+      color: $orangeTone;
+    }
+  }
+
+  .mbCart {
+    display: inline-block;
+    float: right;
+    position: relative;
+
+    .image {
+      width: 38px;
+      height: 38px;
+    }
+
+    .tag {
+      position: absolute;
+      right: -2px;
+      top: -2px;
+      text-align: center;
+      width: 13px;
+      height: 13px;
+      background-color: $orangeTone;
+      color: #FFF;
+      border-radius: 4px;
+      font-size: 9px;
+      
+
+
+    }
+  }
+
+ }
 
   
 
