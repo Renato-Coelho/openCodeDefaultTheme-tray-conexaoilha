@@ -209,10 +209,12 @@ header {
     width: 34px;
     height: 34px; }
 
-  .storeTitle {
-    color: white; }
-    .storeTitle .i {
-      color: #FF7300; }
+  .centeredStoreTitle {
+    display: inline-block; }
+    .centeredStoreTitle .storeTitle {
+      color: white; }
+      .centeredStoreTitle .storeTitle .i {
+        color: #FF7300; }
 
   .mbCart {
     display: inline-block;

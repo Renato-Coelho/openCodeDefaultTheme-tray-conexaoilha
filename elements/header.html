@@ -2,6 +2,7 @@
 {% element 'snippets/messages' %}
 -->
 <header class="outerContainer">
+<!-- DESKTOP -->
   <div class="logoContainer">
     <a  href="{{ links.home }}" title="{{ store.name }}">
         <img class="logo" src="{{ asset('img/logo.png') }}">
@@ -19,8 +20,10 @@
 <!-- MOBILE -->
   <span class="menuButton glyphicon glyphicon-list"></span>
   
-  <img class="mbLogo" src="{{ asset('img/logo_short.png') }}">
-  <h1 class="storeTitle">Conexão <span class="i">I</span>lha</h1>
+  <div class="centeredStoreTitle">
+    <img class="mbLogo" src="{{ asset('img/logo_short.png') }}">
+    <h1 class="storeTitle">Conexão <span class="i">I</span>lha</h1>
+  </div>  
 
   <div class="mbCart">
         <a href="{{ links.cart }}">

@@ -220,19 +220,22 @@ header {
     font-size: 24px;
   }
 
-  .mbLogo {
-    width: 34px;
-    height: 34px;
-  }
+    .mbLogo {
+      width: 34px;
+      height: 34px;
+    }
+  .centeredStoreTitle {
+    display: inline-block;
 
-  .storeTitle {
-    color: white;
 
-    .i {
-      color: $orangeTone;
+    .storeTitle {
+      color: white;
+
+      .i {
+        color: $orangeTone;
+      }
     }
   }
-
   .mbCart {
     display: inline-block;
     float: right;
