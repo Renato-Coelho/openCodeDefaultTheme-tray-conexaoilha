@@ -196,15 +196,28 @@ header {
     font-size: 24px; } }
 
 @media (min-width: 768px) {
+  .menuButton,
   .mbLogo,
   .storeTitle,
   .mbCart {
     display: none; } }
 @media (max-width: 767px) {
+  .menuButton,
   .mbLogo,
   .storeTitle,
   .mbCart {
     display: inline-block; }
+
+  .menuButton {
+    position: relative;
+    float: left;
+    color: white;
+    border: white 1px solid;
+    border-radius: 4px;
+    padding: 3px;
+    height: 34px;
+    width: 34px;
+    font-size: 24px; }
 
   .mbLogo {
     width: 34px;
