@@ -10,6 +10,9 @@ header {
     padding: .25em;
     border-top: $orangeTone solid .075em;
     border-bottom: #FFF solid .075em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   
   .logoContainer {
@@ -202,15 +205,12 @@ header {
 
  @media (max-width: 767px) {
   .menuButton,
-  .mbLogo,
-  .storeTitle,
+  .centeredStoreTitle,
   .mbCart {
-    display: inline-block;
+    display: flex;
   }
   
   .menuButton {
-    position: relative;
-    float: left;
     color: white;
     border: white 1px solid;
     border-radius: 4px;
@@ -220,25 +220,26 @@ header {
     font-size: 24px;
   }
 
-    .mbLogo {
-      width: 34px;
-      height: 34px;
-    }
-  .centeredStoreTitle {
-    display: inline-block;
+  .mbLogo {
+    width: 34px;
+    height: 34px;
+  }
 
+  .centeredStoreTitle {
 
     .storeTitle {
       color: white;
+      padding-top: auto;
+      padding-bottom: auto;
 
       .i {
         color: $orangeTone;
       }
     }
   }
+
   .mbCart {
     display: inline-block;
-    float: right;
     position: relative;
 
     .image {

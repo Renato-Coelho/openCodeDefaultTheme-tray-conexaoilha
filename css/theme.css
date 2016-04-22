@@ -59,7 +59,10 @@ header {
       height: 50px;
       padding: .25em;
       border-top: #FF7300 solid 0.075em;
-      border-bottom: #FFF solid .075em; } }
+      border-bottom: #FFF solid .075em;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; } }
   header .logoContainer {
     display: inline-block;
     height: 100%;
@@ -189,14 +192,11 @@ header {
     display: none; } }
 @media (max-width: 767px) {
   .menuButton,
-  .mbLogo,
-  .storeTitle,
+  .centeredStoreTitle,
   .mbCart {
-    display: inline-block; }
+    display: flex; }
 
   .menuButton {
-    position: relative;
-    float: left;
     color: white;
     border: white 1px solid;
     border-radius: 4px;
@@ -209,16 +209,15 @@ header {
     width: 34px;
     height: 34px; }
 
-  .centeredStoreTitle {
-    display: inline-block; }
-    .centeredStoreTitle .storeTitle {
-      color: white; }
-      .centeredStoreTitle .storeTitle .i {
-        color: #FF7300; }
+  .centeredStoreTitle .storeTitle {
+    color: white;
+    padding-top: auto;
+    padding-bottom: auto; }
+    .centeredStoreTitle .storeTitle .i {
+      color: #FF7300; }
 
   .mbCart {
     display: inline-block;
-    float: right;
     position: relative; }
     .mbCart .image {
       width: 38px;
