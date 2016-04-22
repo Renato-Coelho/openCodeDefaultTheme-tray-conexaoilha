@@ -57,7 +57,9 @@ header {
   @media (max-width: 767px) {
     header {
       height: 50px;
-      padding: .25em; } }
+      padding: .25em;
+      border-top: #FF7300 solid 0.075em;
+      border-bottom: #FFF solid .075em; } }
   header .logoContainer {
     display: inline-block;
     height: 100%;
