@@ -203,22 +203,28 @@ header {
     padding: 3px;
     height: 34px;
     width: 34px;
-    font-size: 24px; }
+    font-size: 24px;
+    position: relative;
+    top: 0px;
+    margin-left: 4px; }
 
   .mbLogo {
-    width: 34px;
-    height: 34px; }
+    width: 23px;
+    height: 43px; }
 
   .centeredStoreTitle .storeTitle {
     color: white;
-    padding-top: auto;
-    padding-bottom: auto; }
+    font-size: 22px;
+    margin-left: 8px;
+    margin-top: 13px; }
     .centeredStoreTitle .storeTitle .i {
       color: #FF7300; }
 
   .mbCart {
     display: inline-block;
-    position: relative; }
+    position: relative;
+    top: 2px;
+    margin-right: 4px; }
     .mbCart .image {
       width: 38px;
       height: 38px; }
