@@ -48,39 +48,6 @@ body {
   max-width: 1024px;
   margin: 0 auto; }
 
-.mbSearchContainer {
-  background-color: #546E7A;
-  padding: 10px;
-  border-bottom: #FFF solid .075em; }
-  .mbSearchContainer .searchWrapper {
-    width: 100%;
-    background-color: #FFF;
-    border-radius: 25px; }
-    .mbSearchContainer .searchWrapper .glyphicon {
-      margin-left: 7px;
-      top: 3px;
-      font-size: 18px;
-      color: #FF7300;
-      opacity: .7; }
-    .mbSearchContainer .searchWrapper .input {
-      width: calc(100% - 108px);
-      height: 36px;
-      color: #FF7300;
-      font-style: italic;
-      font-size: 15px; }
-    .mbSearchContainer .searchWrapper .button {
-      cursor: pointer;
-      background-color: #FF7300;
-      border-radius: 25px;
-      padding: 6px;
-      padding-right: 7px;
-      padding-left: 7px;
-      padding-bottom: 7px;
-      margin-right: 1px;
-      color: #FFF;
-      position: relative;
-      top: -2px; }
-
 header {
   height: 140px;
   padding: .5em;
@@ -216,6 +183,9 @@ header {
 .searchHighlighting {
   box-shadow: 0 0 0.2rem 0.2rem #FF7300; }
 
+.mbSearchContainer {
+  display: none; }
+
 /******** MOBILE ********/
 @media (min-width: 768px) {
   .menuButton,
@@ -275,7 +245,38 @@ header {
       line-height: 2; }
 
   .mbSearchContainer {
-    display: block; } }
+    display: block;
+    background-color: #546E7A;
+    padding: 10px;
+    border-bottom: #FFF solid .075em; }
+    .mbSearchContainer .searchWrapper {
+      width: 100%;
+      background-color: #FFF;
+      border-radius: 25px; }
+      .mbSearchContainer .searchWrapper .glyphicon {
+        margin-left: 7px;
+        top: 3px;
+        font-size: 18px;
+        color: #FF7300;
+        opacity: .7; }
+      .mbSearchContainer .searchWrapper .input {
+        width: calc(100% - 108px);
+        height: 36px;
+        color: #FF7300;
+        font-style: italic;
+        font-size: 15px; }
+      .mbSearchContainer .searchWrapper .button {
+        cursor: pointer;
+        background-color: #FF7300;
+        border-radius: 25px;
+        padding: 6px;
+        padding-right: 7px;
+        padding-left: 7px;
+        padding-bottom: 7px;
+        margin-right: 1px;
+        color: #FFF;
+        position: relative;
+        top: -2px; } }
 /**
  * Footer
  */
