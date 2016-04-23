@@ -406,6 +406,9 @@ header {
 /**
  * Newsletter
  */
+.mbNewsTitle {
+  display: none; }
+
 .news {
   height: 50px;
   background-color: #FF7300;
@@ -431,16 +434,14 @@ header {
     float: right;
     color: #FFF;
     font-weight: bold;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
     border: white solid 2px; }
   .news .email {
     float: right;
     margin-right: 10px;
-    width: 250px;
     text-align: center;
     color: green;
-    font-size: 1em;
     transition: box-shadow 0.25s linear; }
     .news .email:focus {
       box-shadow: 0 0 .125rem .125rem #00ae00; }
@@ -456,6 +457,24 @@ header {
   height: 550px;
   background-color: #555; }
 
+@media (max-width: 767px) {
+  .phrase {
+    display: none; }
+
+  .mbNewsTitle {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    background-color: #FFF;
+    color: #1684FF;
+    padding: 5px; }
+
+  .news .email {
+    float: left;
+    font-size: .75em;
+    position: relative;
+    left: 45px;
+    width: calc(100% - 130px); } }
 /**
  * Product
  */
