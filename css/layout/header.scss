@@ -232,8 +232,8 @@ header {
 
     .storeTitle {
       color: white;
-      font-size: 22px;
-      margin-left: 8px;
+      font-size: 24px;
+      margin-left: 3px;
       margin-top: 13px;
 
       .i {
@@ -255,16 +255,16 @@ header {
 
     .tag {
       position: absolute;
-      right: -2px;
-      top: -2px;
+      right: -3px;
+      top: -3px;
       text-align: center;
-      width: 13px;
-      height: 13px;
+      width: 18px;
+      height: 18px;
       background-color: $orangeTone;
       color: #FFF;
       border-radius: 4px;
       font-size: 9px;
-      
+      line-height: 2;
 
 
     }
