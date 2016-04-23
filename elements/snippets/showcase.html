@@ -1,24 +1,9 @@
 {% if products|length > 0 %}
 
-    <!-- {% if showcaseTitle %}
-        <div class="showcase">
-            <h4 class="showcase-title">{{ showcaseTitle }} </h4>
-        </div>
-    {% endif %} -->
-
-    <div class="row">
-        {% for product in products %}
-
-            <div style="width: 32.75%;
-display: inline-block" class="col-sm-4 product">
-                {% element 'snippets/product' {"product": product} %}
-            </div>
-
-            {% if loop.index is divisible by(3) %}
-                </div><div class="row">
-            {% endif %}
-
-        {% endfor %}
+  {% for product in products %}
+    <div style="width: 90%; display: inline-block; border-radius: 4px; padding: 10px;" class="col-sm-4 product">
+      {% element 'snippets/product' {"product": product} %}
     </div>
+  {% endfor %}
 
 {% endif %}
