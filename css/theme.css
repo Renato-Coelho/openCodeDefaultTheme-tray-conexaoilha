@@ -48,6 +48,9 @@ body {
   max-width: 1024px;
   margin: 0 auto; }
 
+.mbSearchContainer {
+  background-color: #546E7A; }
+
 header {
   height: 140px;
   padding: .5em;
@@ -69,13 +72,13 @@ header {
     width: 25%;
     box-sizing: border-box;
     float: left; }
+    @media (max-width: 767px) {
+      header .logoContainer {
+        display: none; } }
     header .logoContainer .logo {
       max-width: 192px;
       max-height: 120px;
       display: inline-block; }
-    @media (max-width: 767px) {
-      header .logoContainer {
-        display: none; } }
   header .searchContainer {
     display: inline-block;
     height: 100%;
@@ -239,7 +242,10 @@ header {
       color: #FFF;
       border-radius: 4px;
       font-size: 9px;
-      line-height: 2; } }
+      line-height: 2; }
+
+  .mbSearchContainer {
+    display: block; } }
 /**
  * Footer
  */

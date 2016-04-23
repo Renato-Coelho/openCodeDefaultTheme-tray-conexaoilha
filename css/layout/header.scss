@@ -1,3 +1,7 @@
+.mbSearchContainer {
+  background-color: $darkGreen;
+}
+
 header {
   height: 140px;
   padding: .5em;
@@ -22,15 +26,16 @@ header {
     box-sizing: border-box;
     float: left;
 
+    @media (max-width: 767px) {
+      display: none;
+    }
+
     .logo {
       max-width: 192px;
       max-height: 120px;
       display: inline-block;
     }
 
-    @media (max-width: 767px) {
-      display: none;
-    }
   }  
   
   .searchContainer {
@@ -193,23 +198,23 @@ header {
  }
 
 
- /******** MOBILE ********/ 
- @media (min-width: 768px) {
+/******** MOBILE ********/ 
+@media (min-width: 768px) {
   .menuButton,
   .mbLogo,
   .storeTitle,
   .mbCart {
     display: none;
   }
- }
+}
 
- @media (max-width: 767px) {
+@media (max-width: 767px) {
   .menuButton,
   .centeredStoreTitle,
   .mbCart {
     display: flex;
   }
-  
+
   .menuButton {
     color: white;
     border: white 1px solid;
@@ -270,9 +275,12 @@ header {
     }
   }
 
- }
+  .mbSearchContainer {
+    display: block;
+  }
+}
 
-  
 
 
-  
+
+
