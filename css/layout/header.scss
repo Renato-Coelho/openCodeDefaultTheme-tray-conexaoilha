@@ -10,6 +10,7 @@ header {
   @media (max-width: 767px) {
     height: 50px;
     padding: .25em;
+    padding-top: .5em;
     border-top: $orangeTone solid .075em;
     border-bottom: none;
     display: flex;
@@ -218,13 +219,13 @@ header {
   }
 
   .menuButton {
-    color: white;
-    border: white 2px solid;
+    color: #FFF;
+    border: #FFF 2px solid;
     border-radius: 4px;
     padding: 3px;
-    height: 38px;
-    width: 38px;
-    font-size: 26px;
+    height: 44px;
+    width: 44px;
+    font-size: 32px;
     position: relative;
     top: 0px;
     margin-left: 4px;
@@ -238,7 +239,7 @@ header {
   .centeredStoreTitle {
 
     .storeTitle {
-      color: white;
+      color: #FFF;
       font-size: 24px;
       margin-left: 3px;
       margin-top: 13px;
@@ -256,14 +257,14 @@ header {
     margin-right: 4px;
 
     .image {
-      width: 38px;
-      height: 38px;
+      width: 46px;
+      height: 46px;
     }
 
     .tag {
       position: absolute;
-      right: -3px;
-      top: -3px;
+      right: -1px;
+      top: -1px;
       text-align: center;
       width: 18px;
       height: 18px;
@@ -271,9 +272,8 @@ header {
       color: #FFF;
       border-radius: 4px;
       font-size: 9px;
+      font-weight: bold;
       line-height: 2;
-
-
     }
   }
 
@@ -282,6 +282,7 @@ header {
     display: block;
     background-color: $darkGreen;
     padding: 10px;
+    padding-bottom: 6px;
     border-bottom: #FFF solid .075em;
     
     .searchWrapper {
