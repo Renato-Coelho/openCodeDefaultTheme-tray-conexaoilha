@@ -390,6 +390,12 @@ header {
   opacity: 1;
   transition: visibility 0s, opacity 0.3s ease-in-out; }
 
+@media (min-width: 768px) {
+  .mbCategoriesMenu {
+    display: none; } }
+@media (max-width: 676px) {
+  .mbCategoriesMenu {
+    background-color: rgba(0, 0, 255, 0.4); } }
 /**
  * Brand
  */

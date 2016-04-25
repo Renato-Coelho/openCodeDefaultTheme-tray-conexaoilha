@@ -19,3 +19,27 @@
 		{% endfor %}
 	</ul>
 </nav>
+
+
+<!-- MOBILE -->
+<nav class="mbCategoriesMenu">
+	<ul class="menu">
+		{% for category in categories %}
+			{% set children = category.children %}
+			<li>
+				<a href="{{ category.link }}">{{ category.name }}</a>
+				{% if children %}
+					<ul class="menu-children">
+						{% for child in children %}
+							<li>
+								<a href="{{ child.link }}">{{ child.name }}</a>
+							</li>
+						{% endfor%}
+					</ul>
+				{% endif %}
+			</li>
+		{% endfor %}
+	</ul>
+</nav>
+
+
