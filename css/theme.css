@@ -45,6 +45,7 @@ body {
   font-family: "Verdana", "Myriad Set Pro", " Geneva", "Helvetica", "Verdana", sans-serif; }
 
 .outerContainer {
+  width: 100%;
   max-width: 1024px;
   margin: 0 auto; }
 

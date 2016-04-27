@@ -10,6 +10,9 @@
     {{ tray.styles }}
 
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald:400,300,700">
+
+    <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
+
     <link rel="stylesheet" href="{{ asset('css/theme.css') }}">
     {{ tray.scripts }}
     {{ tray.analytics }}
@@ -53,7 +56,13 @@
         {{ html.script('dist/application.min.js?' ~ utils.assets_version) }}
 
         {% element 'snippets/pageview' %}
-   
+<script src="{{ asset('js/jquery-2.2.3.min.js') }}"></script>   
 <script src="{{ asset('js/base.js') }}"></script> 
+<script src="{{ asset('js/wow.min.js') }}"></script>
+<script>
+    $(function() {
+        new WOW().init();
+    });
+</script>
 </body>
 </html>
