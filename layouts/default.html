@@ -1,61 +1,56 @@
 <!doctype html>
 <html lang="pt-br" data-store="{{ store.id }}" class="page-{{ pages.current }}">
 <head>
-    {{ html.charset() }}
-    {{ tray.meta }}
-    <!--
-        [if IE]<meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]
-    -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    {{ tray.styles }}
+  {{ html.charset() }}
+  {{ tray.meta }}
+  <!--
+      [if IE]<meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{ tray.styles }}
 
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald:400,300,700">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald:400,300,700">
 
-    <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
 
-    <link rel="stylesheet" href="{{ asset('css/theme.css') }}">
-    {{ tray.scripts }}
-    {{ tray.analytics }}
-    {{ googleTagManager.header(pages.current, tagManagerData) }}
+  <link rel="stylesheet" href="{{ asset('css/theme.css') }}">
+  {{ tray.scripts }}
+  {{ tray.analytics }}
+  {{ googleTagManager.header(pages.current, tagManagerData) }}
 
-    {% if utils.is_mobile %}
-        <script src="//images.tcdn.com.br/img/arquivos/mobile/scripts/open-mobilev2.js?{{ utils.assets_version }}"></script>
-    {% endif %}
+  {% if utils.is_mobile %}
+      <script src="//images.tcdn.com.br/img/arquivos/mobile/scripts/open-mobilev2.js?{{ utils.assets_version }}"></script>
+  {% endif %}
 </head>
 <body>
-        {{ googleTagManager.top(pages.current, tagManagerData) }}
-                    
-        
-        <!-- HEADER -->
-        {% element 'header' %}
+  {{ googleTagManager.top(pages.current, tagManagerData) }}
+
+  <!-- HEADER -->
+  {% element 'header' %}
+
+  <main>
+    <!-- CATEGORIES <navigation> -->  
+    {% element 'snippets/categories_menu' %}
     
+    <!-- SHOWCASE -->
+    <section class="outerContainer">
+        {{ content_for_layout }}
+    </section>
+    
+    <!-- NEWS -->
+    {% element 'snippets/newsletter' %}
 
-    <main>
-        <!-- CATEGORIES <navigation> -->  
-        {% element 'snippets/categories_menu' %}
-        
-        <!-- SHOWCASE -->
-        <section class="outerContainer">
-            {{ content_for_layout }}
-        </section>
-        
-        <!-- NEWS -->
-        {% element 'snippets/newsletter' %}
+    <footer class="outerContainer footerTest">
+    </footer>
+  </main>        
+    {% element 'snippets/tagcloud' %} 
+    {% element 'snippets/modal' %}
 
-        <footer class="outerContainer footerTest">
-        </footer>
-    </main>        
+    {{ googleTagManager.bottom(pages.current, tagManagerData) }}
 
+    {{ html.script('dist/application.min.js?' ~ utils.assets_version) }}
 
-            
-        {% element 'snippets/tagcloud' %} 
-        {% element 'snippets/modal' %}
-
-        {{ googleTagManager.bottom(pages.current, tagManagerData) }}
-
-        {{ html.script('dist/application.min.js?' ~ utils.assets_version) }}
-
-        {% element 'snippets/pageview' %}
+    {% element 'snippets/pageview' %}
 <script src="{{ asset('js/jquery-2.2.3.min.js') }}"></script>   
 <script src="{{ asset('js/base.js') }}"></script> 
 <script src="{{ asset('js/wow.min.js') }}"></script>

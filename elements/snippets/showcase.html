@@ -1,7 +1,7 @@
 {% if products|length > 0 %}
 
   {% for product in products %}
-    <div class="wow fadeInUp" data-wow-delay="0.75s" style="width: 90%; display: inline-block; border-radius: 4px; padding: 10px; background-color: white; margin-bottom: 30px;" class="col-sm-4 product">
+    <div class="wow fadeInUp" data-wow-delay="0.3s" style="width: 90%; display: inline-block; border-radius: 4px; padding: 10px; background-color: white; margin-bottom: 30px;" class="col-sm-4 product">
       {% element 'snippets/product' {"product": product} %}
     </div>
   {% endfor %}
