@@ -237,7 +237,9 @@ header {
   }
 
   .centeredStoreTitle {
-
+    a {
+      display: inherit;
+    }
     .storeTitle {
       color: #FFF;
       font-size: 24px;
@@ -284,6 +286,7 @@ header {
     padding: 10px;
     padding-bottom: 6px;
     border-bottom: #FFF solid .075em;
+    position: relative;
     
     .searchWrapper {
       width: 100%;

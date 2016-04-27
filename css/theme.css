@@ -217,6 +217,8 @@ header {
     width: 23px;
     height: 43px; }
 
+  .centeredStoreTitle a {
+    display: inherit; }
   .centeredStoreTitle .storeTitle {
     color: #FFF;
     font-size: 24px;
@@ -252,7 +254,8 @@ header {
     background-color: #546E7A;
     padding: 10px;
     padding-bottom: 6px;
-    border-bottom: #FFF solid .075em; }
+    border-bottom: #FFF solid .075em;
+    position: relative; }
     .mbSearchContainer .searchWrapper {
       width: 100%;
       background-color: #FFF;
@@ -394,9 +397,41 @@ header {
 @media (min-width: 768px) {
   .mbCategoriesMenu {
     display: none; } }
-@media (max-width: 676px) {
-  .mbCategoriesMenu {
-    background-color: rgba(0, 0, 255, 0.4); } }
+@media (max-width: 767px) {
+  .mbCategoriesContainer {
+    position: relative; }
+    .mbCategoriesContainer .mbCategoriesMenu {
+      background: #FF7300;
+      color: #FFF;
+      padding: 1em;
+      width: 90%;
+      max-width: 320px;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: -90%;
+      transition: left .3s ease-out; }
+      .mbCategoriesContainer .mbCategoriesMenu .menu {
+        font-size: 20px;
+        color: #000;
+        font-weight: bold; }
+        .mbCategoriesContainer .mbCategoriesMenu .menu li {
+          background-color: rgba(255, 255, 255, 0.2);
+          border-radius: 4px;
+          padding: 5px;
+          margin-bottom: 10px; }
+        .mbCategoriesContainer .mbCategoriesMenu .menu .menu-children {
+          font-size: 16px;
+          text-indent: 10px;
+          color: #FFF;
+          border-radius: 0; }
+          .mbCategoriesContainer .mbCategoriesMenu .menu .menu-children li {
+            border-radius: 0px;
+            padding: 10px;
+            margin-bottom: 0; } }
+.menuActive .mbCategoriesMenu {
+  left: 0; }
+
 /**
  * Brand
  */
