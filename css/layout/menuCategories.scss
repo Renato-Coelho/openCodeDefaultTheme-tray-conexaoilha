@@ -96,65 +96,9 @@
   transition: visibility 0s, opacity 0.3s ease-in-out;    
 }
 
-@media (min-width: 768px) {
-  .mbCategoriesMenu {
-      display: none;
-  }
-}
-
-@media (max-width: 767px) {
-  .mbCategoriesContainer {
-    position: relative;
-    
-    
-
-    .mbCategoriesMenu {
-      background: $orangeTone;
-      color: #FFF;
-      padding: 1em;
-      //height: 100%;
-      width: 90%;
-      max-width: 320px;
-
-      position: absolute;
-      z-index: 1;
-      top: 0;
-      left: -90%;
-      transition: left .3s ease-out;
-
-      .menu {
-          font-size: 20px;
-          color: #000;
-          font-weight: bold;
-
-          li {
-            background-color: rgba(255, 255, 255, .2);
-            border-radius: 4px;
-            padding: 5px;
-            margin-bottom: 10px;
-          }
-        .menu-children {
-          font-size: 16px;
-          text-indent: 10px;
-          color: #FFF;
-          border-radius: 0;
-
-          li {  
-            border-radius: 0px;
-            padding: 10px;
-            margin-bottom: 0;
-          }
-        }
-      }
-    }
 
 
-  } 
-}
 
-.menuActive .mbCategoriesMenu {
-  left: 0;
-}
 
 
 

@@ -1,3 +1,4 @@
+
 var input = document.querySelector(".input");
 
 input.addEventListener("focus", function () {
@@ -17,12 +18,12 @@ input.addEventListener("blur", function () {
 
 // MenuCategories // MOBILE
 
-var menuButton = document.querySelector(".menuButton");
-console.log(menuButton);
+// var menuButton = document.querySelector(".menuButton");
+// console.log(menuButton);
 
-menuButton.onclick = function() {
-	//document.documentElement.classList.add("menuActive");
-	document.querySelector(".mbCategoriesContainer").classList.add("menuActive")
-	console.log(document.documentElement);
-};
+// menuButton.onclick = function() {
+// 	//document.documentElement.classList.add("menuActive");
+// 	document.querySelector(".mbCategoriesContainer").classList.add("menuActive")
+// 	console.log(document.documentElement);
+// };
 
