@@ -408,7 +408,8 @@ header {
           font-size: 13px;
           font-weight: bold;
           white-space: nowrap;
-          padding: 3px 7px; }
+          padding: 3px 7px;
+          vertical-align: middle; }
       header .customerContainer .cart .price {
         text-align: center;
         font-size: 12px;
