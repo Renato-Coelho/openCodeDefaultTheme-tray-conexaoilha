@@ -167,13 +167,14 @@ header {
           right: 0;
           top: 0;
           text-align: center;
-          width: 20px;
-          height: 20px;
+          min-width: 20px;
           background-color: #FF7300;
           color: #FFF;
           border-radius: 4px;
           font-size: 13px;
           font-weight: bold;
+          white-space: nowrap;
+          padding: 3px 7px;
         }
       }
 
@@ -275,7 +276,8 @@ header {
       border-radius: 4px;
       font-size: 9px;
       font-weight: bold;
-      line-height: 2;
+      line-height: 1.7;
+      white-space: nowrap;
     }
   }
 

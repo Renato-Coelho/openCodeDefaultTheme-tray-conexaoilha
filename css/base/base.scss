@@ -5,11 +5,11 @@ html {
 body {
   background: RGBA(255, 115, 0, 0.47); // white
   color: $primaryColor;
-  font-family: $primaryFont;
+  font-family: 'century gothic', $primaryFont;
 }
 
 .outerContainer {
-	width: 100%; 
+  width: 100%; 
   max-width: 1024px;
   margin: 0 auto;
 }

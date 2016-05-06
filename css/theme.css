@@ -42,7 +42,7 @@ html {
 body {
   background: RGBA(255, 115, 0, 0.47);
   color: blue;
-  font-family: "Verdana", "Myriad Set Pro", " Geneva", "Helvetica", "Verdana", sans-serif; }
+  font-family: "century gothic", "Verdana", "Myriad Set Pro", " Geneva", "Helvetica", "Verdana", sans-serif; }
 
 .outerContainer {
   width: 100%;
@@ -401,13 +401,14 @@ header {
           right: 0;
           top: 0;
           text-align: center;
-          width: 20px;
-          height: 20px;
+          min-width: 20px;
           background-color: #FF7300;
           color: #FFF;
           border-radius: 4px;
           font-size: 13px;
-          font-weight: bold; }
+          font-weight: bold;
+          white-space: nowrap;
+          padding: 3px 7px; }
       header .customerContainer .cart .price {
         text-align: center;
         font-size: 12px;
@@ -481,7 +482,8 @@ header {
       border-radius: 4px;
       font-size: 9px;
       font-weight: bold;
-      line-height: 2; }
+      line-height: 1.7;
+      white-space: nowrap; }
 
   .mbSearchContainer {
     display: block;
@@ -713,6 +715,13 @@ header {
     position: relative;
     left: 45px;
     width: calc(100% - 130px); } }
+.breadcrumb {
+  background: #ccc;
+  color: #FF7300;
+  width: 100%;
+  font-size: 80%;
+  padding: 10px; }
+
 /**
  * Product
  */
@@ -755,50 +764,21 @@ header {
     font-size: 0.8em;
     padding: 3px 17px; }
 
-.page-product .breadcrumb {
-  display: inline-block;
-  text-align: left; }
-.page-product .product-safe {
-  text-align: right;
-  margin-top: -20px; }
-.page-product .product-id {
-  float: right; }
-.page-product .product-title {
-  margin: 10px 0 0; }
-.page-product .product-links {
-  text-align: center; }
-  .page-product .product-links > a {
-    display: block;
-    border-right: 1px #ccc solid;
-    border-bottom: 1px #ccc solid;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 3px; }
-.page-product .product-labels, .page-product .product-details {
-  clear: both; }
-.page-product .products-related {
+.product-title {
+  color: white;
+  background: #546E7A;
+  font-size: 150%;
   text-align: center;
-  margin: 10px 0; }
-  .page-product .products-related .related-title {
-    text-align: left;
-    margin: 0 0 10px; }
-  .page-product .products-related .related-image {
-    display: inline-block; }
-.page-product .no-padding {
-  padding: 0; }
-@media screen and (max-width: 600px) {
-  .page-product .product-id {
-    float: none; }
-  .page-product .produto-calcular-frete {
-    display: none; }
-  .page-product #ProdAbas {
-    background: #f1f1f1; }
-    .page-product #ProdAbas li, .page-product #ProdAbas .aberta {
-      float: none; }
-    .page-product #ProdAbas li + li {
-      border-top: 1px solid #ccc; }
-  .page-product #formasPagto img {
-    max-width: 60px; } }
+  padding: 10px; }
+
+.productContainer .productGallery {
+  width: 50%;
+  float: left;
+  border: red 2px solid;
+  border-radius: 20px; }
+.productContainer .productForm {
+  width: 50%;
+  float: right; }
 
 /**
  * Showcase
