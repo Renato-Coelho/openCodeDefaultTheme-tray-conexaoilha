@@ -4,6 +4,10 @@
   color: #fff;
   background-color: $orangeTone;
   box-shadow: 1px 1px 10px 1px #222;
+  
+  @media (min-width: 768px) {
+    display: none;
+  }
 
   i {
     font-size: 44px;

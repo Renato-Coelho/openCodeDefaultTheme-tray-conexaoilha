@@ -11,7 +11,13 @@ input.addEventListener("blur", function () {
 	var search = this.parentNode.parentNode.parentNode;
 	search.classList.remove("searchHighlighting");
 	console.log("searchHighlightingOFF");
-})
+});
+
+
+$('.product-item').mouseenter(function() {
+	console.log($(this));
+	$(this).addClass('wave-effect');
+});
 
 
 

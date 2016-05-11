@@ -289,6 +289,9 @@ html, body {
   color: #fff;
   background-color: #FF7300;
   box-shadow: 1px 1px 10px 1px #222; }
+  @media (min-width: 768px) {
+    .open-left {
+      display: none; } }
   .open-left i {
     font-size: 44px; }
 
