@@ -11,9 +11,11 @@
 
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald:400,300,700">
 
+  <link rel="stylesheet" href="{{ asset('css/materialize.css') }}">
   <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
-
   <link rel="stylesheet" href="{{ asset('css/theme.css') }}">
+  
+
   {{ tray.scripts }}
   {{ tray.analytics }}
   {{ googleTagManager.header(pages.current, tagManagerData) }}
@@ -90,7 +92,8 @@
 
 
 
-<script src="{{ asset('js/jquery-2.2.3.min.js') }}"></script>   
+<script src="{{ asset('js/jquery-2.2.3.min.js') }}"></script> 
+<script src="{{ asset('frameworks/materialize/js/bin/materialize.min.js') }}"></script>  
 <script src="{{ asset('js/base.js') }}"></script>
 <script src="{{ asset('js/snap.js') }}"></script> 
 <script src="{{ asset('js/wow.min.js') }}"></script>
