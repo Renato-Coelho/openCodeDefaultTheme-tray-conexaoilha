@@ -1,3 +1,15 @@
+.open-left {
+  border: solid white 2px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: $orangeTone;
+  box-shadow: 1px 1px 10px 1px #222;
+
+  i {
+    font-size: 44px;
+  }
+}
+
 
 
 header {
@@ -8,9 +20,10 @@ header {
   border-bottom: #FFF solid .125em;
 
   @media (max-width: 767px) {
-    height: 50px;
+    height: 60px;
     padding: .25em;
     padding-top: .5em;
+    padding-bottom: 10px;
     border-top: $orangeTone solid .075em;
     border-bottom: none;
     display: flex;

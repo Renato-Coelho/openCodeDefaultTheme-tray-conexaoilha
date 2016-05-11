@@ -283,6 +283,15 @@ html, body {
   background: RGBA(255, 115, 0, 0.47);
   color: white; }
 
+.open-left {
+  border: solid white 2px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #FF7300;
+  box-shadow: 1px 1px 10px 1px #222; }
+  .open-left i {
+    font-size: 44px; }
+
 header {
   height: 140px;
   padding: .5em;
@@ -291,9 +300,10 @@ header {
   border-bottom: #FFF solid .125em; }
   @media (max-width: 767px) {
     header {
-      height: 50px;
+      height: 60px;
       padding: .25em;
       padding-top: .5em;
+      padding-bottom: 10px;
       border-top: #FF7300 solid 0.075em;
       border-bottom: none;
       display: flex;
