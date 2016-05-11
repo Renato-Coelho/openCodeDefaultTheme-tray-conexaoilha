@@ -500,6 +500,7 @@ header {
     display: block;
     background-color: #546E7A;
     padding: 10px;
+    padding-top: 2px;
     padding-bottom: 6px;
     border-bottom: #FFF solid .075em;
     position: relative; }
