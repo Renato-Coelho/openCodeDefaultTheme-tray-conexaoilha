@@ -1,5 +1,5 @@
 .aaa {
-	background: RGBA(255, 115, 0, 0.47);
+	background: RGBA(255, 115, 0, 0.7);
 	color: white;
 }
 
@@ -13,14 +13,28 @@
 
 }
 
+.category-items {
+	background: rgb(255, 175, 110);
+}
+
 .myLinks {
-	background-color: rgba(255, 255, 255, 0.2);
 	width: 100%;
 	padding: 10px 20px;
 	border-bottom: solid $darkGreen 1px;
-	color: $darkGreen;
+	color: darken($darkGreen, 5);
 }
 
 .myLinks:last-child {
 	border: none;
+}
+
+.mbDivider {
+	height: 1px;
+	background: white;
+	margin-left: 18px;
+
+}
+
+.mbDivider:last-child {
+	display: none;
 }

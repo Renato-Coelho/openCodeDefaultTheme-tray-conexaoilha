@@ -280,7 +280,7 @@ html, body {
   font-size: 12px; }
 
 .aaa {
-  background: RGBA(255, 115, 0, 0.47);
+  background: RGBA(255, 115, 0, 0.7);
   color: white; }
 
 .myCategories {
@@ -291,15 +291,25 @@ html, body {
   font-size: 130%;
   font-weight: bold; }
 
+.category-items {
+  background: #ffaf6e; }
+
 .myLinks {
-  background-color: rgba(255, 255, 255, 0.2);
   width: 100%;
   padding: 10px 20px;
   border-bottom: solid #546E7A 1px;
-  color: #546E7A; }
+  color: #4a606b; }
 
 .myLinks:last-child {
   border: none; }
+
+.mbDivider {
+  height: 1px;
+  background: white;
+  margin-left: 18px; }
+
+.mbDivider:last-child {
+  display: none; }
 
 .open-left {
   border: solid white 2px;
