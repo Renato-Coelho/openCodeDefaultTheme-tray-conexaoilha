@@ -39,12 +39,12 @@
               {% for category in categories %}
                 {% set children = category.children %}
                 <li>
-                  <a href="{{ category.link }}">{{ category.name }}</a>
+                  <a class="myCategories" href="{{ category.link }}">{{ category.name }}</a>
                   {% if children %}
                     <ul>
                       {% for child in children %}
                         <li>
-                          <a class="waves-effect waves-light" href="{{ child.link }}">{{ child.name }}</a>
+                          <a class="myLinks waves-effect waves-light" href="{{ child.link }}">{{ child.name }}</a>
                         </li>
                       {% endfor%}
                     </ul>

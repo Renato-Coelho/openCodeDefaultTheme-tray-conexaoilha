@@ -2,3 +2,25 @@
 	background: RGBA(255, 115, 0, 0.47);
 	color: white;
 }
+
+.myCategories {
+	display: inline-block;
+	padding: 8px 12px;
+	padding-bottom: 4px;
+	width: 100%;
+	font-size: 130%;
+	font-weight: bold;
+
+}
+
+.myLinks {
+	background-color: rgba(255, 255, 255, 0.2);
+	width: 100%;
+	padding: 10px 20px;
+	border-bottom: solid $darkGreen 1px;
+	color: $darkGreen;
+}
+
+.myLinks:last-child {
+	border: none;
+}

@@ -283,6 +283,24 @@ html, body {
   background: RGBA(255, 115, 0, 0.47);
   color: white; }
 
+.myCategories {
+  display: inline-block;
+  padding: 8px 12px;
+  padding-bottom: 4px;
+  width: 100%;
+  font-size: 130%;
+  font-weight: bold; }
+
+.myLinks {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  padding: 10px 20px;
+  border-bottom: solid #546E7A 1px;
+  color: #546E7A; }
+
+.myLinks:last-child {
+  border: none; }
+
 .open-left {
   border: solid white 2px;
   border-radius: 50%;
