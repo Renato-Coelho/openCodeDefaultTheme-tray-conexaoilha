@@ -1,40 +1,45 @@
 <div id="product-container" class="produto-wrapper" itemscope itemtype="http://schema.org/Product">
     
-    <span id="span_erro_carrinho"></span>
-    <div id="loading-product-container">
-        <img src='{{ tray.paths.system_image }}/big-loading.svg' />
-    </div>
-    
-    <!-- BREADCRUMB-->
-    {% element 'snippets/breadcrumb' %}
+  <span id="span_erro_carrinho"></span>
+  <div id="loading-product-container">
+      <img src='{{ tray.paths.system_image }}/big-loading.svg' />
+  </div>
+  
+  <!-- BREADCRUMB-->
+  {% element 'snippets/breadcrumb' %}
 
-    <!-- PRODUCT_NAME-->    
-    <h3 class="product-title">{{ product.name }}</h3>
-    
-    <!-- GALLERY -->
-    <div class="productContainer">
-        <div class="productGallery">
-            <div id="visualBlock" class="product-gallery">
-                {{ productHelper.gallery() }}
-            </div>
+  <!-- PRODUCT_NAME-->    
+  <h3 class="product-title">{{ product.name }}</h3>
+  
+  <!-- GALLERY -->
+  <div class="productContainer">
+    <div class="productGallery">
+        <div id="visualBlock" class="product-gallery">
+            {{ productHelper.gallery() }}
         </div>
+    </div>
 
-        <!-- FORM -->        
-        <form class="productForm" id="form_comprar" method="post" data-app="product.buy-form" action="{{ links.cart_add ~ product.id }}">
-            {{ productHelper.pricing() }}
-            {{ productHelper.variants() }}
-            {{ product.additional_information }}
-            {{ productHelper.gifts() }}
-            {{ productHelper.form() }}
-            {{ productHelper.wishlist() }}
-            {{ productHelper.shipping() }}
-        </form>
-
-        <p class="product-message">
-            {{ product.additional_message }}
-        </p>
-    </div>    
+  <!-- FORM -->        
+    <form class="productForm" id="form_comprar" method="post" data-app="product.buy-form" action="{{ links.cart_add ~ product.id }}">
+        {{ productHelper.pricing() }}
+        {{ productHelper.variants() }}
+        {{ product.additional_information }}
+        {{ productHelper.gifts() }}
+        {{ productHelper.form() }}
+        {{ productHelper.wishlist() }}
+        {{ productHelper.shipping() }}
+    </form>
+  </div>    
 </div>
+
+
+
+
+
+
+
+
+
 
 <div id="ProdBlock">
     <div id="loading-tab-container">
@@ -90,7 +95,11 @@
 
 {{ productHelper.bundle() }}
 
-{% if product.related_products %}
+
+
+<!--#### RELATED PRODUCTS ####-->
+
+<!-- {% if product.related_products %}
 <div class="products-related">
     <h3 class="related-title">Produtos Relacionados</h3>
     <div class="row">
@@ -105,3 +114,4 @@
     </div>
 </div>
 {% endif %}
+ -->

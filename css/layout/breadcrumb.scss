@@ -1,7 +1,23 @@
 .breadcrumb {
-	background: #ccc;
-	color: $orangeTone;
+	background: #414141;
 	width: 100%;
-	font-size: 80%;
 	padding: 10px;
+  border-left: solid 2px white;
+  border-right: solid 2px white;
+
+
+	.breadcrumb-item {
+		color: $orangeTone;
+		font-weight: bold;
+		border-bottom: #FFF solid 1px;
+	}
+
+	.icon-breadcrumb {
+		color: white;
+		padding: 0 4px;
+	}
+
+	.breadcrumb-item-current {
+		color: #FFF;
+	}
 }
