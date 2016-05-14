@@ -311,16 +311,20 @@ html, body {
   display: none; }
 
 .open-left {
-  border: solid white 2px;
-  border-radius: 50%;
+  border: solid white 1px;
   color: #fff;
   background-color: #FF7300;
-  box-shadow: 1px 1px 10px 1px #222; }
+  box-shadow: 1px 1px 10px 1px #222;
+  font-size: 44px;
+  border-radius: 50% !important; }
   @media (min-width: 768px) {
     .open-left {
       display: none; } }
-  .open-left i {
-    font-size: 44px; }
+  @media (max-width: 310px) {
+    .open-left {
+      font-size: 38px;
+      margin-left: 4px;
+      border: solid white 1px; } }
 
 header {
   height: 140px;
@@ -562,6 +566,18 @@ header {
         color: #FFF;
         position: relative;
         top: -2px; } }
+@media (max-width: 310px) {
+  .mbLogo {
+    width: 18px;
+    height: 38px; }
+
+  h1.storeTitle {
+    font-size: 20px !important; }
+
+  .mbCart .image {
+    height: 40px;
+    width: 40px;
+    margin-right: 4px; } }
 /**
  * Footer
  */
@@ -720,11 +736,13 @@ header {
     padding-right: 8px;
     border: white solid 2px; }
   .news .email {
+    width: calc(100% - 550px);
     float: right;
     margin-right: 10px;
     text-align: center;
     color: green;
-    transition: box-shadow 0.25s linear; }
+    transition: box-shadow 0.25s linear;
+    min-width: 300px; }
     .news .email:focus {
       box-shadow: 0 0 .125rem .125rem #00ae00; }
   .news .phrase {
@@ -752,11 +770,31 @@ header {
     padding: 5px; }
 
   .news .email {
-    float: left;
+    float: right;
     font-size: .75em;
-    position: relative;
-    left: 45px;
-    width: calc(100% - 130px); } }
+    width: calc(100% - 190px); } }
+  @media (max-width: 767px) and (max-width: 450px) {
+    .news .email {
+      min-width: 250px; } }
+  @media (max-width: 767px) and (max-width: 410px) {
+    .news .email {
+      min-width: 200px; } }
+  @media (max-width: 767px) and (max-width: 350px) {
+    .news .email {
+      min-width: 170px; } }
+  @media (max-width: 767px) and (max-width: 320px) {
+    .news .email {
+      min-width: 150px;
+      font-size: 0.625em; } }
+  @media (max-width: 767px) and (max-width: 300px) {
+    .news .email {
+      min-width: 130px;
+      font-size: 0.525em; } }
+  @media (max-width: 767px) and (max-width: 280px) {
+    .news .email {
+      min-width: 110px;
+      font-size: 0.5em; } }
+
 .breadcrumb {
   background: #ccc;
   color: #FF7300;

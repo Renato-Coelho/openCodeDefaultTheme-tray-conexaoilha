@@ -1,18 +1,22 @@
 .open-left {
-  border: solid white 2px;
-  border-radius: 50%;
+  border: solid white 1px;
   color: #fff;
   background-color: $orangeTone;
   box-shadow: 1px 1px 10px 1px #222;
-  
+  font-size: 44px;
+  border-radius: 50% !important;
+
   @media (min-width: 768px) {
     display: none;
   }
 
-  i {
-    font-size: 44px;
+  @media (max-width: 310px) {
+    font-size: 38px;
+    margin-left: 4px;
+    border: solid white 1px;
   }
 }
+
 
 
 
@@ -345,6 +349,25 @@ header {
     }
   }
 
+}
+
+@media (max-width: 310px) {
+  .mbLogo {
+    width: 18px;
+    height: 38px;
+  }
+
+  h1.storeTitle {
+    font-size: 20px !important;
+  }
+
+  .mbCart {
+    .image {
+      height: 40px;
+      width: 40px;
+      margin-right: 4px;
+    }
+  }
 }
 
 
