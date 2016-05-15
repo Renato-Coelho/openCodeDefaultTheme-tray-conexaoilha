@@ -41,12 +41,20 @@
         {% endif %}
       </div>
  
+      <!-- {% element 'snippets/addCart' {"product": product} %} -->
  
  
  
- 
-        <!-- {{ productHelper.form() }}
-        {{ productHelper.shipping() }} -->
+         {{ productHelper.form() }}
+          
+         <h5 class="price-separator price-separator-long"></h5>
+         <h5 class="deliveryTime-text">Calcule o frete e o prazo de entrega:</h5>
+
+         {{ productHelper.shipping() }}
+
+         <h5 class="price-separator price-separator-long"></h5>
+
+
  
 
     </form>

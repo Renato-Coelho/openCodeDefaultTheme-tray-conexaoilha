@@ -1,0 +1,15 @@
+{% if product.available %}
+    {% if product.stock > 0 %}
+      <div class="addcart" id="variants">
+        {% if product.has_variation %}
+          <a href="{{ product.link }}"><input type="button" class="addCart" value="Comprar"/></a>
+        {% else %}
+          <input type="button" class="addCart" value="Comprar" onclick="addCart({{ product.id }})" />
+        {% endif %}
+      </div>
+    {% else %}
+      <span> Produto não Disponivel</span>
+    {% endif %}
+  {% else %}
+    <span> Produto não Disponivel</span>
+{% endif %}

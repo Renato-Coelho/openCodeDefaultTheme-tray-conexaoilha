@@ -5,7 +5,7 @@
     text-align: center;
     padding: 10px;
     border: solid white 2px;
-    border-top: none;
+    border-top: solid 0.04em #fff;
 }
 
 .productContainer {
@@ -24,10 +24,49 @@
         margin-top: 10px;
         padding: 24px;
         background-color: #FFF;
+        
+        #product-form-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        #quantidade {
+            width: 200px;
+            border: none;
+            color: $darkGreen;
+
+            #quant {
+                color: $orangeTone;
+                font-size: 16px;
+                background-color: #EDEDED;
+                color: $darkGreen;
+                padding: 3px 6px;
+                text-align: center;
+                font-weight: bold;
+                border: solid orange 1px;
+                border-radius: 5px;
+            }
+        }
+        
+        #button-buy {
+            background-image: url(../img/buy_button.png);
+            background-size: 100% 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-indent: -9999px;
+            overflow: hidden;
+            font-size: 0;
+            color: transparent;
+            width: 240px;
+            height: 84px;
+            border: none;
+        }
     }
 }
 
-.productForm .product-price-info {
+.productForm {
 
     .cashPrice {
         color: $orangeTone;
@@ -54,7 +93,7 @@
         background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(90,118,130,1) 38%, rgba(90,118,130,1) 63%, rgba(255,255,255,1) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
         height: 2px;
-        width: 80%;
+        width: 60%;
         margin: 20px auto;
     }
 
@@ -72,6 +111,65 @@
     }
 }
 
+.price-separator-long {
+    width: 100% !important;
+    margin-bottom: 5px;
+}
+
+.deliveryTime-text {
+    text-align: center;
+    font-size: 16px;
+    color: $orangeTone;
+}
+
+#cepbox {
+    border: none;
+    margin: 0;
+    text-align: center;
+    color: $darkGreen;
+
+    .cepbox-text {
+        display: none;
+    }
+
+    #cep1, #cep2 {
+        border: 1px solid $darkGreen;
+        border-radius: 7px;
+        position: relative;
+        top: -4px;
+        text-align: center;
+    }
+
+    #cep1 {
+        height: 25px;
+        width: 100px;
+    }
+
+    #cep2 {
+        height: 25px;
+        width: 50px;
+    }
+}
+
+#shippingSimulatorButton {
+    color: transparent;
+    background: #FFF;
+    border: none;
+    border-radius: 8px;
+    position: relative;
+    top: 9px;
+    font-size: 0;
+    width: 100px;
+    height: 34px;
+    margin-left: 10px;
+    
+    background-image: url(../img/calc_shipping_button.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+}
 
 
 

@@ -818,7 +818,7 @@ header {
   text-align: center;
   padding: 10px;
   border: solid white 2px;
-  border-top: none; }
+  border-top: solid 0.04em #fff; }
 
 .productContainer .productGallery {
   width: 50%;
@@ -833,17 +833,48 @@ header {
   margin-top: 10px;
   padding: 24px;
   background-color: #FFF; }
+  .productContainer .productForm #product-form-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px; }
+  .productContainer .productForm #quantidade {
+    width: 200px;
+    border: none;
+    color: #546E7A; }
+    .productContainer .productForm #quantidade #quant {
+      color: #FF7300;
+      font-size: 16px;
+      background-color: #EDEDED;
+      color: #546E7A;
+      padding: 3px 6px;
+      text-align: center;
+      font-weight: bold;
+      border: solid orange 1px;
+      border-radius: 5px; }
+  .productContainer .productForm #button-buy {
+    background-image: url(../img/buy_button.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+    font-size: 0;
+    color: transparent;
+    width: 240px;
+    height: 84px;
+    border: none; }
 
-.productForm .product-price-info .cashPrice {
+.productForm .cashPrice {
   color: #FF7300;
   font-size: 36px;
   font-weight: bold; }
-  .productForm .product-price-info .cashPrice .cashPrice-text {
+  .productForm .cashPrice .cashPrice-text {
     color: #546E7A;
     font-size: 16px; }
-  .productForm .product-price-info .cashPrice .cashPrice-descriptive {
+  .productForm .cashPrice .cashPrice-descriptive {
     font-size: 26px; }
-.productForm .product-price-info .price-separator {
+.productForm .price-separator {
   background: white;
   background: -moz-linear-gradient(left, white 0%, #5a7682 38%, #5a7682 63%, white 100%);
   background: -webkit-gradient(left top, right top, color-stop(0%, white), color-stop(38%, #5a7682), color-stop(63%, #5a7682), color-stop(100%, white));
@@ -853,15 +884,62 @@ header {
   background: linear-gradient(to right, white 0%, #5a7682 38%, #5a7682 63%, white 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
   height: 2px;
-  width: 80%;
+  width: 60%;
   margin: 20px auto; }
-.productForm .product-price-info .rawPrice {
+.productForm .rawPrice {
   font-size: 26px;
   color: #546E7A; }
-  .productForm .product-price-info .rawPrice .rawPrice-descriptive {
+  .productForm .rawPrice .rawPrice-descriptive {
     font-size: 16px; }
-  .productForm .product-price-info .rawPrice .rawPrice-text {
+  .productForm .rawPrice .rawPrice-text {
     font-size: 14px; }
+
+.price-separator-long {
+  width: 100% !important;
+  margin-bottom: 5px; }
+
+.deliveryTime-text {
+  text-align: center;
+  font-size: 16px;
+  color: #FF7300; }
+
+#cepbox {
+  border: none;
+  margin: 0;
+  text-align: center;
+  color: #546E7A; }
+  #cepbox .cepbox-text {
+    display: none; }
+  #cepbox #cep1, #cepbox #cep2 {
+    border: 1px solid #546E7A;
+    border-radius: 7px;
+    position: relative;
+    top: -4px;
+    text-align: center; }
+  #cepbox #cep1 {
+    height: 25px;
+    width: 100px; }
+  #cepbox #cep2 {
+    height: 25px;
+    width: 50px; }
+
+#shippingSimulatorButton {
+  color: transparent;
+  background: #FFF;
+  border: none;
+  border-radius: 8px;
+  position: relative;
+  top: 9px;
+  font-size: 0;
+  width: 100px;
+  height: 34px;
+  margin-left: 10px;
+  background-image: url(../img/calc_shipping_button.png);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  overflow: hidden; }
 
 /**
  * Product
