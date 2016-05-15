@@ -20,9 +20,48 @@
         width: calc(50% - 10px);
         float: right;
         border: solid $darkGreen 3px;
-        border-radius: 8%;
+        border-radius: 50px;
         margin-top: 10px;
-        padding: 8px;
+        padding: 24px;
+        background-color: #FFF;
+    }
+}
+
+.productForm .product-price-info {
+
+    .cashPrice {
+        color: $orangeTone;
+        font-size: 36px;
+        font-weight: bold;
+
+        .cashPrice-text {
+            color: $darkGreen;
+            font-size: 16px;
+        }
+
+        .cashPrice-descriptive {
+            font-size: 26px;
+        }
+    }
+
+    .price-separator {
+        background: $darkGreen;
+        height: 2px;
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .rawPrice {
+        font-size: 26px;
+        color: $darkGreen;
+
+        .rawPrice-descriptive {
+            font-size: 16px;
+        }
+
+        .rawPrice-text {
+            font-size: 14px;
+        }
     }
 }
 

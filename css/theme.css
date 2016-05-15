@@ -829,9 +829,32 @@ header {
   width: calc(50% - 10px);
   float: right;
   border: solid #546E7A 3px;
-  border-radius: 8%;
+  border-radius: 50px;
   margin-top: 10px;
-  padding: 8px; }
+  padding: 24px;
+  background-color: #FFF; }
+
+.productForm .product-price-info .cashPrice {
+  color: #FF7300;
+  font-size: 36px;
+  font-weight: bold; }
+  .productForm .product-price-info .cashPrice .cashPrice-text {
+    color: #546E7A;
+    font-size: 16px; }
+  .productForm .product-price-info .cashPrice .cashPrice-descriptive {
+    font-size: 26px; }
+.productForm .product-price-info .price-separator {
+  background: #546E7A;
+  height: 2px;
+  width: 80%;
+  margin: 20px auto; }
+.productForm .product-price-info .rawPrice {
+  font-size: 26px;
+  color: #546E7A; }
+  .productForm .product-price-info .rawPrice .rawPrice-descriptive {
+    font-size: 16px; }
+  .productForm .product-price-info .rawPrice .rawPrice-text {
+    font-size: 14px; }
 
 /**
  * Product

@@ -11,32 +11,42 @@
   <!-- PRODUCT_NAME-->    
   <h3 class="product-title">{{ product.name }}</h3>
   
-  <!-- GALLERY -->
   <div class="productContainer">
+    
+    <!-- GALLERY -->    
     <div class="productGallery">
         <div id="visualBlock" class="product-gallery">
             {{ productHelper.gallery() }}
         </div>
     </div>
 
-  <!-- FORM -->        
+
+    <!-- FORM -->        
     <form class="productForm" id="form_comprar" method="post" data-app="product.buy-form" action="{{ links.cart_add ~ product.id }}">
-        {{ productHelper.pricing() }}
-        {{ productHelper.variants() }}
-        {{ product.additional_information }}
-        {{ productHelper.gifts() }}
-        {{ productHelper.form() }}
-        {{ productHelper.wishlist() }}
-        {{ productHelper.shipping() }}
+        
+      <div class="product-price-info">
+        {% if product.show_price %}
+          <div class="cashPrice">
+            {% set prt = product.price * 0.85 %}
+            R$ {{ prt|number_format(2, ',', '.') }} <span class="cashPrice-descriptive">à vista</span>
+            <h5 class="cashPrice-text">(Boleto ou Depósito)  ->  15% de desconto!</h5>
+          </div>
+
+          <h5 class="price-separator"></h5>
+          <div class="rawPrice">
+            R$ {{ product.price|number_format(2, ',', '.') }} <span class="rawPrice-descriptive">no cartão</span>
+            {% set installmentPrice = product.price * 0.1 %}
+            <h5 class="rawPrice-text">(Em 10x sem juros de R$ {{ installmentPrice|number_format(2, ',', '.') }})</h5>
+          </div>
+        {% endif %}
+      </div>
+
+
     </form>
-  </div>    
+
+  </div>
+
 </div>
-
-
-
-
-
-
 
 
 
@@ -101,6 +111,7 @@
 
 <!-- {% if product.related_products %}
 <div class="products-related">
+</div>
     <h3 class="related-title">Produtos Relacionados</h3>
     <div class="row">
         {% for related in product.related_products %}
