@@ -582,7 +582,7 @@ header {
  * Footer
  */
 .footerTest {
-  height: 550px;
+  height: 480px;
   background-color: #555; }
 
 .footer-links {
@@ -788,7 +788,7 @@ header {
   display: none; }
 
 .news {
-  height: 50px;
+  height: 54px;
   background-color: #FF7300;
   padding: 8px;
   position: relative; }
@@ -806,7 +806,9 @@ header {
   .news .button,
   .news .email {
     height: 34px;
-    border-radius: .125rem; }
+    border-radius: .125rem;
+    position: relative;
+    top: 2px; }
   .news .button {
     background-color: #00ae00;
     float: right;
@@ -832,7 +834,7 @@ header {
     margin-right: 15px;
     font-size: 1rem;
     position: relative;
-    top: 6px; }
+    top: 10px; }
 
 @media (max-width: 767px) {
   .phrase {
@@ -1034,23 +1036,25 @@ header {
 
 .installment-price-table {
   width: 100%;
-  height: 200px;
-  background-color: #ccc;
+  height: 140px;
+  background-color: #f0f0f0;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.3); }
+  .installment-price-table .installment-price-item {
+    color: #546E7A;
+    padding: 2px; }
 
 div.installment-price-left,
 div.installment-price-right {
   width: 50%;
   height: 100%;
   display: inline-block;
-  float: left; }
-
-div.installment-price-left {
-  background-color: pink; }
-
-div.installment-price-right {
-  background-color: blue; }
+  float: left;
+  text-align: center; }
 
 /**
  * Showcase

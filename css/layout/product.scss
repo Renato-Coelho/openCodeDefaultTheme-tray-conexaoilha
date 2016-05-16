@@ -188,10 +188,19 @@
 
 .installment-price-table {
     width: 100%;
-    height: 200px;
-    background-color: #ccc;
+    height: 140px;
+    background-color: #f0f0f0;
     display: flex;
     justify-content: space-between;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.3);
+
+    .installment-price-item {
+        color: $darkGreen;
+        padding: 2px;
+    }
 }
 
 div.installment-price-left,
@@ -200,15 +209,16 @@ div.installment-price-right {
     height: 100%;
     display: inline-block;
     float: left;
+    text-align: center;
 
 }
 
 div.installment-price-left {
-    background-color: pink;
+    // background-color: pink;
 }
 
 div.installment-price-right {
-    background-color: blue;
+    // background-color: blue;
 }
 
 

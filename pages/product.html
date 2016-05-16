@@ -61,9 +61,19 @@
            <div class="installment-price-table">
               
               <div class="installment-price-left">
+                <h2 class="installment-price-item">1x ----- R$ {{ product.price|number_format(2, ',', '.') }}</h2>
+                <h2 class="installment-price-item">2x ----- R$ {{ (product.price / 2)|number_format(2, ',', '.') }}</h2>
+                <h2 class="installment-price-item">3x ----- R$ {{ (product.price / 3)|number_format(2, ',', '.') }}</h2>
+                <h2 class="installment-price-item">4x ----- R$ {{ (product.price / 4)|number_format(2, ',', '.') }}</h2>
+                <h2 class="installment-price-item">5x ----- R$ {{ (product.price / 5)|number_format(2, ',', '.') }}</h2>
               </div>
 
               <div class="installment-price-right">
+                <h2 class="installment-price-item">6x ----- R$ {{ (product.price / 6)|number_format(2, ',', '.') }}</h2>
+                <h2 class="installment-price-item">7x ----- R$ {{ (product.price / 7)|number_format(2, ',', '.') }}</h2>
+                <h2 class="installment-price-item">8x ----- R$ {{ (product.price / 8)|number_format(2, ',', '.') }}</h2>
+                <h2 class="installment-price-item">9x ----- R$ {{ (product.price / 9)|number_format(2, ',', '.') }}</h2>
+                <h2 class="installment-price-item">10x  -----  R$ {{ (product.price / 10)|number_format(2, ',', '.') }}</h2>
               </div>
                 
              

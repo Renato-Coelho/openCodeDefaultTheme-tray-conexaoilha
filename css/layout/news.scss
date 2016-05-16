@@ -7,7 +7,7 @@
 }
 
 .news {
-	height: 50px;
+	height: 54px;
 	background-color: $orangeTone;
 	padding: 8px;
 	position: relative;
@@ -29,6 +29,8 @@
 	.email {
 		height: 34px;
 		border-radius: .125rem;
+		position: relative;
+		top: 2px;
 	}
 
 	.button {
@@ -63,7 +65,7 @@
 		margin-right: 15px;
 		font-size: 1rem;
 		position:  relative;
-		top: 6px;
+		top: 10px;
 	}
 }
 
