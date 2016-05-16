@@ -1,23 +1,14 @@
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-3">
-                <h4 class="footer-title">Loja</h4>
-                {% element 'snippets/categories_list' {'limit': 6} %}
-            </div>
-            <div class="col-sm-3">
-                <h4 class="footer-title">Ajuda</h4>
-                {% element 'snippets/help_links' %}
-            </div>
-            <div class="col-sm-3">
-                <h4 class="footer-title">Siga-nos</h4>
-                {% element 'snippets/contact_links' %}
-            </div>
-            <div class="col-sm-3">
-                <h4 class="footer-title">Inscreva-se</h4>
-                {% element 'snippets/newsletter' %}
-            </div>
-        </div>
-        {% element 'snippets/address' %}
-    </div>
-</footer>
+<ul class="footer-links">
+    <li><a href="{{ links.company }}">Empresa</a></li>
+    <li><a href="{{ links.info_buy }}">Como comprar</a></li>
+    <li><a href="{{ links.security}} ">Segurança e privacidade</a></li>
+    <li><a href="{{ links.send }}">Envio</a></li>
+    <li><a href="{{ links.paymeent }}">Pagamento</a></li>
+    <li><a href="{{ links.warranty }}">Garantia</a></li>
+    <li><a href="{{ links.contact }}">Entre em contato conosco</a></li>
+    <li><a href="{{ links.central }}">Central do cliente</a></li>
+    
+</ul>
+
+<div class="footer-divider"></div>
+
