@@ -1,5 +1,5 @@
 .breadcrumb {
-	background: #414141;
+	background: #555;
 	width: 100%;
 	padding: 10px;
   border-left: solid 2px white;
@@ -9,7 +9,10 @@
 	.breadcrumb-item {
 		color: $orangeTone;
 		font-weight: bold;
-		border-bottom: #FFF solid 1px;
+		
+		&:hover {
+			border-bottom: solid #FFF 1px;
+		}
 	}
 
 	.icon-breadcrumb {
