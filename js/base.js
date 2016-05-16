@@ -35,7 +35,25 @@ function addCart(dataProductId){
 	  var response = $.parseJSON( jqXHR.responseText );
 	  console.log(response);
 	});
-}
+};
+
+// $(".footer-link").hover(function() {
+// 	$(this).addClass("funcc");
+// 	console.log(this);
+// 	console.log("oi");
+// });
+
+
+$(".footer-link")
+	.on("mouseenter", function() {
+		$(this).addClass("funcc");
+	})
+	.on("mouseleave", function() {
+		$(this).removeClass("funcc");
+	})
+;
+	
+
 
 
 
