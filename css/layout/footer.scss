@@ -33,16 +33,46 @@
     margin: 10px auto;
     width: 100%;
     height: 3px;
-    background: red; /* For browsers that do not support gradients */    
-    background: -webkit-linear-gradient(left, #555 , yellow); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, #555, yellow); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, #555, yellow); /* For Firefox 3.6 to 15 */
+    background: white; /* For browsers that do not support gradients */    
+    background: -webkit-linear-gradient(left, #555 white 30%, white 70%, #555); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #555 white 30%, white 70%, #555); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #555 white 30%, white 70%, #555); /* For Firefox 3.6 to 15 */
     background: linear-gradient(to right, #555, white 30%, white 70%, #555); /* Standard syntax (must be last) */
 }
 
+.footer-info-wrapper {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    
+    .footer-info-section {
+        width: 32%;
+        height: 100%;
+        display: inline-block;
+        float: left;
+    }
+}
 
+// .footer-info-sectionInitial {
+//     border-right: solid 1px #FFF;
+// }
 
+// .footer-info-sectionLast {
+//     border-left: solid 1px #FFF;
+// }
 
+.footer-verticalDivider {
+    height: 100%;
+    width: 2px;
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#555, white 40%, white 60%, #555); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#555, white 40%, white 60%, #555); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#555, white 40%, white 60%, #555); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#555, white 40%, white 60%, #555); /* Standard syntax (must be last) */
+}
 
 
 
