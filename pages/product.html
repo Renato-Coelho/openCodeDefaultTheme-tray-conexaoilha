@@ -27,7 +27,7 @@
         <div class="product-price-info">
           {% if product.show_price %}
             <div class="cashPrice">
-              {% set prt = product.price * 0.85 %}
+              {% set prt = product.price %}
               R$ {{ prt|number_format(2, ',', '.') }} <span class="cashPrice-descriptive">à vista</span>
               <h5 class="cashPrice-text">(Boleto ou Depósito)  ->  15% de desconto!</h5>
             </div>
