@@ -1,12 +1,9 @@
 
-
 #ProdBlock {
 	background: lighten($darkGreen, 60);
 	margin: 30px 0;
 	display: inline-block;
 }
-
-
 
 #loading-product-container, #loading-tab-container {
 	position:absolute;
@@ -35,7 +32,7 @@
 		}
 		a {
 			color: $orangeTone;
-			letter-spacing: 0;
+			letter-spacing: 0.1em;
 		}
 	}
 }

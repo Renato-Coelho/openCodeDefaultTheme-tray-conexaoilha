@@ -1026,7 +1026,8 @@ header {
   text-align: center;
   font-size: 20px;
   margin-top: 20px;
-  margin-bottom: 6px; }
+  margin-bottom: 6px;
+  letter-spacing: 0.2em; }
 
 .installment-img-list {
   max-width: 100%;
@@ -1089,7 +1090,7 @@ div.installment-price-right {
       background-color: #dedede; }
     .abasProduto .tabs .tab a {
       color: #FF7300;
-      letter-spacing: 0; }
+      letter-spacing: 0.1em; }
 
 /**
  * Showcase
