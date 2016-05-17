@@ -1,15 +1,20 @@
+
 <div id="ProdBlock">
-    <div id="loading-tab-container">
+<!-- IMPLEMENTAR O LOADING custom-ConexaoIlha!!! !!! -->
+<!-- IMPLEMENTAR O LOADING !!! !!! -->
+<!-- IMPLEMENTAR O LOADING !!! !!! -->
+    <!-- <div id="loading-tab-container">
         <img src='{{ tray.paths.system_image }}/big-loading.svg' />
-    </div>
-    <a name="formaPagto">pagg</a>
+    </div> -->
+    <a name="formaPagto"></a>
     
 
-    <div id="ProdAbas" class="abasProduto">
-        <ul>
+  
+    <div class="abasProduto row">
+        <ul class="tabs">
             {% for key, tab in productTabs %}
               {% if tab.container_id %}
-              <li id="{{ tab.id }}" {% if key=='description' %}class="aberta" {% endif %}>
+              <li id="{{ tab.id }}" class="tab">
                 <a href="#" data-tab-container-id="{{ tab.container_id }}" data-tab-url="{{ tab.url }}">{{ tab.description }}</a>
               </li>
               {% endif %}
@@ -21,7 +26,7 @@
 
    <div id="descricao" class="prodBox">
         <div class="board">
-            <div class="board_htm description">
+            <div class="">
                 {{ product.description ? product.description : product.description_small }}
             </div>
         </div>

@@ -1062,6 +1062,35 @@ div.installment-price-right {
   margin: 0 auto;
   display: block; }
 
+#ProdBlock {
+  background: white;
+  margin: 30px 0;
+  display: inline-block; }
+
+#loading-product-container, #loading-tab-container {
+  position: absolute;
+  display: none;
+  background: #fff;
+  opacity: 1;
+  margin: 0;
+  z-index: 9999;
+  width: 90%;
+  height: 50%; }
+
+.abasProduto, #ProdBlock {
+  border: solid 3px #546E7A;
+  border-radius: 10px; }
+
+.abasProduto .tabs {
+  background-color: #F0F0F0; }
+  .abasProduto .tabs .tab {
+    transition: background-color 0.2s linear; }
+    .abasProduto .tabs .tab:hover {
+      background-color: #dedede; }
+    .abasProduto .tabs .tab a {
+      color: #FF7300;
+      letter-spacing: 0; }
+
 /**
  * Showcase
  */
