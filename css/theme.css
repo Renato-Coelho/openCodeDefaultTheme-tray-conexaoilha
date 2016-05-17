@@ -1042,7 +1042,7 @@ header {
   justify-content: space-between;
   padding: 8px;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.3); }
   .installment-price-table .installment-price-item {
     color: #546E7A;
@@ -1055,6 +1055,12 @@ div.installment-price-right {
   display: inline-block;
   float: left;
   text-align: center; }
+
+.buy_more_button {
+  max-width: 190px;
+  height: auto;
+  margin: 0 auto;
+  display: block; }
 
 /**
  * Showcase
