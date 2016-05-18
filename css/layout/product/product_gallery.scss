@@ -1,0 +1,37 @@
+#visualAbas.produto-imagem-abas {
+	display: none;
+}
+
+#colFotos {
+	background: white;
+	border: solid $orangeTone 3px;
+	border-radius: 50px;
+
+	#add {
+		.imgLinks {
+			display: none;
+		}
+	}
+
+	#foto_p {
+		border: none;
+	}
+
+	.produto-zoom-detalhe {
+		display: none;
+	}
+
+	#foto_a {
+		padding: 10px 0;
+		border-top: 5px #FF7300 double;
+		margin: 10px 0 0;
+		padding-top: 10px;
+		background: rgba(233, 108, 40, 0.29);
+		border-bottom-left-radius: 40px;
+		border-bottom-right-radius: 40px;
+		img {
+			border: 2px solid rgb(255, 115, 0);
+			border-radius: 50px;
+		}
+	}
+}
