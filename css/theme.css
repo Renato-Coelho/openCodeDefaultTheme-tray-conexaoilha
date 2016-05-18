@@ -680,6 +680,13 @@ header {
   background: linear-gradient(#555, white 50%, white 50%, #555);
   /* Standard syntax (must be last) */ }
 
+.seal-ebit {
+  margin-top: 20px; }
+  .seal-ebit img {
+    width: 100px !important;
+    height: 100px !important;
+    display: inline-block; }
+
 /**
  * Address
  */
@@ -901,7 +908,7 @@ header {
 
 .product-title {
   color: white;
-  background: #546E7A;
+  background: RGBA(84, 110, 122, 0.5);
   font-size: 150%;
   text-align: center;
   padding: 10px;
@@ -1076,7 +1083,7 @@ div.installment-price-right {
 
 #colFotos {
   background: white;
-  border: solid #FF7300 3px;
+  border: solid #546E7A 3px;
   border-radius: 50px; }
   #colFotos #add .imgLinks {
     display: none; }
@@ -1086,10 +1093,10 @@ div.installment-price-right {
     display: none; }
   #colFotos #foto_a {
     padding: 10px 0;
-    border-top: 5px #FF7300 double;
+    border-top: 3px #FF7300 solid;
     margin: 10px 0 0;
     padding-top: 10px;
-    background: rgba(233, 108, 40, 0.29);
+    background: rgba(137, 154, 169, 0.29);
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px; }
     #colFotos #foto_a img {
