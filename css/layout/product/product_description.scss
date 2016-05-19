@@ -4,6 +4,8 @@
 	background: white;
 	margin: 30px 0;
 	display: inline-block;
+	border-bottom: solid #899aa9 26px;
+	margin-bottom: 0;
 
 	.prodBox {
 		background: white;
@@ -77,6 +79,20 @@ h1.tit {
 #descricao {
 	background: #FFF;
 }
+
+// INCLUDED ITEMS
+#itensInclusos {
+	.board {
+		p {
+			border: none;
+			border-left: solid 0.2em $orangeTone;
+			padding-left: 2ch;
+			margin-left: 0.5em;
+			margin-bottom: 0.4em;
+		}
+	}
+}
+
 // FORMAS DE PAGAMENTO
 .Forma2 {
 	border: none;

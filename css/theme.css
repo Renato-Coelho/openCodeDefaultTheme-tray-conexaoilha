@@ -1106,7 +1106,9 @@ div.installment-price-right {
 #ProdBlock {
   background: white;
   margin: 30px 0;
-  display: inline-block; }
+  display: inline-block;
+  border-bottom: solid #899aa9 26px;
+  margin-bottom: 0; }
   #ProdBlock .prodBox {
     background: white; }
   #ProdBlock #formasPagto {
@@ -1154,6 +1156,13 @@ h1.tit {
 
 #descricao {
   background: #FFF; }
+
+#itensInclusos .board p {
+  border: none;
+  border-left: solid 0.2em #FF7300;
+  padding-left: 2ch;
+  margin-left: 0.5em;
+  margin-bottom: 0.4em; }
 
 .Forma2 {
   border: none;
