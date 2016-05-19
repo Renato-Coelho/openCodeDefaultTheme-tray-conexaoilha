@@ -35,9 +35,11 @@
     <div id="itensInclusos" class="prodBox">
         <div class="board">
             {% set items = product.included_items|split(', ') %}
-            {% for item in items %}
-                <p>{{ item|trim }}</p>
-            {% endfor %}
+            <ul>
+                {% for item in items %}
+                    <li><p>{{ item|trim }}</p></li>
+                {% endfor %}
+            </ul>
         </div>
     </div>
 

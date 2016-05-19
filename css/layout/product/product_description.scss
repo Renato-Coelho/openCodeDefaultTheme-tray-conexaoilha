@@ -5,7 +5,12 @@
 	margin: 30px 0;
 	display: inline-block;
 	border-bottom: solid #899aa9 26px;
+	padding-bottom: 36px;
 	margin-bottom: 0;
+
+	p {
+		border: none;
+	}
 
 	.prodBox {
 		background: white;
@@ -36,10 +41,6 @@
 	height: 50%;
 }
 
-h1.tit {
-	background-color: red;
-	color: pink;
-}
 .tabs-wrapper, #ProdBlock {
 	// border: solid 3px $darkGreen;
 	// border-radius: 10px;
@@ -60,13 +61,20 @@ h1.tit {
 	width: 100% !important;
 
 	.tab {
-		transition: background-color 0.2s linear;
+		transition: all 0.2s linear;
 		&:hover {
 			background-color: darken($tabsBackgroundColor, 7);
+			color: white;
+			font-weight: bold;
 		}
 		a {
 			color: $orangeTone;
 			letter-spacing: 0.1em;
+			transition: color 0.2s linear;
+
+			&:hover {
+				color: $darkGreen;
+			}
 		}
 	}
 }
@@ -78,6 +86,13 @@ h1.tit {
 // DESCRIÇAO GERAL
 #descricao {
 	background: #FFF;
+
+	img {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 1.5em;
+		box-shadow: 0.2em 0.2em .4em #ff9945;
+	}
 }
 
 // INCLUDED ITEMS
@@ -85,10 +100,14 @@ h1.tit {
 	.board {
 		p {
 			border: none;
-			border-left: solid 0.2em $orangeTone;
+			border-left: solid 0.2em $darkerOrange;
 			padding-left: 2ch;
+			padding-right: 1ch;
 			margin-left: 0.5em;
 			margin-bottom: 0.4em;
+			color: $darkerOrange;
+			background-color: #f5f5f5;
+			display: inline-block;
 		}
 	}
 }
@@ -98,6 +117,7 @@ h1.tit {
 	border: none;
 	background: #f0f0f0;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+	padding: 12px;
 
 	h3 {
 		display: block;
