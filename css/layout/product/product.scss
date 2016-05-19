@@ -71,10 +71,9 @@
     .cashPrice {
         color: $orangeTone;
         font-size: 36px;
-        font-weight: bold;
 
         .cashPrice-text {
-            color: $darkGreen;
+            color: #9B5200;
             font-size: 16px;
         }
 
@@ -107,6 +106,7 @@
 
         .rawPrice-text {
             font-size: 14px;
+            color: #9B5200;
         }
     }
 }

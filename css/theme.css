@@ -962,10 +962,9 @@ header {
 
 .productForm .cashPrice {
   color: #FF7300;
-  font-size: 36px;
-  font-weight: bold; }
+  font-size: 36px; }
   .productForm .cashPrice .cashPrice-text {
-    color: #546E7A;
+    color: #9B5200;
     font-size: 16px; }
   .productForm .cashPrice .cashPrice-descriptive {
     font-size: 26px; }
@@ -987,7 +986,8 @@ header {
   .productForm .rawPrice .rawPrice-descriptive {
     font-size: 16px; }
   .productForm .rawPrice .rawPrice-text {
-    font-size: 14px; }
+    font-size: 14px;
+    color: #9B5200; }
 
 .price-separator-long {
   width: 100% !important;
