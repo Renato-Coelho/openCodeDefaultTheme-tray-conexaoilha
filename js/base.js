@@ -52,6 +52,19 @@ $(".footer-link")
 		$(this).removeClass("funcc");
 	})
 ;
+
+
+// ANIMATION ON INCLUDED_ITEMS
+$('.board ul li p').mouseenter(function() {
+	$(this).animate( {width: '+=20px'} );
+});
+$('.board ul li p').mouseleave(function() {
+	$(this).animate( {width: '-=20px'} );
+});
+
+// $('.board ul li p').click(function() {
+// 	$(this).toggle(1000);
+// });
 	
 
 

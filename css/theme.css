@@ -1175,7 +1175,8 @@ div.installment-price-right {
   margin-bottom: 0.4em;
   color: #BA5400;
   background-color: #f5f5f5;
-  display: inline-block; }
+  display: inline-block;
+  overflow: hidden; }
 
 .Forma2 {
   border: none;
