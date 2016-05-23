@@ -65,8 +65,8 @@ $('.board ul li p').mouseleave(function() {
 // $('.board ul li p').click(function() {
 // 	$(this).toggle(1000);
 // });
-	
 
+$('.singleProduct').fadeIn(5000);
 
 
 
