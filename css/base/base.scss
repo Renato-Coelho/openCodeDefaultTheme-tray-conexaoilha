@@ -9,8 +9,19 @@ body {
 }
 
 .outerContainer {
-  width: 100%; 
+  float: left;
+  width: 100%;
+}
+
+.outerContent {
+  display: block;	
+  width: 90%; 
   max-width: 1024px;
   margin: 0 auto;
+  border:  black solid 2px;
+}
+
+.main_header {
+
 }
 

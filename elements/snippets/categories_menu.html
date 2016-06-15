@@ -1,23 +1,25 @@
 {% set _width  =  100/categories|length %}
 
 <nav class="categoriesMenu outerContainer">
-	<ul class="menu">
-		{% for category in categories %}
-			{% set children = category.children %}
-			<li class="menuLi" style="width: {{_width}}%">
-				<a href="{{ category.link }}">{{ category.name }}</a>
-				{% if children %}
-					<ul class="menu-children">
-						{% for child in children %}
-							<li>
-								<a class="product-item waves-effect" href="{{ child.link }}">{{ child.name }}</a>
-							</li>
-						{% endfor%}
-					</ul>
-				{% endif %}
-			</li>
-		{% endfor %}
-	</ul>
+	<div class="outerContent">
+		<ul class="menu">
+			{% for category in categories %}
+				{% set children = category.children %}
+				<li class="menuLi" style="width: {{_width}}%">
+					<a href="{{ category.link }}">{{ category.name }}</a>
+					{% if children %}
+						<ul class="menu-children">
+							{% for child in children %}
+								<li>
+									<a class="product-item waves-effect" href="{{ child.link }}">{{ child.name }}</a>
+								</li>
+							{% endfor%}
+						</ul>
+					{% endif %}
+				</li>
+			{% endfor %}
+		</ul>
+	</div>	
 </nav>
 
 

@@ -1,46 +1,47 @@
 <!--
 {% element 'snippets/messages' %}
 -->
-<header class="outerContainer">
+<header class="outerContainer main_header">
 <!-- DESKTOP -->
-  <div class="logoContainer">
-    <a  href="{{ links.home }}" title="{{ store.name }}">
-        <img class="logo" src="{{ asset('img/logo.png') }}">
-    </a>
+  <div class="outerContent">
+    <div class="logoContainer">
+      <a  href="{{ links.home }}" title="{{ store.name }}">
+          <img class="logo" src="{{ asset('img/logo.png') }}">
+      </a>
+    </div>
+   
+    <div class="searchContainer"> 
+        {% element 'snippets/search' %}
+    </div>
+
+    <div class="customerContainer">  
+      {% element 'snippets/customer' %}
+    </div>
+
+  <!-- MOBILE -->
+
+    <!-- <span id="open-left" class="menuButton glyphicon glyphicon-list waves-effect waves-light"></span> -->
+    
+    
+      <i id="open-left" class="open-left md-24 material-icons waves-effect waves-circle">more_vert</i>
+    
+
+    <div class="centeredStoreTitle">
+      <a  href="{{ links.home }}" title="{{ store.name }}">
+        <img class="mbLogo" src="{{ asset('img/logo_short.png') }}">
+        <h1 class="storeTitle">Conexão <span class="i">I</span>lha</h1>
+      </a>  
+    </div>  
+
+    <div class="mbCart">
+          <a href="{{ links.cart }}">
+                  <img class="image" src="{{ asset('img/cart.png') }}">
+          </a>
+          
+          <span class="tag" data-cart="amount"></span>    
+    
+    </div>
   </div>
- 
-  <div class="searchContainer"> 
-      {% element 'snippets/search' %}
-  </div>
-
-  <div class="customerContainer">  
-    {% element 'snippets/customer' %}
-  </div>
-
-<!-- MOBILE -->
-
-  <!-- <span id="open-left" class="menuButton glyphicon glyphicon-list waves-effect waves-light"></span> -->
-  
-  
-    <i id="open-left" class="open-left md-24 material-icons waves-effect waves-circle">more_vert</i>
-  
-
-  <div class="centeredStoreTitle">
-    <a  href="{{ links.home }}" title="{{ store.name }}">
-      <img class="mbLogo" src="{{ asset('img/logo_short.png') }}">
-      <h1 class="storeTitle">Conexão <span class="i">I</span>lha</h1>
-    </a>  
-  </div>  
-
-  <div class="mbCart">
-        <a href="{{ links.cart }}">
-                <img class="image" src="{{ asset('img/cart.png') }}">
-        </a>
-        
-        <span class="tag" data-cart="amount"></span>    
-  
-  </div>
-
     
 </header>
 

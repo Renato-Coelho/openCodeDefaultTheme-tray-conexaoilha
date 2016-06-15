@@ -45,9 +45,15 @@ body {
   font-family: 'Roboto', sans-serif; }
 
 .outerContainer {
-  width: 100%;
+  float: left;
+  width: 100%; }
+
+.outerContent {
+  display: block;
+  width: 90%;
   max-width: 1024px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  border: black solid 2px; }
 
 html, body {
   margin: 0;
@@ -708,7 +714,7 @@ header {
   text-align: center; }
 
 .categoriesMenu {
-  background-color: #FF7300;
+  background-color: #546E7A;
   height: 41px;
   border-bottom: solid white .125rem; }
   @media (max-width: 767px) {
