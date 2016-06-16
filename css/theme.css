@@ -54,6 +54,9 @@ body {
   max-width: 1024px;
   margin: 0 auto; }
 
+.clear {
+  clear: both; }
+
 html, body {
   margin: 0;
   padding: 0;

@@ -7,11 +7,12 @@
 {% set products = Products({
   'filter': 'featured'
 }) %}
-<div class="outerContent">
-	<div class="showcase">
-		{% element 'snippets/showcase' {
-		  "showcaseTitle": "- Destaques -",
-		  "products": products
-		} %}
-	</div>
+
+<div class="showcase">
+	{% element 'snippets/showcase' {
+	  "showcaseTitle": "- Destaques -",
+	  "products": products
+	} %}
 </div>
+
+

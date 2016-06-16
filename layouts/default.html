@@ -72,7 +72,10 @@
                 
             <!-- SHOWCASE -->
             <section class="outerContainer">
-                {{ content_for_layout }}
+                <div class="outerContent">
+                    {{ content_for_layout }}
+                    <div class="clear"></div>
+                </div>
             </section>
             
             <!-- NEWS -->
@@ -81,7 +84,10 @@
 
           <!-- FOOTER -->
         <footer class="outerContainer footerTest">
-            {% element 'footer' %}
+            <div class="outerContent">
+                {% element 'footer' %}
+                <div class="clear"></div>
+            </div>
         </footer>
     </div>
 
