@@ -5,8 +5,6 @@
 
  .showcase {
  	text-align: center;
- 	
-
  	background:
 	radial-gradient(black 15%, transparent 16%) 0 0,
 	radial-gradient(black 15%, transparent 16%) 8px 8px,
@@ -16,8 +14,8 @@
 	background-color:#282828;
 	background-size:16px 16px;
 	background-attachment: fixed;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	float: left;
+	padding: 40px;
 }
 
 .showcase-title {
@@ -27,3 +25,22 @@
     text-align: center;
 	padding: 2rem auto;
 }
+
+
+.products_row {
+	float: left;
+	height: 300px;
+}
+.products_row ~ .products_row {
+	margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+

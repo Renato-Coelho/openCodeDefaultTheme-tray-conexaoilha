@@ -1,10 +1,18 @@
 {% if products|length > 0 %}
 
-  {% for product in products %}
-  <!-- class="wow fadeInUp" data-wow-delay="0.3s" -->
-    <div class="singleProduct" style="display: none; width: 33%; display: inline-block; border-radius: 4px; padding: 10px; background-color: white; margin-bottom: 30px" class="col-sm-4 product">
-      {% element 'snippets/product' {"product": product} %}
+ 	<div class="products_row">
+  		{% for product in products %}
+    	<div class="singleProduct" style="height: 100%; width: 31%; float: left; display: inline-block; border-radius: 4px; padding: 10px; background-color: white;">
+      		{% element 'snippets/product' {"product": product} %}
+    	</div>
+    	<!-- {{ loop.index }} -->
+      		{% if loop.index is divisible by(3) and products[loop.index] %}
+    	
     </div>
-  {% endfor %}
+    <div class="products_row">
+      		{% endif %}
+  		{% endfor %}
+	</div>
 
 {% endif %}
+
