@@ -10,18 +10,18 @@
 	width: 100%;
 	font-size: 130%;
 	font-weight: bold;
-
+	background: $darkGreen;
 }
 
 .category-items {
-	background: rgb(255, 175, 110);
+	background: white;
 }
 
 .myLinks {
 	width: 100%;
 	padding: 10px 20px;
 	border-bottom: solid $darkGreen 1px;
-	color: darken($darkGreen, 7);
+	color: $orangeTone;
 }
 
 .myLinks:last-child {
@@ -30,7 +30,7 @@
 
 .mbDivider {
 	height: 1px;
-	background: white;
+	background: $darkGreen;
 	margin-left: 18px;
 
 }

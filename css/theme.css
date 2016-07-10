@@ -53,7 +53,7 @@ html {
   font-size: 100%; }
 
 body {
-  background: RGBA(255, 115, 0, 0.47);
+  background: white;
   color: blue;
   font-family: 'Roboto', sans-serif; }
 
@@ -309,23 +309,24 @@ html, body {
   padding-bottom: 4px;
   width: 100%;
   font-size: 130%;
-  font-weight: bold; }
+  font-weight: bold;
+  background: #546E7A; }
 
 .category-items {
-  background: #ffaf6e; }
+  background: white; }
 
 .myLinks {
   width: 100%;
   padding: 10px 20px;
   border-bottom: solid #546E7A 1px;
-  color: #455b65; }
+  color: #FF7300; }
 
 .myLinks:last-child {
   border: none; }
 
 .mbDivider {
   height: 1px;
-  background: white;
+  background: #546E7A;
   margin-left: 18px; }
 
 .mbDivider:last-child {
@@ -728,41 +729,38 @@ header {
   text-align: center; }
 
 .categoriesMenu {
-  height: 41px;
-  border-bottom: solid white .125rem;
-  border-radius: 30%; }
+  height: 41px; }
   @media (max-width: 767px) {
     .categoriesMenu {
       display: none; } }
-
-li.menu-category:hover .menu-children {
-  visibility: visible;
-  opacity: 1;
-  transition: visibility 0s, opacity 0.3s ease-in-out; }
 
 .menu li.menu-category {
   display: inline-block;
   position: relative;
   color: #fff;
   text-align: center;
-  float: left;
-  border-top: solid white 0.125em; }
+  float: left; }
+  .menu li.menu-category:hover {
+    background-color: #546E7A;
+    color: white; }
+    .menu li.menu-category:hover a {
+      color: white; }
   .menu li.menu-category a {
     display: inline-block;
     width: 100%;
     height: 100%;
-    font-size: 18px;
-    background-color: #FF7300;
-    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: transparent;
+    color: #FF7300;
     padding: 8px 0;
-    text-shadow: 1px 1px 1px #111;
     transition: background-color 0.4s ease-in-out;
     position: relative; }
 .menu li.menu-category ~ li.menu-category {
-  border-left: solid 3px #fff; }
+  border-left: solid 2px #546E7A; }
   .menu li.menu-category ~ li.menu-category:before {
     content: '';
-    background-color: #FF7300;
+    background-color: white;
     width: 8px;
     height: 8px;
     position: absolute;
@@ -771,7 +769,7 @@ li.menu-category:hover .menu-children {
     z-index: 100000; }
   .menu li.menu-category ~ li.menu-category:after {
     content: '';
-    background-color: #FF7300;
+    background-color: white;
     width: 8px;
     height: 8px;
     position: absolute;
@@ -807,7 +805,7 @@ li.menu-category:hover .menu-children {
     background-color: #eb6a00; }
 
 .menuCategories_showcaseHorizontalDivider {
-  height: 2px;
+  height: 12px;
   width: 100%;
   margin: auto; }
 
