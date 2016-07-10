@@ -1,7 +1,7 @@
 .categoriesMenu {
    height: 41px;
    border-bottom: solid white .125rem;
-
+   border-radius: 30%;
    @media (max-width: 767px) {
       display: none;
    }  
@@ -97,5 +97,10 @@ li.menu-category:hover .menu-children {
    
 } // .menu-children  
 
-
+.menuCategories_showcaseHorizontalDivider {
+    @extend %darkGreenHorizontalDividerBackground;
+    height: 2px;
+    width: 100%;
+    margin: auto;
+}
 

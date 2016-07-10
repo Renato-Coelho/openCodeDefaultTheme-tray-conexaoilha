@@ -15,6 +15,11 @@ a {
     color: inherit;
 }
 
+// to override tray.min.css where there was a dotted bottom border
+p {
+	border: none;
+}
+
 ol, ul, li {
 	list-style: none;
 }

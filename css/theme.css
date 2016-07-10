@@ -1,4 +1,4 @@
-.price-separator, .menuCategories_showcaseHorizontalDivider {
+.menuCategories_showcaseHorizontalDivider, .price-separator {
   background: white;
   background: -moz-linear-gradient(left, white 0%, #5a7682 38%, #5a7682 63%, white 100%);
   background: -webkit-gradient(left top, right top, color-stop(0%, white), color-stop(38%, #5a7682), color-stop(63%, #5a7682), color-stop(100%, white));
@@ -42,6 +42,9 @@
 a {
   text-decoration: none;
   color: inherit; }
+
+p {
+  border: none; }
 
 ol, ul, li {
   list-style: none; }
@@ -726,7 +729,8 @@ header {
 
 .categoriesMenu {
   height: 41px;
-  border-bottom: solid white .125rem; }
+  border-bottom: solid white .125rem;
+  border-radius: 30%; }
   @media (max-width: 767px) {
     .categoriesMenu {
       display: none; } }
@@ -801,6 +805,11 @@ li.menu-category:hover .menu-children {
     color: #FFF;
     margin-bottom: 6px;
     background-color: #eb6a00; }
+
+.menuCategories_showcaseHorizontalDivider {
+  height: 2px;
+  width: 100%;
+  margin: auto; }
 
 /**
  * Brand
@@ -1004,11 +1013,6 @@ li.menu-category:hover .menu-children {
   height: 2px;
   width: 60%;
   margin: 20px auto; }
-
-.menuCategories_showcaseHorizontalDivider {
-  height: 2px;
-  width: 60%;
-  margin: auto; }
 
 .price-separator-long {
   width: 100% !important;
