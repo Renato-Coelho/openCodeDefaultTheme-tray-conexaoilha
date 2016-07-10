@@ -1,11 +1,16 @@
 .categoriesMenu {
-   background-color: $darkGreen;
    height: 41px;
    border-bottom: solid white .125rem;
 
    @media (max-width: 767px) {
       display: none;
    }  
+}
+
+li.menu-category:hover .menu-children {
+   visibility: visible;
+   opacity: 1;
+   transition: visibility 0s, opacity 0.3s ease-in-out;    
 }
 
 .menu {
@@ -93,8 +98,4 @@
 } // .menu-children  
 
 
-li.menu-category:hover .menu-children {
-   visibility: visible;
-   opacity: 1;
-   transition: visibility 0s, opacity 0.3s ease-in-out;    
-}
+

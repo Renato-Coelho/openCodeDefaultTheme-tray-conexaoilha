@@ -715,12 +715,16 @@ header {
   text-align: center; }
 
 .categoriesMenu {
-  background-color: #546E7A;
   height: 41px;
   border-bottom: solid white .125rem; }
   @media (max-width: 767px) {
     .categoriesMenu {
       display: none; } }
+
+li.menu-category:hover .menu-children {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.3s ease-in-out; }
 
 .menu li.menu-category {
   display: inline-block;
@@ -787,11 +791,6 @@ header {
     color: #FFF;
     margin-bottom: 6px;
     background-color: #eb6a00; }
-
-li.menu-category:hover .menu-children {
-  visibility: visible;
-  opacity: 1;
-  transition: visibility 0s, opacity 0.3s ease-in-out; }
 
 /**
  * Brand
@@ -982,7 +981,16 @@ li.menu-category:hover .menu-children {
     font-size: 16px; }
   .productForm .cashPrice .cashPrice-descriptive {
     font-size: 26px; }
-.productForm .price-separator {
+.productForm .rawPrice {
+  font-size: 26px;
+  color: #546E7A; }
+  .productForm .rawPrice .rawPrice-descriptive {
+    font-size: 16px; }
+  .productForm .rawPrice .rawPrice-text {
+    font-size: 14px;
+    color: #9B5200; }
+
+.price-separator {
   background: white;
   background: -moz-linear-gradient(left, white 0%, #5a7682 38%, #5a7682 63%, white 100%);
   background: -webkit-gradient(left top, right top, color-stop(0%, white), color-stop(38%, #5a7682), color-stop(63%, #5a7682), color-stop(100%, white));
@@ -994,14 +1002,6 @@ li.menu-category:hover .menu-children {
   height: 2px;
   width: 60%;
   margin: 20px auto; }
-.productForm .rawPrice {
-  font-size: 26px;
-  color: #546E7A; }
-  .productForm .rawPrice .rawPrice-descriptive {
-    font-size: 16px; }
-  .productForm .rawPrice .rawPrice-text {
-    font-size: 14px;
-    color: #9B5200; }
 
 .price-separator-long {
   width: 100% !important;
@@ -1221,15 +1221,8 @@ div.installment-price-right {
   color: #546e7a;
   box-shadow: 0.15em 0.15em 0.15em rgba(0, 0, 0, 0.3); }
 
-/**
- * Showcase
- */
 .showcase {
   text-align: center;
-  background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
-  background-color: #282828;
-  background-size: 16px 16px;
-  background-attachment: fixed;
   float: left;
   padding: 40px; }
 
