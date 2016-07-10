@@ -3,21 +3,21 @@ html {
 }
 
 body {
-  background: white; // white
-  color: $primaryColor;
-  font-family: 'Roboto', sans-serif;
+   background: white; // white
+   color: $primaryColor;
+   font-family: 'Roboto', sans-serif;
 }
 
 .outerContainer {
-  float: left;
-  width: 100%;
+   float: left;
+   width: 100%;
 }
 
 .outerContent {
-  display: block;	
-  width: 90%; 
-  max-width: 1024px;
-  margin: 0 auto;
+   display: block;	
+   width: 90%; 
+   max-width: 1024px;
+   margin: 0 auto;
 }
 
 .clear {

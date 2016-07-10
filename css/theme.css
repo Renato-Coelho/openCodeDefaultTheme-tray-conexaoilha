@@ -932,6 +932,16 @@ header {
   .breadcrumb .breadcrumb-item-current {
     color: #FFF; }
 
+.singleProduct {
+  display: inline-block;
+  float: left;
+  background-color: white;
+  height: 100%;
+  width: 31%;
+  border: solid 1px #cccccc;
+  border-radius: 10px;
+  padding: 10px; }
+
 .singleProduct:nth-of-type(2n + 0) {
   margin-left: 3.5%;
   margin-right: 3.5%; }
