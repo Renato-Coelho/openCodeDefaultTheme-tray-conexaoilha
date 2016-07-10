@@ -13,12 +13,30 @@
 }
 
 .products_row {
-	float: left;
-	height: 300px;
+	display: flex;
+	justify-content: space-between;
 }
 
 .products_row ~ .products_row {
 	margin-top: 40px;
+}
+
+.singleProduct {
+    background-color: white;
+    max-width: 31%;
+    border: solid 1px rgb(204, 204, 204);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+// .singleProduct:nth-of-type(2n + 0) {
+//     margin-left: 3.5%;
+//     margin-right: 3.5%;
+// }
+
+.singleProduct-buyButton {
+    margin: auto;
+    margin-bottom: 0;
 }
 
 

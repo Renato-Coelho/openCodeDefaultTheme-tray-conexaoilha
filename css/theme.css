@@ -932,24 +932,6 @@ header {
   .breadcrumb .breadcrumb-item-current {
     color: #FFF; }
 
-.singleProduct {
-  display: inline-block;
-  float: left;
-  background-color: white;
-  height: 100%;
-  width: 31%;
-  border: solid 1px #cccccc;
-  border-radius: 10px;
-  padding: 10px; }
-
-.singleProduct-buyButton {
-  margin: auto;
-  margin-bottom: 0; }
-
-.singleProduct:nth-of-type(2n + 0) {
-  margin-left: 3.5%;
-  margin-right: 3.5%; }
-
 .product-title {
   color: white;
   background: RGBA(84, 110, 122, 0.5);
@@ -1257,10 +1239,21 @@ div.installment-price-right {
   padding: 2rem auto; }
 
 .products_row {
-  float: left;
-  height: 300px; }
+  display: flex;
+  justify-content: space-between; }
 
 .products_row ~ .products_row {
   margin-top: 40px; }
+
+.singleProduct {
+  background-color: white;
+  max-width: 31%;
+  border: solid 1px #cccccc;
+  border-radius: 10px;
+  padding: 10px; }
+
+.singleProduct-buyButton {
+  margin: auto;
+  margin-bottom: 0; }
 
 /*# sourceMappingURL=theme.css.map */
