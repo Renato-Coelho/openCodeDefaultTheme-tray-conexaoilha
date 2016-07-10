@@ -1,88 +1,73 @@
 <!doctype html>
 <html lang="pt-br" data-store="{{ store.id }}" class="page-{{ pages.current }}">
 <head>
-  {{ html.charset() }} <!-- must always be the first line within the head -->
-  {{ tray.meta }}
-  <!--
-      [if IE]<meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]
-  -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- TO_DO
+   {{ html.charset() }} <!-- must always be the first line within the head -->
+   {{ tray.meta }}
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- TO_DO
       <meta name="description content="">
-      -->
+ -->
   {{ tray.styles }}
+   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="{{ asset('css/materialize.css') }}" media="screen,projection">
+   <link rel="stylesheet" href="{{ asset('css/material-design.css') }}">
+   <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
+   <link rel="stylesheet" href="{{ asset('css/theme.css') }}">
+   {{ tray.scripts }}
+   {{ tray.analytics }}
+   {{ googleTagManager.header(pages.current, tagManagerData) }}
 
-  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="{{ asset('css/materialize.css') }}" media="screen,projection">
-  <link rel="stylesheet" href="{{ asset('css/material-design.css') }}">
-  <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
-  <link rel="stylesheet" href="{{ asset('css/theme.css') }}">
-  
-
-  {{ tray.scripts }}
-  {{ tray.analytics }}
-  {{ googleTagManager.header(pages.current, tagManagerData) }}
-
-  {% if utils.is_mobile %}
+<!--
+   {% if utils.is_mobile %}
       <script src="//images.tcdn.com.br/img/arquivos/mobile/scripts/open-mobilev2.js?{{ utils.assets_version }}"></script>
-  {% endif %}
+   {% endif %}
+  -->
 </head>
 <body>
-  {{ googleTagManager.top(pages.current, tagManagerData) }}
-
-        
-
-    <div class="aaa snap-drawer-left">
-
+   {{ googleTagManager.top(pages.current, tagManagerData) }}
+   <div class="aaa snap-drawer-left">
+      
       <div>
-
-          <nav>
+         <nav>
             <ul>
-              {% for category in categories %}
-                {% set children = category.children %}
-                <li>
-                  <a class="myCategories" href="{{ category.link }}">{{ category.name }}</a>
-                  {% if children %}
-                    <ul class="category-items">
-                      {% for child in children %}
-                        <li>
-                          <a class="myLinks waves-effect waves-light" href="{{ child.link }}">{{ child.name }}</a>
-                        </li>
-                        <div class="mbDivider"></div>
-                      {% endfor%}
-                    </ul>
-                  {% endif %}
-                </li>
-              {% endfor %}
+               {% for category in categories %}
+                  <li>
+                     <a class="myCategories" href="{{ category.link }}">{{ category.name }}</a>
+                     {% set children = category.children %}
+                     {% if children %}
+                        <ul class="category-items">
+                           {% for child in children %}
+                              <li>
+                                 <a class="myLinks waves-effect waves-light" href="{{ child.link }}">{{ child.name }}</a>
+                              </li>
+                              <div class="mbDivider"></div>
+                           {% endfor%}
+                        </ul>
+                     {% endif %}
+                   </li>
+               {% endfor %}
             </ul>
-          </nav>
-
+         </nav>
       </div>
-    </div>
+    
+   </div>
 
-    <div id="content" class="snap-content">
-          
-          <!-- HEADER -->
-        {% element 'header' %}
+   <div id="content" class="snap-content">
+      <!-- HEADER -->
+      {% element 'header' %}
 
-        <main>
-          <form action="/">
-            <input type="submit" value="reload" />
-          </form>
-            <!-- CATEGORIES <navigation> -->  
-            {% element 'snippets/categories_menu' %}
-                
-            <!-- SHOWCASE -->
-            <section class="outerContainer">
-                <div class="outerContent">
-                    {{ content_for_layout }}
-                    <div class="clear"></div>
-                </div>
-            </section>
+      <main class="outerContainer">
+      <!-- CATEGORIES <navigation> -->  
+         {% element 'snippets/categories_menu' %}
+
+      <!-- SHOWCASE -->
+         <section class="outerContent">
+            {{ content_for_layout }}
+            <div class="clear"></div>
+         </section>
             
-            <!-- NEWS -->
-            {% element 'snippets/newsletter' %}
+      <!-- NEWS -->
+         {% element 'snippets/newsletter' %}
         </main>
 
           <!-- FOOTER -->

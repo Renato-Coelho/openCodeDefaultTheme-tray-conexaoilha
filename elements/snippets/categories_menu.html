@@ -1,12 +1,11 @@
 {% set _width  =  100/categories|length %}
 
-<nav class="categoriesMenu outerContainer">
-	<div class="outerContent">
-		<ul class="menu">
-			{% for category in categories %}
-				{% set children = category.children %}
-				<li class="menuLi" style="width: {{_width}}%">
-					<a href="{{ category.link }}">{{ category.name }}</a>
+<nav class="categoriesMenu outerContent">
+	<ul class="menu">
+		{% for category in categories %}
+			<li class="menu-category" style="width: {{_width}}%">
+				<a href="{{ category.link }}">{{ category.name }}</a>
+					{% set children = category.children %}
 					{% if children %}
 						<ul class="menu-children">
 							{% for child in children %}
@@ -16,10 +15,9 @@
 							{% endfor%}
 						</ul>
 					{% endif %}
-				</li>
-			{% endfor %}
-		</ul>
-	</div>	
+			</li>
+		{% endfor %}
+	</ul>
 </nav>
 
 
