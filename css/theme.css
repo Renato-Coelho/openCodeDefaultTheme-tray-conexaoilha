@@ -1,3 +1,13 @@
+.price-separator, .menuCategories_showcaseHorizontalDivider {
+  background: white;
+  background: -moz-linear-gradient(left, white 0%, #5a7682 38%, #5a7682 63%, white 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, white), color-stop(38%, #5a7682), color-stop(63%, #5a7682), color-stop(100%, white));
+  background: -webkit-linear-gradient(left, white 0%, #5a7682 38%, #5a7682 63%, white 100%);
+  background: -o-linear-gradient(left, white 0%, #5a7682 38%, #5a7682 63%, white 100%);
+  background: -ms-linear-gradient(left, white 0%, #5a7682 38%, #5a7682 63%, white 100%);
+  background: linear-gradient(to right, white 0%, #5a7682 38%, #5a7682 63%, white 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 ); }
+
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url("../../fonts/glyphicons-halflings-regular.eot");
@@ -991,17 +1001,14 @@ li.menu-category:hover .menu-children {
     color: #9B5200; }
 
 .price-separator {
-  background: white;
-  background: -moz-linear-gradient(left, white 0%, #5a7682 38%, #5a7682 63%, white 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, white), color-stop(38%, #5a7682), color-stop(63%, #5a7682), color-stop(100%, white));
-  background: -webkit-linear-gradient(left, white 0%, #5a7682 38%, #5a7682 63%, white 100%);
-  background: -o-linear-gradient(left, white 0%, #5a7682 38%, #5a7682 63%, white 100%);
-  background: -ms-linear-gradient(left, white 0%, #5a7682 38%, #5a7682 63%, white 100%);
-  background: linear-gradient(to right, white 0%, #5a7682 38%, #5a7682 63%, white 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
   height: 2px;
   width: 60%;
   margin: 20px auto; }
+
+.menuCategories_showcaseHorizontalDivider {
+  height: 2px;
+  width: 60%;
+  margin: auto; }
 
 .price-separator-long {
   width: 100% !important;
