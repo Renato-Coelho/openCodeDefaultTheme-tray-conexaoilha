@@ -2,12 +2,9 @@
 
  	<div class="products_row">
   		{% for product in products %}
-    	<div class="singleProduct">
       		{% element 'snippets/product' {"product": product} %}
-    	</div>
     	<!-- {{ loop.index }} -->
       		{% if loop.index is divisible by(3) and products[loop.index] %}
-    	
     </div>
     <div class="products_row">
       		{% endif %}
@@ -15,4 +12,3 @@
 	</div>
 
 {% endif %}
-

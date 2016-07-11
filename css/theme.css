@@ -29,6 +29,9 @@
 .glyphicon-list:before {
   content: "\e056"; }
 
+.glyphicon-shopping-cart:before {
+  content: "\e116"; }
+
 /*
  * Tray Commerce Reset
  */
@@ -447,8 +450,7 @@ header {
         font-weight: bold; }
         header .customerContainer nav.customerStatus li a {
           color: #FFF;
-          text-decoration: none;
-          text-shadow: 1px 1px 1px #FF7300; }
+          text-decoration: none; }
           header .customerContainer nav.customerStatus li a:hover {
             border-bottom: #FF7300 solid 0.125em; }
     header .customerContainer .cart {
@@ -1237,27 +1239,68 @@ div.installment-price-right {
 .products_row ~ .products_row {
   margin-top: 40px; }
 
-.singleProduct {
+.wrapper-singleProductContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: white;
   max-width: 31%;
-  border: solid 1px #cccccc;
+  border: solid 0.07rem rgba(204, 204, 204, 0);
   border-radius: 10px;
   padding: 10px;
   color: #333;
-  text-align: center; }
+  text-align: center;
+  transition: border .2s linear; }
+  .wrapper-singleProductContent:hover {
+    border: solid .07rem #aaa; }
 
-.wrapper-singleProductContent {
-  display: flex; }
-
-.singleProduct-fullPrice {
-  color: #FF7300; }
-
-.product-price {
+.productPrice,
+.productPrice-discounted,
+.productPrice-twelveInstallmentsInfo {
   text-align: left; }
 
-.singleProduct-buyButton {
-  background-color: #ccc;
-  width: 100%;
+.productPrice {
+  margin-top: 20px; }
+
+.productPrice-discounted,
+.productPrice-twelveInstallmentsInfo,
+.product-name {
+  margin-top: 8px; }
+
+.productPrice-discounted {
+  font-size: 22px; }
+
+.productPrice-discountPrice {
+  font-weight: bold; }
+
+.productPrice-twelveInstallmentsInfo {
+  font-size: 14px; }
+
+.productPrice-full,
+.productPrice-discountPrice,
+.productPrice-installmentsPrice_twelve {
+  color: #FF7300; }
+
+.productPrice-fullInfo,
+.productPrice-discountInfo {
+  font-size: 12px;
   display: block; }
+
+.singleProduct-buyButton {
+  display: block;
+  width: 100%;
+  background-color: #04A85A;
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: .15ch;
+  padding: 10px;
+  margin-top: 30px;
+  border-radius: 3px;
+  font-size: 18px;
+  transition: background-color 0.2s linear; }
+  .singleProduct-buyButton:hover {
+    background-color: #008C4F; }
+  .singleProduct-buyButton .text {
+    margin-left: 8px; }
 
 /*# sourceMappingURL=theme.css.map */

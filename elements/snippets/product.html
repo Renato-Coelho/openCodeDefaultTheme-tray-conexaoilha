@@ -11,10 +11,29 @@
         <div class="product-name" itemprop="name">
             <h3>{{ product.name }}</h3>
         </div>
-        <div class="product-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+        <div class="productPrice" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
             {% set price = product.price_offer > 0 ? product.price_offer : product.price %}
-            <span itemprop="price">por: R$ <span class="singleProduct-fullPrice">{{ price|currency }}</span></span>
+            {% set discount_price = price * 0.95 %}
+            <span itemprop="price"><span class="productPrice-full">R$ {{ price|currency }}</span></span>
             <meta itemprop="priceCurrency" content="BRL">
+            <span class="productPrice-fullInfo">(1x no cartão / BB crediário)</span>
         </div>
-    </div> 
+        <div class="productPrice-discounted">
+            Por: <span class="productPrice-discountPrice">R$ {{ discount_price|number_format(2, ',', '.') }}</span>
+            <span class="productPrice-discountInfo">(Depósito / Boleto à vista)</span>
+        </div>
+        <div class="productPrice-twelveInstallmentsInfo">
+            {% set installmentPrice_twelveTimes = price *  0.128374027%}
+            ou em até 12x de <span class="productPrice-installmentsPrice_twelve">R$ {{ installmentPrice_twelveTimes|number_format(2, ',', '.') }}</span>
+        </div>
+    </div>
+
+    <div class="pLink">
+        <a class="singleProduct-buyButton" href="{{ product.link }}" itemprop="url">
+            <span class="glyphicon glyphicon-shopping-cart"></span>
+            <span class="text">
+                Comprar
+            </span>
+        </a>
+    </div>    
 </div>

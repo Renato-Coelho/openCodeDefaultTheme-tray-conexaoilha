@@ -12,37 +12,88 @@
 	margin-top: 40px;
 }
 
-.singleProduct {
-    background-color: white;
+
+.wrapper-singleProductContent {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: white;
     max-width: 31%;
-    border: solid 1px rgb(204, 204, 204);
+    border: solid .07rem rgba(204, 204, 204, 0);
     border-radius: 10px;
     padding: 10px;
     color: #333;
     text-align: center;
+	transition: border .2s linear;
+
+    &:hover {
+    	border: solid .07rem #aaa;
+    }
 }
 
-.wrapper-singleProductContent {
-	display: flex;
-}
-
-.singleProductContent {
-	
-}
-
-.singleProduct-fullPrice {
-	color: $orangeTone;
-}
-.product-price {
+.productPrice,
+.productPrice-discounted,
+.productPrice-twelveInstallmentsInfo {
 	text-align: left;
 }
 
-.singleProduct-buyButton {
-	background-color: #ccc;
-	width: 100%;
+.productPrice {
+	margin-top: 20px;
+}
+
+.productPrice-discounted,
+.productPrice-twelveInstallmentsInfo,
+.product-name {
+	margin-top: 8px;
+}
+
+.productPrice-discounted {
+	font-size: 22px;
+}
+
+.productPrice-discountPrice {
+	font-weight: bold;
+}
+
+.productPrice-twelveInstallmentsInfo {
+	font-size: 14px;
+}
+
+.productPrice-full,
+.productPrice-discountPrice,
+.productPrice-installmentsPrice_twelve {
+	color: $orangeTone;
+}
+
+.productPrice-fullInfo,
+.productPrice-discountInfo {
+	font-size: 12px;
 	display: block;
 }
 
+
+
+.singleProduct-buyButton {
+	display: block;
+	width: 100%;
+	background-color: #04A85A;
+	color: #FFF;
+	text-transform: uppercase;
+	letter-spacing: .15ch;
+	padding: 10px;
+	margin-top: 30px;
+	border-radius: 3px;
+	font-size: 18px;
+	transition: background-color 0.2s linear;
+
+	&:hover {
+		background-color: #008C4F;
+	}
+
+	.text {
+		margin-left: 8px;
+	}
+}
 
 
 
