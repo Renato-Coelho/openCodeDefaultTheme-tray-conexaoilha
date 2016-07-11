@@ -37,13 +37,6 @@ function addCart(dataProductId){
 	});
 };
 
-// $(".footer-link").hover(function() {
-// 	$(this).addClass("funcc");
-// 	console.log(this);
-// 	console.log("oi");
-// });
-
-
 $(".footer-link")
 	.on("mouseenter", function() {
 		$(this).addClass("funcc");
@@ -53,7 +46,6 @@ $(".footer-link")
 	})
 ;
 
-
 // ANIMATION ON INCLUDED_ITEMS
 $('.board ul li p').mouseenter(function() {
 	$(this).animate( {width: '+=20px'} );
@@ -62,22 +54,54 @@ $('.board ul li p').mouseleave(function() {
 	$(this).animate( {width: '-=20px'} );
 });
 
-// $('.board ul li p').click(function() {
-// 	$(this).toggle(1000);
-// });
 
 $('.singleProduct').fadeIn(5000);
 
 
 
-// MenuCategories // MOBILE
 
-// var menuButton = document.querySelector(".menuButton");
-// console.log(menuButton);
+$(document).ready(function() {
+	$('.menu-category').hover(
+		function(event) {
+			console.log("aaa");
+			var target = $(event.target);
+			if (target.is('.menu-category-link')) {
+				console.log("aaabbb");
+				$('li.menu-category ~ li.menu-category').addClass("removeLeftBorder");
+				$('li.menu-category ~ li.menu-category').addClass("hidePseudoElements");
+				console.log(this);
 
-// menuButton.onclick = function() {
-// 	//document.documentElement.classList.add("menuActive");
-// 	document.querySelector(".mbCategoriesContainer").classList.add("menuActive")
-// 	console.log(document.documentElement);
-// };
+			}
+		},
+		function(event) {
+			var target = $(event.target);
+			$('li.menu-category ~ li.menu-category').removeClass("removeLeftBorder");
+			$('li.menu-category ~ li.menu-category').removeClass("hidePseudoElements");
+		}
+	);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

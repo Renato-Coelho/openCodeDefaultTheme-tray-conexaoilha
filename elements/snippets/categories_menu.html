@@ -5,7 +5,7 @@
 			<ul class="menu">
 				{% for category in categories %}
 					<li class="menu-category" style="width: {{_width}}%">
-						<a href="{{ category.link }}">{{ category.name }}</a>
+						<a class="menu-category-link" href="{{ category.link }}">{{ category.name }}</a>
 							{% set children = category.children %}
 							{% if children %}
 								<ul class="menu-children">

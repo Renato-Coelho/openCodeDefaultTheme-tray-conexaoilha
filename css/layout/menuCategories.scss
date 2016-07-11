@@ -19,6 +19,7 @@
       text-align: center;
       float: left;
       line-height: 1.55em;
+      transition: background-color .3s linear;
 
       &:hover {
          background-color: $darkGreen;
@@ -110,5 +111,14 @@
     height: 12px;
     width: 100%;
     margin: auto;
+}
+
+.removeLeftBorder {
+   border-left: solid 2px #FFF !important;
+}
+
+.menu-category ~ .menu-category.hidePseudoElements:before,
+.menu-category ~ .menu-category.hidePseudoElements:after {
+   opacity: 0;
 }
 
