@@ -2,8 +2,8 @@
     put our own loading_image, instead of tray_loadingImage 
 -->
 
-<div itemscope itemtype="http://schema.org/Product">
-    
+<div class="wrapper-singleProductContent" itemscope itemtype="http://schema.org/Product">
+    <div class="singleProductContent">
         <div class="product-image">
             {% set loading = tray.paths.system_image ~ "/loading.gif" %}
             <img class="img-responsive lazy" data-original="{{ product.images[0].large }}" src="{{ loading }}" alt="{{ product.name }}">
@@ -13,9 +13,8 @@
         </div>
         <div class="product-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
             {% set price = product.price_offer > 0 ? product.price_offer : product.price %}
-            <span itemprop="price">{{ price|currency }}</span>
+            <span itemprop="price">por: R$ <span class="singleProduct-fullPrice">{{ price|currency }}</span></span>
             <meta itemprop="priceCurrency" content="BRL">
         </div>
-        <a class="singleProduct-buyButton" href="{{ product.link }}" itemprop="url">Comprar
-        </a>
+    </div> 
 </div>
