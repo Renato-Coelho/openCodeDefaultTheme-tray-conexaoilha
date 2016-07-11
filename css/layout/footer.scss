@@ -3,17 +3,22 @@
  */
 
 .footerTest {
-    height: 480px;
+    height: 460px;
     background-color: #555;
+    background: -webkit-linear-gradient(white 80%, $darkGreen); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white 80%, $darkGreen); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white 80%, $darkGreen); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white 80%, $darkGreen); /* Standard syntax (must be last) */
 }
 
 .footer-links {
-    color: #FFF;
+    color: $orangeTone;
+    font-weight: bold;
     display: flex;
     justify-content: space-around;
 
     li ~ li {
-        border-left: solid $orangeTone 3px;
+        border-left: solid $darkGreen 3px;
     }
 
     li {
@@ -30,6 +35,10 @@
 
     .footer-link {
         position: relative;
+
+        &:hover {
+            text-decoration: underline $orangeTone;
+        }
     }
 
     .footer-link:before {
@@ -49,18 +58,19 @@
     display: inline-block;
 }
 
-.footer-divider {
-    @include footerHorizontalDividerWithColor($orangeTone);    
+.footerHorizontalDivider {
+    margin-top: 10px !important;
+    display: block;
 }
 
 .footer-divider-white {
-    @include footerHorizontalDividerWithColor(#FFF);
-    height: 2px;
+    @include footerHorizontalDividerWithColor(#333);
+    height: 1px;
 }
 
 .footer-info-wrapper {
     margin-top: 25px;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     width: 100%;
     height: 300px;
     display: flex;
@@ -78,7 +88,7 @@
         p {
             color: #FFF;
             font-size: 18px;
-            background: #3f3f3f;
+            background: #999;
             border: none;
         }
     }
@@ -94,12 +104,8 @@
 
 .footer-verticalDivider {
     height: 100%;
-    width: 0.08em;
-    background: white; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#555, white 50%, white 50%, #555); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#555, white 50%, white 50%, #555); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#555, white 50%, white 50%, #555); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#555, white 50%, white 50%, #555); /* Standard syntax (must be last) */
+    width: 1px;
+    background: #333; /* For browsers that do not support gradients */    
 }
 
 // SEALS
@@ -112,8 +118,11 @@
     }
 }
 
-
-
+.copyright {
+    color: #FFF;
+    text-align: center;
+    font-size: 22px;
+}
 
 
 

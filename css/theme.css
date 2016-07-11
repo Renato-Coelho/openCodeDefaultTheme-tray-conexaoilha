@@ -32,6 +32,10 @@
 .glyphicon-shopping-cart:before {
   content: "\e116"; }
 
+.glyphicon-ok:before {
+  content: "\e013";
+  color: #3f535c; }
+
 /*
  * Tray Commerce Reset
  */
@@ -605,15 +609,24 @@ header {
  * Footer
  */
 .footerTest {
-  height: 480px;
-  background-color: #555; }
+  height: 460px;
+  background-color: #555;
+  background: -webkit-linear-gradient(white 80%, #546E7A);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(white 80%, #546E7A);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(white 80%, #546E7A);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(white 80%, #546E7A);
+  /* Standard syntax (must be last) */ }
 
 .footer-links {
-  color: #FFF;
+  color: #FF7300;
+  font-weight: bold;
   display: flex;
   justify-content: space-around; }
   .footer-links li ~ li {
-    border-left: solid #FF7300 3px; }
+    border-left: solid #546E7A 3px; }
   .footer-links li {
     display: inline-block;
     float: left; }
@@ -624,6 +637,8 @@ header {
       text-align: center; }
   .footer-links .footer-link {
     position: relative; }
+    .footer-links .footer-link:hover {
+      text-decoration: underline #FF7300; }
   .footer-links .footer-link:before {
     content: '';
     background-color: #FFF;
@@ -637,40 +652,21 @@ header {
 .funcc.footer-link:before {
   display: inline-block; }
 
-.footer-divider {
-  margin: 10px auto;
-  width: 100%;
-  height: 4px;
-  background: #FF7300;
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left, #555 #FF7300 30%, #FF7300 70%, #555);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, #555 #FF7300 30%, #FF7300 70%, #555);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, #555 #FF7300 30%, #FF7300 70%, #555);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, #555, #FF7300 30%, #FF7300 70%, #555);
-  /* Standard syntax (must be last) */ }
+.footerHorizontalDivider {
+  margin-top: 10px !important;
+  display: block; }
 
 .footer-divider-white {
   margin: 10px auto;
   width: 100%;
-  height: 4px;
-  background: #FFF;
+  height: 1px;
+  background: #333;
   /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left, #555 #FFF 30%, #FFF 70%, #555);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, #555 #FFF 30%, #FFF 70%, #555);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, #555 #FFF 30%, #FFF 70%, #555);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, #555, #FFF 30%, #FFF 70%, #555);
-  /* Standard syntax (must be last) */
-  height: 2px; }
+  height: 1px; }
 
 .footer-info-wrapper {
   margin-top: 25px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   width: 100%;
   height: 300px;
   display: flex;
@@ -686,22 +682,14 @@ header {
     .footer-info-wrapper .footer-info-section p {
       color: #FFF;
       font-size: 18px;
-      background: #3f3f3f;
+      background: #999;
       border: none; }
 
 .footer-verticalDivider {
   height: 100%;
-  width: 0.08em;
-  background: white;
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#555, white 50%, white 50%, #555);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#555, white 50%, white 50%, #555);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#555, white 50%, white 50%, #555);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#555, white 50%, white 50%, #555);
-  /* Standard syntax (must be last) */ }
+  width: 1px;
+  background: #333;
+  /* For browsers that do not support gradients */ }
 
 .seal-ebit {
   margin-top: 20px; }
@@ -709,6 +697,11 @@ header {
     width: 100px !important;
     height: 100px !important;
     display: inline-block; }
+
+.copyright {
+  color: #FFF;
+  text-align: center;
+  font-size: 22px; }
 
 /**
  * Address
@@ -752,6 +745,7 @@ header {
     width: 100%;
     height: 100%;
     font-size: 20px;
+    letter-spacing: 0.1ch;
     font-weight: bold;
     background-color: transparent;
     color: #FF7300;
@@ -832,7 +826,7 @@ header {
 
 .news {
   height: 54px;
-  background-color: #FF7300;
+  background-color: #546E7A;
   padding: 8px;
   position: relative; }
   .news:before {
@@ -865,7 +859,6 @@ header {
     float: right;
     margin-right: 10px;
     text-align: center;
-    color: green;
     transition: box-shadow 0.25s linear;
     min-width: 300px;
     font-size: 16px; }
