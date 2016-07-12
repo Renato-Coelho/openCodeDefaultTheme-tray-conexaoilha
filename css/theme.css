@@ -729,6 +729,11 @@ header {
     .categoriesMenu {
       display: none; } }
 
+li.menu-category:hover .menu-children {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.3s ease-in-out; }
+
 .menu li.menu-category {
   display: inline-block;
   position: relative;
@@ -780,11 +785,11 @@ header {
   opacity: 0;
   width: 100%;
   position: absolute;
-  top: 34px;
+  top: 40px;
   left: 0;
   z-index: 9999;
   overflow: auto;
-  background-color: #FF7300;
+  background-color: #546E7A;
   font-size: 12px;
   padding: 16px;
   border-bottom-left-radius: 4px;
@@ -794,13 +799,14 @@ header {
     display: block;
     float: none; }
   .menu-children a {
-    border: solid #FFF 1px;
     border-radius: 4px;
     text-shadow: none;
-    font-size: 14px;
-    color: #FFF;
-    margin-bottom: 6px;
-    background-color: #eb6a00; }
+    font-size: 14px !important;
+    color: #FF7300 !important;
+    margin-bottom: 10px;
+    background-color: #FFF !important; }
+    .menu-children a:hover {
+      box-shadow: 0px 0px 2px 1px #FF7300 inset; }
 
 .menuCategories_showcaseHorizontalDivider {
   height: 12px;

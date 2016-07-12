@@ -63,12 +63,13 @@ $('.singleProduct').fadeIn(5000);
 $(document).ready(function() {
 	$('.menu-category').hover(
 		function(event) {
-			console.log("aaa");
+			
 			var target = $(event.target);
 			if (target.is('.menu-category-link')) {
 				console.log("aaabbb");
 				$('li.menu-category ~ li.menu-category').addClass("removeLeftBorder");
 				$('li.menu-category ~ li.menu-category').addClass("hidePseudoElements");
+				$('.menu-children').slideDown(150);
 				console.log(this);
 
 			}
@@ -77,6 +78,7 @@ $(document).ready(function() {
 			var target = $(event.target);
 			$('li.menu-category ~ li.menu-category').removeClass("removeLeftBorder");
 			$('li.menu-category ~ li.menu-category').removeClass("hidePseudoElements");
+			$('.menu-children').slideUp(150);
 		}
 	);
 });
