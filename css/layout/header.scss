@@ -17,14 +17,11 @@
   }
 }
 
-
-
-
 header {
   height: 140px;
   padding: .5em;
   background-color: $darkGreen;
-  border-top: $orangeTone solid .064em;
+  border-top: $orangeTone solid 0.08em;
 
   @media (max-width: 767px) {
     height: 60px;
