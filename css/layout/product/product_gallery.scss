@@ -4,8 +4,8 @@
 
 #colFotos {
 	background: white;
-	border: solid $darkGreen 3px;
-	border-radius: 50px;
+	border: solid $darkGreen 1px;
+	border-radius: 10px;
 
 	#add {
 		.imgLinks {
@@ -23,15 +23,12 @@
 
 	#foto_a {
 		padding: 10px 0;
-		border-top: 3px #FF7300 solid;
+		border-top: 1px $darkGreen solid;
 		margin: 10px 0 0;
 		padding-top: 10px;
-		background: rgba(137, 154, 169, 0.29);
-		border-bottom-left-radius: 40px;
-		border-bottom-right-radius: 40px;
 		img {
-			border: 2px solid rgb(255, 115, 0);
-			border-radius: 15px;
+			border: 1px solid $darkGreen;
+			border-radius: 5px;
 		}
 	}
 }

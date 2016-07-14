@@ -1,26 +1,31 @@
 .breadcrumb {
-	background: #555;
+	margin-top: 6px;
 	width: 100%;
-	padding: 10px;
-  border-left: solid 2px white;
-  border-right: solid 2px white;
+	padding: 4px;
+  	border-left: solid 2px white;
+  	border-right: solid 2px white;
 
 
 	.breadcrumb-item {
 		color: $orangeTone;
-		font-weight: bold;
+
+		a {
+			text-decoration: underline;
+		}
 		
 		&:hover {
 			border-bottom: solid #FFF 1px;
 		}
+
 	}
 
 	.icon-breadcrumb {
-		color: white;
+		color: #444;
 		padding: 0 4px;
 	}
 
 	.breadcrumb-item-current {
-		color: #FFF;
+		color: darken($darkGreen, 7);
+		
 	}
 }

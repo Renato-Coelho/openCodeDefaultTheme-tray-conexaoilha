@@ -23,6 +23,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.glyphicon-chevron-right:before {
+  content: "\e080"; }
+
 .glyphicon-search:before {
   content: "\e003"; }
 
@@ -929,42 +932,40 @@ li.menu-category ~ li.menu-category {
       font-size: 0.5em; } }
 
 .breadcrumb {
-  background: #555;
+  margin-top: 6px;
   width: 100%;
-  padding: 10px;
+  padding: 4px;
   border-left: solid 2px white;
   border-right: solid 2px white; }
   .breadcrumb .breadcrumb-item {
-    color: #FF7300;
-    font-weight: bold; }
+    color: #FF7300; }
+    .breadcrumb .breadcrumb-item a {
+      text-decoration: underline; }
     .breadcrumb .breadcrumb-item:hover {
       border-bottom: solid #FFF 1px; }
   .breadcrumb .icon-breadcrumb {
-    color: white;
+    color: #444;
     padding: 0 4px; }
   .breadcrumb .breadcrumb-item-current {
-    color: #FFF; }
+    color: #455b65; }
 
 .product-title {
-  color: white;
-  background: RGBA(84, 110, 122, 0.5);
+  color: #3c3c3c;
   font-size: 150%;
   text-align: center;
-  padding: 10px;
+  margin: 16px auto;
   border: solid white 2px;
   border-top: solid 0.04em #fff; }
 
 .productContainer .productGallery {
   width: 50%;
   float: left;
-  border-radius: 16px;
-  margin-top: 10px; }
+  border-radius: 16px; }
 .productContainer .productForm {
   width: calc(50% - 10px);
   float: right;
-  border: solid #546E7A 3px;
-  border-radius: 50px;
-  margin-top: 10px;
+  border: solid #546E7A 1px;
+  border-radius: 10px;
   padding: 24px;
   background-color: #FFF; }
   .productContainer .productForm #product-form-box {
@@ -984,7 +985,7 @@ li.menu-category ~ li.menu-category {
       padding: 3px 6px;
       text-align: center;
       font-weight: bold;
-      border: solid #FF7300 2px;
+      border: solid #FF7300 1px;
       border-radius: 5px; }
   .productContainer .productForm #button-buy {
     background-image: url(../img/comprar-2.svg);
@@ -1003,7 +1004,7 @@ li.menu-category ~ li.menu-category {
   color: #FF7300;
   font-size: 36px; }
   .productForm .cashPrice .cashPrice-text {
-    color: #9B5200;
+    color: #444;
     font-size: 16px; }
   .productForm .cashPrice .cashPrice-descriptive {
     font-size: 26px; }
@@ -1014,7 +1015,7 @@ li.menu-category ~ li.menu-category {
     font-size: 16px; }
   .productForm .rawPrice .rawPrice-text {
     font-size: 14px;
-    color: #9B5200; }
+    color: #444; }
 
 .price-separator {
   height: 2px;
@@ -1115,8 +1116,8 @@ div.installment-price-right {
 
 #colFotos {
   background: white;
-  border: solid #546E7A 3px;
-  border-radius: 50px; }
+  border: solid #546E7A 1px;
+  border-radius: 10px; }
   #colFotos #add .imgLinks {
     display: none; }
   #colFotos #foto_p {
@@ -1125,15 +1126,28 @@ div.installment-price-right {
     display: none; }
   #colFotos #foto_a {
     padding: 10px 0;
-    border-top: 3px #FF7300 solid;
+    border-top: 1px #546E7A solid;
     margin: 10px 0 0;
-    padding-top: 10px;
-    background: rgba(137, 154, 169, 0.29);
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px; }
+    padding-top: 10px; }
     #colFotos #foto_a img {
-      border: 2px solid #ff7300;
-      border-radius: 15px; }
+      border: 1px solid #546E7A;
+      border-radius: 5px; }
+
+.productTabs {
+  margin-top: 30px; }
+
+.productTab {
+  float: left;
+  background: #CCC; }
+  .productTab a {
+    display: block;
+    text-align: center;
+    padding: 12px 0; }
+
+.productTab-content {
+  width: 100%;
+  padding: 20px;
+  background: red; }
 
 .showcase {
   float: left;

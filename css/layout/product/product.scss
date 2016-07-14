@@ -1,29 +1,27 @@
 
 
 .product-title {
-    color: white;
-    background: RGBA(84, 110, 122, 0.5);
+    color: #3c3c3c;
     font-size: 150%;
     text-align: center;
-    padding: 10px;
+    margin: 16px auto;
     border: solid white 2px;
     border-top: solid 0.04em #fff;
 }
 
 .productContainer {
+
     .productGallery {
         width: 50%;
         float: left;
         border-radius: 16px;
-        margin-top: 10px;
     }
 
     .productForm {
         width: calc(50% - 10px);
         float: right;
-        border: solid $darkGreen 3px;
-        border-radius: 50px;
-        margin-top: 10px;
+        border: solid $darkGreen 1px;
+        border-radius: 10px;
         padding: 24px;
         background-color: #FFF;
         
@@ -47,7 +45,7 @@
                 padding: 3px 6px;
                 text-align: center;
                 font-weight: bold;
-                border: solid $orangeTone 2px;
+                border: solid $orangeTone 1px;
                 border-radius: 5px;
             }
         }
@@ -75,7 +73,7 @@
         font-size: 36px;
 
         .cashPrice-text {
-            color: #9B5200;
+            color: #444;
             font-size: 16px;
         }
 
@@ -96,7 +94,7 @@
 
         .rawPrice-text {
             font-size: 14px;
-            color: #9B5200;
+            color: #444;
         }
     }
 }

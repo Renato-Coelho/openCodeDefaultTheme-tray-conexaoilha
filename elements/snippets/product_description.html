@@ -1,17 +1,22 @@
 
 
 
-<ul class="productTab">
+<ul class="productTabs">
    {% for key, tab in productTabs %}
+      {% set tabsLength = productTabs|length %}
+      {% set _tabWidth = 100 / tabsLength %}
+
       {% if tab.container_id %}
-         <li id="{{ tab.id }}" class="productTabs">
+         <li  style="width: {{_tabWidth}}%" id="{{ tab.id }}" class="productTab">
             <a href="#" data-tab-container-id="{{ tab.container_id }}" data-tab-url="{{ tab.url }}">{{ tab.description }}</a>
          </li>
       {% endif %}
    {% endfor %}
 </ul>
 
-<div id="descricao">
+<div class="clear"></div>
+
+<!-- <div id="descricao">
    <div class="productTab-content">
       {{ product.description ? product.description : product.description_small }}
    </div>
@@ -38,7 +43,7 @@
   <div class="productTab-content">
       {% element 'product/properties' %}
   </div>
-</div>
+</div> -->
 
 
 

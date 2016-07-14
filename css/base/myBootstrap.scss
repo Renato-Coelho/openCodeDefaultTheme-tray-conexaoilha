@@ -17,6 +17,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.glyphicon-chevron-right:before {
+  content: "\e080";
+}
+
 .glyphicon-search:before {
   content: "\e003";
 }
@@ -33,3 +37,6 @@
   content: "\e013";
   color: darken($darkGreen, 10);
 }
+
+
+
