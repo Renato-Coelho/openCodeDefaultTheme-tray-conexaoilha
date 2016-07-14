@@ -8,42 +8,51 @@
   
    <div class="productContainer">
       
-      <!-- GALLERY -->    
-      <div class="productGallery">
-          <div id="visualBlock" class="product-gallery">
-              {{ productHelper.gallery() }}
-          </div>
-      </div>
-
-      <!-- FORM -->        
-      <form class="productForm" id="form_comprar" method="post" data-app="product.buy-form" action="{{ links.cart_add ~ product.id }}">
-          
-         <div class="product-price-info">
-            {% if product.show_price %}
-               <div class="cashPrice">
-                  {% set prt = product.price %}
-                  R$ {{ prt|number_format(2, ',', '.') }} <span class="cashPrice-descriptive">à vista</span>
-                  <h5 class="cashPrice-text">(Boleto ou Depósito)  ->  15% de desconto!</h5>
-               </div>
-
-               <h5 class="price-separator"></h5>
-               <div class="rawPrice">
-                  R$ {{ product.price|number_format(2, ',', '.') }} <span class="rawPrice-descriptive">no cartão</span>
-                  {% set installmentPrice = product.price * 0.1 %}
-                  <h5 class="rawPrice-text">(Em 10x sem juros de R$ {{ installmentPrice|number_format(2, ',', '.') }})</h5>
-               </div>
-            {% endif %}
+      <div class="wrapper-formAndGallery">
+         <!-- GALLERY -->    
+         <div class="productGallery">
+             <div id="visualBlock" class="product-gallery">
+                 {{ productHelper.gallery() }}
+             </div>
          </div>
 
-         {{ productHelper.form() }}
-         <h5 class="price-separator price-separator-long"></h5>
-         <h5 class="deliveryTime-text">Calcule o frete e o prazo de entrega:</h5>
-         {{ productHelper.shipping() }}
-         <h5 class="price-separator price-separator-long"></h5>
+         <!-- FORM -->        
+         <form class="productForm" id="form_comprar" method="post" data-app="product.buy-form" action="{{ links.cart_add ~ product.id }}">
+             
+            <div class="product-price-info">
+               {% if product.show_price %}
+                  <div class="cashPrice">
+                     {% set prt = product.price %}
+                     R$ {{ prt|number_format(2, ',', '.') }} <span class="cashPrice-descriptive">à vista</span>
+                     <h5 class="cashPrice-text">(Boleto ou Depósito) <span class="dep">5% de desconto!</span></h5>
+                  </div>
+
+                  <h5 class="price-separator"></h5>
+                  <div class="rawPrice">
+                     R$ {{ product.price|number_format(2, ',', '.') }} <span class="rawPrice-descriptive">no cartão</span>
+                     {% set installmentPrice = product.price * 0.1 %}
+                     <h5 class="rawPrice-text">(Em 10x sem juros de R$ {{ installmentPrice|number_format(2, ',', '.') }})</h5>
+                  </div>
+               {% endif %}
+            </div>
+
+            {{ productHelper.form() }}
+            <h5 class="price-separator price-separator-long"></h5>
+            <h5 class="deliveryTime-text">Calcule o frete e o prazo de entrega:</h5>
+            {{ productHelper.shipping() }}
+            <h5 class="price-separator price-separator-long"></h5>
+            <a href="{{ links.home }}">
+            <img class="buy_more_button" src="{{ asset('img/buy_more_button.png') }}" alt="">
+         </a>
+
+         </form>
+
+      </div>
+
+      <div class="installmentsInfoSection">
+       <!-- INSTALLMENTS TABLE_LIKE layout -->
          <h1 class="installment-title">PARCELAMENTO:</h1>
          <img src="{{ asset('img/credit_card_list.png') }}" alt="" class="installment-img-list">
-
-           <!-- INSTALLMENTS TABLE_LIKE layout -->
          <div class="installment-price-table">
               
             <div class="installment-price-left">
@@ -65,11 +74,7 @@
          </div>
 
          <h5 class="price-separator price-separator-long"></h5>
-         <a href="{{ links.home }}">
-            <img class="buy_more_button" src="{{ asset('img/buy_more_button.png') }}" alt="">
-         </a>
-
-      </form>
+      </div>
    </div>
 
 </div>

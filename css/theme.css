@@ -958,12 +958,13 @@ li.menu-category ~ li.menu-category {
   border-top: solid 0.04em #fff; }
 
 .productContainer .productGallery {
-  width: 50%;
+  width: 48.5%;
   float: left;
-  border-radius: 16px; }
+  border: solid #546E7A 1px;
+  border-radius: 10px; }
 .productContainer .productForm {
-  width: calc(50% - 10px);
-  float: right;
+  width: 49%;
+  float: left;
   border: solid #546E7A 1px;
   border-radius: 10px;
   padding: 24px;
@@ -1006,13 +1007,20 @@ li.menu-category ~ li.menu-category {
   .productForm .cashPrice .cashPrice-text {
     color: #444;
     font-size: 16px; }
+    .productForm .cashPrice .cashPrice-text .dep {
+      background-color: #ededed;
+      color: #000;
+      font-weight: bold;
+      padding: 4px; }
   .productForm .cashPrice .cashPrice-descriptive {
-    font-size: 26px; }
+    font-size: 26px;
+    color: #546E7A; }
 .productForm .rawPrice {
   font-size: 26px;
-  color: #546E7A; }
+  color: #FF7300; }
   .productForm .rawPrice .rawPrice-descriptive {
-    font-size: 16px; }
+    font-size: 16px;
+    color: #546E7A; }
   .productForm .rawPrice .rawPrice-text {
     font-size: 14px;
     color: #444; }
@@ -1069,6 +1077,13 @@ li.menu-category ~ li.menu-category {
   text-indent: -9999px;
   overflow: hidden; }
 
+.wrapper-formAndGallery {
+  display: flex;
+  justify-content: space-between; }
+
+.installmentsInfoSection {
+  clear: both; }
+
 .installment-title {
   color: #FF7300;
   text-align: center;
@@ -1115,9 +1130,8 @@ div.installment-price-right {
   display: none; }
 
 #colFotos {
-  background: white;
-  border: solid #546E7A 1px;
-  border-radius: 10px; }
+  background: none;
+  border: none !important; }
   #colFotos #add .imgLinks {
     display: none; }
   #colFotos #foto_p {
@@ -1125,13 +1139,16 @@ div.installment-price-right {
   #colFotos .produto-zoom-detalhe {
     display: none; }
   #colFotos #foto_a {
-    padding: 10px 0;
+    padding: 0 10px;
     border-top: 1px #546E7A solid;
-    margin: 10px 0 0;
-    padding-top: 10px; }
+    margin: 40px 20px;
+    padding-top: 20px; }
     #colFotos #foto_a img {
       border: 1px solid #546E7A;
       border-radius: 5px; }
+
+.jcarousel-container-horizontal {
+  padding: 0px !important; }
 
 .productTabs {
   margin-top: 30px; }

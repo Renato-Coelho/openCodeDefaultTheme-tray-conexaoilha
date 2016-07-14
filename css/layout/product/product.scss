@@ -1,5 +1,4 @@
 
-
 .product-title {
     color: #3c3c3c;
     font-size: 150%;
@@ -12,14 +11,15 @@
 .productContainer {
 
     .productGallery {
-        width: 50%;
+        width: 48.5%;
         float: left;
-        border-radius: 16px;
+        border: solid $darkGreen 1px;
+        border-radius: 10px;
     }
 
     .productForm {
-        width: calc(50% - 10px);
-        float: right;
+        width: 49%;
+        float: left;
         border: solid $darkGreen 1px;
         border-radius: 10px;
         padding: 24px;
@@ -75,10 +75,18 @@
         .cashPrice-text {
             color: #444;
             font-size: 16px;
+
+            .dep {
+                background-color: #ededed;
+                color: #000;
+                font-weight: bold;
+                padding: 4px;
+            }
         }
 
         .cashPrice-descriptive {
             font-size: 26px;
+            color: $darkGreen;
         }
     }
 
@@ -86,10 +94,11 @@
 
     .rawPrice {
         font-size: 26px;
-        color: $darkGreen;
+        color: $orangeTone;
 
         .rawPrice-descriptive {
             font-size: 16px;
+            color: $darkGreen;
         }
 
         .rawPrice-text {
@@ -163,6 +172,15 @@
     background-repeat: no-repeat;
     text-indent: -9999px;
     overflow: hidden;
+}
+
+
+.wrapper-formAndGallery {
+    display: flex;
+    justify-content: space-between;
+}
+.installmentsInfoSection {
+    clear: both;
 }
 
 .installment-title {

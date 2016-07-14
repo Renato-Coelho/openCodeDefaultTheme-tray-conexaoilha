@@ -3,9 +3,8 @@
 }
 
 #colFotos {
-	background: white;
-	border: solid $darkGreen 1px;
-	border-radius: 10px;
+	background: none;
+	border: none !important;
 
 	#add {
 		.imgLinks {
@@ -22,13 +21,17 @@
 	}
 
 	#foto_a {
-		padding: 10px 0;
+		padding: 0 10px;
 		border-top: 1px $darkGreen solid;
-		margin: 10px 0 0;
-		padding-top: 10px;
+		margin: 40px 20px;
+		padding-top: 20px;
 		img {
 			border: 1px solid $darkGreen;
 			border-radius: 5px;
 		}
 	}
+}
+
+.jcarousel-container-horizontal {
+	padding: 0px !important;
 }
