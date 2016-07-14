@@ -1,18 +1,13 @@
 <div id="product-container" class="produto-wrapper" itemscope itemtype="http://schema.org/Product">
-    
-  <span id="span_erro_carrinho"></span>
-  <div id="loading-product-container">
-      <img src='{{ tray.paths.system_image }}/big-loading.svg' />
-  </div>
   
-  <!-- BREADCRUMB-->
-  {% element 'snippets/breadcrumb' %}
+   <!-- BREADCRUMB-->
+   {% element 'snippets/breadcrumb' %}
 
-  <!-- PRODUCT_NAME-->    
-  <h3 class="product-title">{{ product.name }}</h3>
+   <!-- PRODUCT_NAME-->    
+   <h3 class="product-title">{{ product.name }}</h3>
   
-  <div class="productContainer">
-    
+   <div class="productContainer">
+      
       <!-- GALLERY -->    
       <div class="productGallery">
           <div id="visualBlock" class="product-gallery">
@@ -24,75 +19,61 @@
       <!-- FORM -->        
       <form class="productForm" id="form_comprar" method="post" data-app="product.buy-form" action="{{ links.cart_add ~ product.id }}">
           
-        <div class="product-price-info">
-          {% if product.show_price %}
-            <div class="cashPrice">
-              {% set prt = product.price %}
-              R$ {{ prt|number_format(2, ',', '.') }} <span class="cashPrice-descriptive">à vista</span>
-              <h5 class="cashPrice-text">(Boleto ou Depósito)  ->  15% de desconto!</h5>
-            </div>
+         <div class="product-price-info">
+            {% if product.show_price %}
+               <div class="cashPrice">
+                  {% set prt = product.price %}
+                  R$ {{ prt|number_format(2, ',', '.') }} <span class="cashPrice-descriptive">à vista</span>
+                  <h5 class="cashPrice-text">(Boleto ou Depósito)  ->  15% de desconto!</h5>
+               </div>
 
-            <h5 class="price-separator"></h5>
-            <div class="rawPrice">
-              R$ {{ product.price|number_format(2, ',', '.') }} <span class="rawPrice-descriptive">no cartão</span>
-              {% set installmentPrice = product.price * 0.1 %}
-              <h5 class="rawPrice-text">(Em 10x sem juros de R$ {{ installmentPrice|number_format(2, ',', '.') }})</h5>
-            </div>
-          {% endif %}
-        </div>
-   
-        <!-- {% element 'snippets/addCart' {"product": product} %} -->
-   
-   
-   
-           {{ productHelper.form() }}
-            
-           <h5 class="price-separator price-separator-long"></h5>
-           <h5 class="deliveryTime-text">Calcule o frete e o prazo de entrega:</h5>
+               <h5 class="price-separator"></h5>
+               <div class="rawPrice">
+                  R$ {{ product.price|number_format(2, ',', '.') }} <span class="rawPrice-descriptive">no cartão</span>
+                  {% set installmentPrice = product.price * 0.1 %}
+                  <h5 class="rawPrice-text">(Em 10x sem juros de R$ {{ installmentPrice|number_format(2, ',', '.') }})</h5>
+               </div>
+            {% endif %}
+         </div>
 
-           {{ productHelper.shipping() }}
-
-           <h5 class="price-separator price-separator-long"></h5>
-
-           <h1 class="installment-title">PARCELAMENTO:</h1>
-           <img src="{{ asset('img/credit_card_list.png') }}" alt="" class="installment-img-list">
+         {{ productHelper.form() }}
+         <h5 class="price-separator price-separator-long"></h5>
+         <h5 class="deliveryTime-text">Calcule o frete e o prazo de entrega:</h5>
+         {{ productHelper.shipping() }}
+         <h5 class="price-separator price-separator-long"></h5>
+         <h1 class="installment-title">PARCELAMENTO:</h1>
+         <img src="{{ asset('img/credit_card_list.png') }}" alt="" class="installment-img-list">
 
            <!-- INSTALLMENTS TABLE_LIKE layout -->
-           <div class="installment-price-table">
+         <div class="installment-price-table">
               
-              <div class="installment-price-left">
-                <h2 class="installment-price-item">1x ----- R$ {{ product.price|number_format(2, ',', '.') }}</h2>
-                <h2 class="installment-price-item">2x ----- R$ {{ (product.price / 2)|number_format(2, ',', '.') }}</h2>
-                <h2 class="installment-price-item">3x ----- R$ {{ (product.price / 3)|number_format(2, ',', '.') }}</h2>
-                <h2 class="installment-price-item">4x ----- R$ {{ (product.price / 4)|number_format(2, ',', '.') }}</h2>
-                <h2 class="installment-price-item">5x ----- R$ {{ (product.price / 5)|number_format(2, ',', '.') }}</h2>
+            <div class="installment-price-left">
+               <h2 class="installment-price-item">1x ----- R$ {{ product.price|number_format(2, ',', '.') }}</h2>
+               <h2 class="installment-price-item">2x ----- R$ {{ (product.price / 2)|number_format(2, ',', '.') }}</h2>
+               <h2 class="installment-price-item">3x ----- R$ {{ (product.price / 3)|number_format(2, ',', '.') }}</h2>
+               <h2 class="installment-price-item">4x ----- R$ {{ (product.price / 4)|number_format(2, ',', '.') }}</h2>
+               <h2 class="installment-price-item">5x ----- R$ {{ (product.price / 5)|number_format(2, ',', '.') }}</h2>
               </div>
 
-              <div class="installment-price-right">
-                <h2 class="installment-price-item">6x ----- R$ {{ (product.price / 6)|number_format(2, ',', '.') }}</h2>
-                <h2 class="installment-price-item">7x ----- R$ {{ (product.price / 7)|number_format(2, ',', '.') }}</h2>
-                <h2 class="installment-price-item">8x ----- R$ {{ (product.price / 8)|number_format(2, ',', '.') }}</h2>
-                <h2 class="installment-price-item">9x ----- R$ {{ (product.price / 9)|number_format(2, ',', '.') }}</h2>
-                <h2 class="installment-price-item">10x  -----  R$ {{ (product.price / 10)|number_format(2, ',', '.') }}</h2>
-              </div>
+            <div class="installment-price-right">
+               <h2 class="installment-price-item">6x ----- R$ {{ (product.price / 6)|number_format(2, ',', '.') }}</h2>
+               <h2 class="installment-price-item">7x ----- R$ {{ (product.price / 7)|number_format(2, ',', '.') }}</h2>
+               <h2 class="installment-price-item">8x ----- R$ {{ (product.price / 8)|number_format(2, ',', '.') }}</h2>
+               <h2 class="installment-price-item">9x ----- R$ {{ (product.price / 9)|number_format(2, ',', '.') }}</h2>
+               <h2 class="installment-price-item">10x  -----  R$ {{ (product.price / 10)|number_format(2, ',', '.') }}</h2>
+            </div>
                 
-             
-           </div>
+         </div>
 
-           <h5 class="price-separator price-separator-long"></h5>
-           <a href="{{ links.home }}">
-             <img class="buy_more_button" src="{{ asset('img/buy_more_button.png') }}" alt="">
-           </a>
-           
+         <h5 class="price-separator price-separator-long"></h5>
+         <a href="{{ links.home }}">
+            <img class="buy_more_button" src="{{ asset('img/buy_more_button.png') }}" alt="">
+         </a>
 
       </form>
-
-  </div>
+   </div>
 
 </div>
 
+<div class="clear"></div>
 {% element 'snippets/product_description' %}
-
-
-
-<!--  -->
