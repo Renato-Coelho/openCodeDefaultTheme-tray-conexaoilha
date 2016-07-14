@@ -1,65 +1,61 @@
-
-<div id="ProdBlock">
 <!-- IMPLEMENTAR O LOADING custom-ConexaoIlha!!! !!! -->
 <!-- IMPLEMENTAR O LOADING !!! !!! -->
 <!-- IMPLEMENTAR O LOADING !!! !!! -->
     <!-- <div id="loading-tab-container">
         <img src='{{ tray.paths.system_image }}/big-loading.svg' />
     </div> -->
-    <a name="formaPagto"></a>
-    
+<div id="ProdBlock">
 
-  
-    <div class="tabs-wrapper row">
-        <ul class="tabs">
-            {% for key, tab in productTabs %}
-              {% if tab.container_id %}
-              <li id="{{ tab.id }}" class="tab">
-                <a href="#" data-tab-container-id="{{ tab.container_id }}" data-tab-url="{{ tab.url }}">{{ tab.description }}</a>
-              </li>
-              {% endif %}
-            {% endfor %}
-        </ul>
-    </div>
+   <!-- <a name="formaPagto"></a> -->
 
-
+   <div class="tabs-wrapper row">
+     <ul class="tabs">
+         {% for key, tab in productTabs %}
+            {% if tab.container_id %}
+               <li id="{{ tab.id }}" class="tab">
+                  <a href="#" data-tab-container-id="{{ tab.container_id }}" data-tab-url="{{ tab.url }}">{{ tab.description }}</a>
+               </li>
+            {% endif %}
+         {% endfor %}
+     </ul>
+   </div>
 
    <div id="descricao" class="prodBox">
-        <div class="board">
-            <div class="">
-                {{ product.description ? product.description : product.description_small }}
-            </div>
-        </div>
-    </div>
+     <div class="board">
+         <div class="">
+             {{ product.description ? product.description : product.description_small }}
+         </div>
+     </div>
+   </div>
 
-    <div id="itensInclusos" class="prodBox">
-        <div class="board">
-            {% set items = product.included_items|split(', ') %}
-            <ul>
-                {% for item in items %}
-                    <li><p>{{ item|trim }}</p></li>
-                {% endfor %}
-            </ul>
-        </div>
-    </div>
+   <div id="itensInclusos" class="prodBox">
+     <div class="board">
+         {% set items = product.included_items|split(', ') %}
+         <ul>
+             {% for item in items %}
+                 <li><p>{{ item|trim }}</p></li>
+             {% endfor %}
+         </ul>
+     </div>
+   </div>
 
-    <div id="coments" class="prodBox">
-        <div class="board">
-            {% element 'product/comments' %}
-        </div>
-    </div>
+   <div id="coments" class="prodBox">
+     <div class="board">
+         {% element 'product/comments' %}
+     </div>
+   </div>
 
-    <div id="caracteristicas" class="prodBox">
-        <div class='board'>
-            {% element 'product/properties' %}
-        </div>
-    </div>
+   <div id="caracteristicas" class="prodBox">
+     <div class='board'>
+         {% element 'product/properties' %}
+     </div>
+   </div>
 
-    {{ productTabs.custom.content }}
-    {{ productTabs.downloads.content }}
+   {{ productTabs.custom.content }}
+   {{ productTabs.downloads.content }}
 
-    <div id="garantia" class="prodBox">
-        <img class="loader" src="{{ tray.paths.system_image }}/big-loading.svg" style="display:none;" />
-    </div>
-    <div data-app="product.payment-methods" id="formasPagto" class="prodBox" style="display:none;" ></div>
+   <div id="garantia" class="prodBox">
+     <img class="loader" src="{{ tray.paths.system_image }}/big-loading.svg" style="display:none;" />
+   </div>
+   <div data-app="product.payment-methods" id="formasPagto" class="prodBox" style="display:none;"></div>
 </div>
