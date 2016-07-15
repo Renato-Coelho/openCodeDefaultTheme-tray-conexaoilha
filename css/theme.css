@@ -1,4 +1,4 @@
-.menuCategories_showcaseHorizontalDivider, .price-separator {
+.menuCategories_showcaseHorizontalDivider, .price-separator, .separator-breadcrumb {
   background: white;
   background: -moz-linear-gradient(left, white 0%, #5a7682 38%, #5a7682 63%, white 100%);
   background: -webkit-gradient(left top, right top, color-stop(0%, white), color-stop(38%, #5a7682), color-stop(63%, #5a7682), color-stop(100%, white));
@@ -1036,6 +1036,19 @@ li.menu-category ~ li.menu-category {
 .price-separator-long {
   width: 100% !important;
   margin-bottom: 5px; }
+
+.separator-breadcrumb {
+  background: white;
+  background: -moz-linear-gradient(to right, rgba(90, 118, 130, 0.6) 8%, white 70%);
+  background: -webkit-gradient(to right, rgba(90, 118, 130, 0.6) 8%, white 70%);
+  background: -webkit-linear-gradient(to right, rgba(90, 118, 130, 0.6) 8%, white 70%);
+  background: -o-linear-gradient(to right, rgba(90, 118, 130, 0.6) 8%, white 70%);
+  background: -ms-linear-gradient(to right, rgba(90, 118, 130, 0.6) 8%, white 70%);
+  background: linear-gradient(to right, rgba(90, 118, 130, 0.6) 8%, white 70%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
+  height: 3px;
+  margin: 6px auto;
+  width: 100%; }
 
 .deliveryTime-text {
   text-align: center;

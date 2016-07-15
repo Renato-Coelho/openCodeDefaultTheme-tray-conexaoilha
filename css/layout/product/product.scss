@@ -119,6 +119,24 @@
     margin-bottom: 5px;
 }
 
+.separator-breadcrumb {
+   @extend %darkGreenHorizontalDividerBackground;
+
+   background: rgba(255,255,255,1);
+   background: -moz-linear-gradient(to right, rgba(90,118,130, .6) 8%, rgba(255,255,255,1) 70%);
+   background: -webkit-gradient(to right, rgba(90,118,130, .6) 8%, rgba(255,255,255,1) 70%);
+   background: -webkit-linear-gradient(to right, rgba(90,118,130, .6) 8%, rgba(255,255,255,1) 70%);
+   background: -o-linear-gradient(to right, rgba(90,118,130, .6) 8%, rgba(255,255,255,1) 70%);
+   background: -ms-linear-gradient(to right, rgba(90,118,130, .6) 8%, rgba(255,255,255,1) 70%);
+   background: linear-gradient(to right, rgba(90,118,130, .6) 8%, rgba(255,255,255,1) 70%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
+
+   height: 3px;
+   margin: 6px auto;
+   width: 100% ;
+}
+
+
 .deliveryTime-text {
     text-align: center;
     font-size: 16px;
