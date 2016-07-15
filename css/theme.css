@@ -942,10 +942,8 @@ li.menu-category ~ li.menu-category {
   border-right: solid 2px white; }
   .breadcrumb .breadcrumb-item {
     color: #FF7300; }
-    .breadcrumb .breadcrumb-item a {
-      text-decoration: underline; }
     .breadcrumb .breadcrumb-item:hover {
-      border-bottom: solid #FFF 1px; }
+      text-decoration: underline; }
   .breadcrumb .icon-breadcrumb {
     color: #444;
     padding: 0 4px; }
