@@ -2,50 +2,55 @@
     put our own loading_image, instead of tray_loadingImage 
 -->
 
-<div class="wrapper-singleProductContent" itemscope itemtype="http://schema.org/Product">
-    <div class="singleProductContent">
-         
-         <!-- IMAGE -->
-         <div class="product-image">
-            {% set loading = tray.paths.system_image ~ "/loading.gif" %}
-            <img class="img-responsive lazy" data-original="{{ product.images[0].large }}" src="{{ loading }}" alt="{{ product.name }}">
-         </div>
-
-         <!-- NAME -->
-         <div class="product-name" itemprop="name">
-            <h3>{{ product.name }}</h3>
-         </div>
-
-         <!-- PRICE -->
-     {% if product.show_price %}
-         <!-- price_full -->
-         <div class="productPrice" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-            {% set price = product.price_offer > 0 ? product.price_offer : product.price %}
-            {% set discount_price = price * 0.95 %}
-            <span itemprop="price"><span class="productPrice-full">R$ {{ price|currency }}</span></span>
-            <meta itemprop="priceCurrency" content="BRL">
-            <span class="productPrice-fullInfo">(1x no cartão / BB crediário)</span>
-         </div>
-         <!-- price_cash -->
-         <div class="productPrice-discounted">
-            Por: <span class="productPrice-discountPrice">R$ {{ discount_price|number_format(2, ',', '.') }}</span>
-            <span class="productPrice-discountInfo">(Depósito / Boleto à vista)</span>
-         </div>
-         <!-- price_installments (12x) -->
-         <div class="productPrice-twelveInstallmentsInfo">
-            {% set installmentPrice_twelveTimes = price *  0.128374027%}
-            ou em até 12x de <span class="productPrice-installmentsPrice_twelve">R$ {{ installmentPrice_twelveTimes|number_format(2, ',', '.') }}</span>
-         </div>
-     {% endif %}    
-    </div> <!-- endOf .singleProductContent -->
+<a  class="wrapper-singleProductLink" href="{{ product.link }}" itemprop="url">
    
-   <!-- BUY_BUTTON -->
-    <div class="pLink">
-        <a class="singleProduct-buyButton" href="{{ product.link }}" itemprop="url">
-            <span class="glyphicon glyphicon-shopping-cart"></span>
-            <span class="text">Comprar</span>
-        </a>
-    </div>    
+        <div class="wrapper-singleProductContent" itemscope itemtype="http://schema.org/Product">
+            <div class="singleProductContent">
+                 
+                 <!-- IMAGE -->
+                 <div class="product-image">
+                    {% set loading = tray.paths.system_image ~ "/loading.gif" %}
+                    <img class="img-responsive lazy" data-original="{{ product.images[0].large }}" src="{{ loading }}" alt="{{ product.name }}">
+                 </div>
 
-</div>
+                 <!-- NAME -->
+                 <div class="product-name" itemprop="name">
+                    <h3>{{ product.name }}</h3>
+                 </div>
 
+                 <!-- PRICE -->
+             {% if product.show_price %}
+                 <!-- price_full -->
+                 <div class="productPrice" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    {% set price = product.price_offer > 0 ? product.price_offer : product.price %}
+                    {% set discount_price = price * 0.95 %}
+                    <span itemprop="price"><span class="productPrice-full">R$ {{ price|currency }}</span></span>
+                    <meta itemprop="priceCurrency" content="BRL">
+                    <span class="productPrice-fullInfo">(1x no cartão / BB crediário)</span>
+                 </div>
+                 <!-- price_cash -->
+                 <div class="productPrice-discounted">
+                    Por: <span class="productPrice-discountPrice">R$ {{ discount_price|number_format(2, ',', '.') }}</span>
+                    <span class="productPrice-discountInfo">(Depósito / Boleto à vista)</span>
+                 </div>
+                 <!-- price_installments (12x) -->
+                 <div class="productPrice-twelveInstallmentsInfo">
+                    {% set installmentPrice_twelveTimes = price *  0.128374027%}
+                    ou em até 12x de <span class="productPrice-installmentsPrice_twelve">R$ {{ installmentPrice_twelveTimes|number_format(2, ',', '.') }}</span>
+                 </div>
+             {% endif %}    
+            </div> <!-- endOf .singleProductContent -->
+           
+           <!-- BUY_BUTTON -->
+            <div class="pLink">
+                <div class="singleProduct-buyButton">
+                    <span class="glyphicon glyphicon-shopping-cart"></span>
+                    <span class="text">Comprar</span>
+                </div>
+            </div>    
+
+        </div>
+
+</a>
+    <!-- div to make flexbox to work out properly -->
+    

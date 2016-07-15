@@ -1,83 +1,84 @@
-<div id="product-container" class="produto-wrapper" itemscope itemtype="http://schema.org/Product">
-  
-   <!-- BREADCRUMB-->
-   {% element 'snippets/breadcrumb' %}
+<div class="outerContainer">
+   <div class="outerContent">
+      <div id="product-container" class="produto-wrapper" itemscope itemtype="http://schema.org/Product">
+        
+         <!-- BREADCRUMB-->
+         {% element 'snippets/breadcrumb' %}
 
-   <!-- PRODUCT_NAME-->    
-   <h3 class="product-title">{{ product.name }}</h3>
-  
-   <div class="productContainer">
-      
-      <div class="wrapper-formAndGallery">
-         <!-- GALLERY -->    
-         <div class="productGallery">
-             <div id="visualBlock" class="product-gallery">
-                 {{ productHelper.gallery() }}
-             </div>
-         </div>
+         <!-- PRODUCT_NAME-->    
+         <h3 class="product-title">{{ product.name }}</h3>
+        
+         <div class="productContainer">
+            
+            <div class="wrapper-formAndGallery">
+               <!-- GALLERY -->    
+               <div class="productGallery">
+                   <div id="visualBlock" class="product-gallery">
+                       {{ productHelper.gallery() }}
+                   </div>
+               </div>
 
-         <!-- FORM -->        
-         <form class="productForm" id="form_comprar" method="post" data-app="product.buy-form" action="{{ links.cart_add ~ product.id }}">
-             
-            <div class="product-price-info">
-               {% if product.show_price %}
-                  <div class="cashPrice">
-                     {% set prt = product.price %}
-                     R$ {{ prt|number_format(2, ',', '.') }} <span class="cashPrice-descriptive">à vista</span>
-                     <h5 class="cashPrice-text">(Boleto ou Depósito) <span class="dep">5% de desconto!</span></h5>
+               <!-- FORM -->        
+               <form class="productForm" id="form_comprar" method="post" data-app="product.buy-form" action="{{ links.cart_add ~ product.id }}">
+                   
+                  <div class="product-price-info">
+                     {% if product.show_price %}
+                        <div class="cashPrice">
+                           {% set prt = product.price %}
+                           R$ {{ prt|number_format(2, ',', '.') }} <span class="cashPrice-descriptive">à vista</span>
+                           <h5 class="cashPrice-text">(Boleto ou Depósito) <span class="dep">5% de desconto!</span></h5>
+                        </div>
+
+                        <h5 class="price-separator"></h5>
+                        <div class="rawPrice">
+                           R$ {{ product.price|number_format(2, ',', '.') }} <span class="rawPrice-descriptive">no cartão</span>
+                           {% set installmentPrice = product.price * 0.1 %}
+                           <h5 class="rawPrice-text">(Em 10x sem juros de R$ {{ installmentPrice|number_format(2, ',', '.') }})</h5>
+                        </div>
+                     {% endif %}
                   </div>
 
-                  <h5 class="price-separator"></h5>
-                  <div class="rawPrice">
-                     R$ {{ product.price|number_format(2, ',', '.') }} <span class="rawPrice-descriptive">no cartão</span>
-                     {% set installmentPrice = product.price * 0.1 %}
-                     <h5 class="rawPrice-text">(Em 10x sem juros de R$ {{ installmentPrice|number_format(2, ',', '.') }})</h5>
+                  {{ productHelper.form() }}
+                  <h5 class="price-separator price-separator-long"></h5>
+                  <h5 class="deliveryTime-text">Calcule o frete e o prazo de entrega:</h5>
+                  {{ productHelper.shipping() }}
+                  <h5 class="price-separator price-separator-long"></h5>
+                  <a href="{{ links.home }}">
+                  <img class="buy_more_button" src="{{ asset('img/buy_more_button.png') }}" alt="">
+               </a>
+
+               </form>
+
+            </div>
+
+            <div class="installmentsInfoSection">
+             <!-- INSTALLMENTS TABLE_LIKE layout -->
+               <h1 class="installment-title">PARCELAMENTO:</h1>
+               <img src="{{ asset('img/credit_card_list.png') }}" alt="" class="installment-img-list">
+               <div class="installment-price-table">
+                    
+                  <div class="installment-price-left">
+                     <h2 class="installment-price-item">1x ----- R$ {{ product.price|number_format(2, ',', '.') }}</h2>
+                     <h2 class="installment-price-item">2x ----- R$ {{ (product.price / 2)|number_format(2, ',', '.') }}</h2>
+                     <h2 class="installment-price-item">3x ----- R$ {{ (product.price / 3)|number_format(2, ',', '.') }}</h2>
+                     <h2 class="installment-price-item">4x ----- R$ {{ (product.price / 4)|number_format(2, ',', '.') }}</h2>
+                     <h2 class="installment-price-item">5x ----- R$ {{ (product.price / 5)|number_format(2, ',', '.') }}</h2>
+                    </div>
+
+                  <div class="installment-price-right">
+                     <h2 class="installment-price-item">6x ----- R$ {{ (product.price / 6)|number_format(2, ',', '.') }}</h2>
+                     <h2 class="installment-price-item">7x ----- R$ {{ (product.price / 7)|number_format(2, ',', '.') }}</h2>
+                     <h2 class="installment-price-item">8x ----- R$ {{ (product.price / 8)|number_format(2, ',', '.') }}</h2>
+                     <h2 class="installment-price-item">9x ----- R$ {{ (product.price / 9)|number_format(2, ',', '.') }}</h2>
+                     <h2 class="installment-price-item">10x  -----  R$ {{ (product.price / 10)|number_format(2, ',', '.') }}</h2>
                   </div>
-               {% endif %}
+                      
+               </div>
+
+               <h5 class="price-separator price-separator-long"></h5>
             </div>
-
-            {{ productHelper.form() }}
-            <h5 class="price-separator price-separator-long"></h5>
-            <h5 class="deliveryTime-text">Calcule o frete e o prazo de entrega:</h5>
-            {{ productHelper.shipping() }}
-            <h5 class="price-separator price-separator-long"></h5>
-            <a href="{{ links.home }}">
-            <img class="buy_more_button" src="{{ asset('img/buy_more_button.png') }}" alt="">
-         </a>
-
-         </form>
-
-      </div>
-
-      <div class="installmentsInfoSection">
-       <!-- INSTALLMENTS TABLE_LIKE layout -->
-         <h1 class="installment-title">PARCELAMENTO:</h1>
-         <img src="{{ asset('img/credit_card_list.png') }}" alt="" class="installment-img-list">
-         <div class="installment-price-table">
-              
-            <div class="installment-price-left">
-               <h2 class="installment-price-item">1x ----- R$ {{ product.price|number_format(2, ',', '.') }}</h2>
-               <h2 class="installment-price-item">2x ----- R$ {{ (product.price / 2)|number_format(2, ',', '.') }}</h2>
-               <h2 class="installment-price-item">3x ----- R$ {{ (product.price / 3)|number_format(2, ',', '.') }}</h2>
-               <h2 class="installment-price-item">4x ----- R$ {{ (product.price / 4)|number_format(2, ',', '.') }}</h2>
-               <h2 class="installment-price-item">5x ----- R$ {{ (product.price / 5)|number_format(2, ',', '.') }}</h2>
-              </div>
-
-            <div class="installment-price-right">
-               <h2 class="installment-price-item">6x ----- R$ {{ (product.price / 6)|number_format(2, ',', '.') }}</h2>
-               <h2 class="installment-price-item">7x ----- R$ {{ (product.price / 7)|number_format(2, ',', '.') }}</h2>
-               <h2 class="installment-price-item">8x ----- R$ {{ (product.price / 8)|number_format(2, ',', '.') }}</h2>
-               <h2 class="installment-price-item">9x ----- R$ {{ (product.price / 9)|number_format(2, ',', '.') }}</h2>
-               <h2 class="installment-price-item">10x  -----  R$ {{ (product.price / 10)|number_format(2, ',', '.') }}</h2>
-            </div>
-                
          </div>
-
-         <h5 class="price-separator price-separator-long"></h5>
       </div>
+      {% element 'snippets/product_description' %}
    </div>
-
 </div>
-
-<div class="clear"></div>
-{% element 'snippets/product_description' %}
