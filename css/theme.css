@@ -735,11 +735,6 @@ header {
     .categoriesMenu {
       display: none; } }
 
-li.menu-category:hover .menu-children {
-  visibility: visible;
-  opacity: 1;
-  transition: visibility 0s, opacity 0.3s ease-in-out; }
-
 li.menu-category {
   display: inline-block;
   position: relative;
@@ -765,6 +760,11 @@ li.menu-category {
     padding: 8px 0;
     transition: all 0.4s ease-in-out;
     position: relative; }
+
+li.menu-category:hover .menu-children {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.3s ease-in-out; }
 
 li.menu-category ~ li.menu-category {
   border-left: solid 3px #6C8590; }
@@ -1168,17 +1168,28 @@ div.installment-price-right {
   margin-top: 30px; }
 
 .productTab {
-  float: left;
-  background: #CCC; }
+  float: left; }
   .productTab a {
     display: block;
     text-align: center;
-    padding: 12px 0; }
+    padding: 12px 0;
+    background: #CCC;
+    cursor: pointer;
+    text-transform: uppercase; }
+
+.productTab:first-child a {
+  background: #999; }
 
 .productTab-content {
-  width: 100%;
   padding: 20px;
-  background: red; }
+  background: #999;
+  display: none; }
+
+.activeTab {
+  display: block; }
+
+.rem {
+  display: block; }
 
 .products_row {
   width: 100%;

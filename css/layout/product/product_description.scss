@@ -4,17 +4,31 @@
 
 .productTab {
 	float: left;
-	background: #CCC;
 
-	a {
-		display: block;
-		text-align: center;
-		padding: 12px 0;
+   a {
+      display: block;
+      text-align: center;
+      padding: 12px 0;
+   	background: #CCC;
+      cursor: pointer;
+      text-transform: uppercase;
 	}
 }
 
+.productTab:first-child a {
+   background: #999;
+}
+
 .productTab-content {
-	width: 100%;
+	
 	padding: 20px;
-	background: red;
+	background: #999;
+   display: none;
+}
+
+.activeTab {
+   display: block
+}
+.rem {
+   display: block;
 }

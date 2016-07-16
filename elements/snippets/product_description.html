@@ -1,6 +1,4 @@
-
-
-
+<!-- Tabs -->
 <ul class="productTabs">
    {% for key, tab in productTabs %}
       {% set tabsLength = productTabs|length %}
@@ -8,42 +6,38 @@
 
       {% if tab.container_id %}
          <li  style="width: {{_tabWidth}}%" id="{{ tab.id }}" class="productTab">
-            <a href="#" data-tab-container-id="{{ tab.container_id }}" data-tab-url="{{ tab.url }}">{{ tab.description }}</a>
+            <a class="productTabLink" href="#" data-tab-container-id="{{ tab.container_id }}">{{ tab.description }}</a>
          </li>
       {% endif %}
    {% endfor %}
 </ul>
 
-<div class="clear"></div>
-
-<!-- <div id="descricao">
-   <div class="productTab-content">
-      {{ product.description ? product.description : product.description_small }}
-   </div>
+<!-- each Tab -->
+<div id="descricao" class=" activeTab productTab-content">
+   {{ product.description ? product.description : product.description_small }}
 </div>
 
-<div id="itensInclusos">
-   <div class="productTab-content">
-      {% set items = product.included_items|split(', ') %}
-      <ul>
-          {% for item in items %}
-              <li><p>{{ item|trim }}</p></li>
-          {% endfor %}
-      </ul>
-   </div>
+<div id="itensInclusos" class="productTab-content">
+   {% set items = product.included_items|split(', ') %}
+   <ul>
+       {% for item in items %}
+           <li><p>{{ item|trim }}</p></li>
+       {% endfor %}
+   </ul>
 </div>
 
-<div id="coments">
-  <div class="productTab-content">
-      {% element 'product/comments' %}
-  </div>
+<div id="comments" class="productTab-content">
+   {% element 'product/comments' %}
 </div>
 
-<div id="caracteristicas">
-  <div class="productTab-content">
-      {% element 'product/properties' %}
-  </div>
-</div> -->
+<div id="formasPagto" class="productTab-content">
+   <!-- {% element 'product/properties' %} -->
+   payment option
+</div>
+
+<div id="caracteristicas" class="productTab-content">
+   {% element 'product/properties' %}
+</div>
 
 
 

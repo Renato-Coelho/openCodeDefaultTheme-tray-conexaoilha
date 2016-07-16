@@ -55,12 +55,45 @@ $('.board ul li p').mouseleave(function() {
 });
 
 
-$('.singleProduct').fadeIn(5000);
+// $('.singleProduct').fadeIn(5000);
+
+var productDescriptionTabsLogic = function () {
+   
+   var tabs = $('.productTabLink');
+   // $(tabs.eq(0)).css('background-color', '#999');
+   tabs.eq(0).click(function() {
+      $('.productTab-content').slideUp();
+      $('.productTabLink').css('background-color', '#ccc'); 
+      $(this).css('background-color', '#999' );
+      $('#descricao').slideDown();
+   });
+   tabs.eq(1).click(function() {
+      $('.productTab-content').slideUp();
+      $('.productTabLink').css('background-color', '#ccc');
+      $(this).css('background-color', '#999' );
+      $('#itensInclusos').slideDown();
+   });
+   tabs.eq(2).click(function() {
+      $('.productTab-content').slideUp();
+      $('.productTabLink').css('background-color', '#ccc');
+      $(this).css('background-color', '#999' );
+      $('#formasPagto').slideDown();
+   });
+   tabs.eq(3).click(function() {
+      $('.productTab-content').slideUp();
+      $('.productTabLink').css('background-color', '#ccc');
+      $(this).css('background-color', '#999' );
+      $('#comments').slideDown();
+   });
+
+
+};
 
 
 
 
 $(document).ready(function() {
+   productDescriptionTabsLogic();
 	$('.menu-category').hover(
 		function(event) {
 			
