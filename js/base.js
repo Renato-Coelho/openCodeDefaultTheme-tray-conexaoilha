@@ -59,6 +59,33 @@ $('.board ul li p').mouseleave(function() {
 
 var productDescriptionTabsLogic = function () {
    
+   $('.productTabLink').each(function() {
+      $(this).click(function() {
+         $('.productTab-content').slideUp();
+         $('.productTabLink').css('background-color', '#ccc');
+         $(this).css('background-color', '#999');
+         var tabText = $(this).text().toLowerCase();
+         switch (tabText) {
+            case 'descrição geral':
+               $('#descricao').slideDown();
+               break;
+            case 'formas de pagamento':
+               $('#formasPagto').slideDown();
+               break;
+            case 'itens inclusos':
+               $('#itensInclusos').slideDown();
+               break;
+            case 'comentários':
+               $('#comments').slideDown();
+               break;
+            default:
+               break;
+         }
+      });
+
+   });
+
+/**
    var tabs = $('.productTabLink');
    // $(tabs.eq(0)).css('background-color', '#999');
    tabs.eq(0).click(function() {
@@ -85,7 +112,7 @@ var productDescriptionTabsLogic = function () {
       $(this).css('background-color', '#999' );
       $('#comments').slideDown();
    });
-
+**/
 
 };
 
