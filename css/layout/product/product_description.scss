@@ -19,6 +19,9 @@
 }
 .productTabLink {
    background: rgb(227, 227, 227);
+   &:hover {
+      background: #ccc;
+   }
 }
 
 .productTab:first-child a {
