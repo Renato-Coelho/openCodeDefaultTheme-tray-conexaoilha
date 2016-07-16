@@ -77,10 +77,11 @@
             font-size: 16px;
 
             .dep {
-                background-color: #ededed;
-                color: #000;
+                color: $orangeTone;
                 font-weight: bold;
+                font-size: 14px;
                 padding: 4px;
+                vertical-align: top;
             }
         }
 
@@ -118,6 +119,19 @@
     width: 100% !important;
     margin-bottom: 5px;
 }
+.price-separator-installments {
+   margin-top: 3px;
+}
+.installments-hoverTriger {
+   letter-spacing: .1ch;
+   margin-top: 3px;
+   font-size: 14px;
+   color: $orangeTone;
+
+   span {
+      text-decoration: underline;
+   }
+}
 
 .separator-breadcrumb {
    @extend %darkGreenHorizontalDividerBackground;
@@ -140,7 +154,8 @@
 .deliveryTime-text {
     text-align: center;
     font-size: 16px;
-    color: $orangeTone;
+    color: $darkGreen;
+    margin-top: 14px;
 }
 
 #cepbox {
@@ -211,9 +226,9 @@
 }
 
 .installment-img-list {
-    max-width: 100%;
+    max-width: 320px;
     height: auto;
-    margin: 0 auto;
+    margin: 14px auto 0;
     display: block;
 }
 

@@ -26,7 +26,7 @@
                         <div class="cashPrice">
                            {% set prt = product.price %}
                            R$ {{ prt|number_format(2, ',', '.') }} <span class="cashPrice-descriptive">à vista</span>
-                           <h5 class="cashPrice-text">(Boleto ou Depósito) <span class="dep">5% de desconto!</span></h5>
+                           <h5 class="cashPrice-text">(Boleto ou Depósito) <span class="dep">| 5% de desconto</span></h5>
                         </div>
 
                         <h5 class="price-separator"></h5>
@@ -37,6 +37,10 @@
                         </div>
                      {% endif %}
                   </div>
+
+                  <img src="{{ asset('img/credit_card_list.png') }}" alt="" class="installment-img-list">
+                  <h5 class="installments-hoverTriger text-center">Veja o parcelamento <span>aqui</span></h5>
+                  <h5 class="price-separator price-separator-installments"></h5>
 
                   {{ productHelper.form() }}
                   <h5 class="price-separator price-separator-long"></h5>
@@ -53,8 +57,8 @@
 
             <div class="installmentsInfoSection">
              <!-- INSTALLMENTS TABLE_LIKE layout -->
-               <h1 class="installment-title">PARCELAMENTO:</h1>
-               <img src="{{ asset('img/credit_card_list.png') }}" alt="" class="installment-img-list">
+               <!-- <h1 class="installment-title">PARCELAMENTO:</h1> -->
+               <!-- <img src="{{ asset('img/credit_card_list.png') }}" alt="" class="installment-img-list"> -->
                <div class="installment-price-table">
                     
                   <div class="installment-price-left">

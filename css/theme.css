@@ -59,6 +59,9 @@ p {
 ol, ul, li {
   list-style: none; }
 
+* {
+  letter-spacing: .03ch; }
+
 html {
   font-size: 100%; }
 
@@ -79,6 +82,9 @@ body {
 
 .clear {
   clear: both; }
+
+.text-center {
+  text-align: center; }
 
 html, body {
   margin: 0;
@@ -1009,10 +1015,11 @@ li.menu-category ~ li.menu-category {
     color: #444;
     font-size: 16px; }
     .productForm .cashPrice .cashPrice-text .dep {
-      background-color: #ededed;
-      color: #000;
+      color: #FF7300;
       font-weight: bold;
-      padding: 4px; }
+      font-size: 14px;
+      padding: 4px;
+      vertical-align: top; }
   .productForm .cashPrice .cashPrice-descriptive {
     font-size: 26px;
     color: #546E7A; }
@@ -1035,6 +1042,17 @@ li.menu-category ~ li.menu-category {
   width: 100% !important;
   margin-bottom: 5px; }
 
+.price-separator-installments {
+  margin-top: 3px; }
+
+.installments-hoverTriger {
+  letter-spacing: .1ch;
+  margin-top: 3px;
+  font-size: 14px;
+  color: #FF7300; }
+  .installments-hoverTriger span {
+    text-decoration: underline; }
+
 .separator-breadcrumb {
   background: white;
   background: -moz-linear-gradient(to right, rgba(90, 118, 130, 0.6) 8%, white 70%);
@@ -1051,7 +1069,8 @@ li.menu-category ~ li.menu-category {
 .deliveryTime-text {
   text-align: center;
   font-size: 16px;
-  color: #FF7300; }
+  color: #546E7A;
+  margin-top: 14px; }
 
 #cepbox {
   border: none;
@@ -1107,9 +1126,9 @@ li.menu-category ~ li.menu-category {
   letter-spacing: 0.2em; }
 
 .installment-img-list {
-  max-width: 100%;
+  max-width: 320px;
   height: auto;
-  margin: 0 auto;
+  margin: 14px auto 0;
   display: block; }
 
 .installment-price-table {
