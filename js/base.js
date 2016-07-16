@@ -61,9 +61,15 @@ var productDescriptionTabsLogic = function () {
    
    $('.productTabLink').each(function() {
       $(this).click(function() {
-         $('.productTab-content').slideUp();
-         $('.productTabLink').css('background-color', '#ccc');
-         $(this).css('background-color', '#999');
+         $('.wrapper-productTab-content').slideUp();
+         $('.productTabLink').css({
+                                 'background-color': '#E3E3E3',
+                                 'color': '#546E7A'
+                                 });
+         $(this).css({
+                     'background-color': '#546E7A',
+                     'color': 'white'
+                     });
          var tabText = $(this).text().toLowerCase();
          switch (tabText) {
             case 'descrição geral':

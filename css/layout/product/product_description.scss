@@ -4,26 +4,41 @@
 
 .productTab {
 	float: left;
-
    a {
       display: block;
       text-align: center;
-      padding: 12px 0;
-   	background: #CCC;
+      padding: 12px;
+      color: $darkGreen;
       cursor: pointer;
       text-transform: uppercase;
 	}
 }
 
+.productTab ~ .productTab {
+   border-left: 1px solid $darkGreen;
+}
+.productTabLink {
+   background: rgb(227, 227, 227);
+}
+
 .productTab:first-child a {
-   background: #999;
+   background: $darkGreen;
+   color: white;
+}
+
+.wrapper-productTab-content {
+	background: $darkGreen;
+   padding: 10px;
+   display: none;
+
+   img {
+      max-width: 100%;
+   }
 }
 
 .productTab-content {
-	
-	padding: 20px;
-	background: #999;
-   display: none;
+   padding: 15px;
+   background: #FFF;
 }
 
 .activeTab {

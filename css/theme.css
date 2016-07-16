@@ -1191,18 +1191,31 @@ div.installment-price-right {
   .productTab a {
     display: block;
     text-align: center;
-    padding: 12px 0;
-    background: #CCC;
+    padding: 12px;
+    color: #546E7A;
     cursor: pointer;
     text-transform: uppercase; }
 
+.productTab ~ .productTab {
+  border-left: 1px solid #546E7A; }
+
+.productTabLink {
+  background: #e3e3e3; }
+
 .productTab:first-child a {
-  background: #999; }
+  background: #546E7A;
+  color: white; }
+
+.wrapper-productTab-content {
+  background: #546E7A;
+  padding: 10px;
+  display: none; }
+  .wrapper-productTab-content img {
+    max-width: 100%; }
 
 .productTab-content {
-  padding: 20px;
-  background: #999;
-  display: none; }
+  padding: 15px;
+  background: #FFF; }
 
 .activeTab {
   display: block; }
