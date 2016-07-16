@@ -57,9 +57,40 @@ $('.board ul li p').mouseleave(function() {
 
 // $('.singleProduct').fadeIn(5000);
 
+
+// $(this).hover(
+//    function() {
+//       $(this).css('background-color', '#ccc');
+//    },
+//    function() {
+//       $(this).css('background-color', '#E3E3E3');
+//    };
+// );
+
+
+
+
+
+
 var productDescriptionTabsLogic = function () {
    
    $('.productTabLink').each(function() {
+      
+      $(this).hover(
+         function() {
+            if ( !$(this).hasClass('greenBack') ) {
+               console.log('falsseee.. theres no class');
+               $(this).css('background-color', '#ccc');
+            }
+         },
+         function() {
+            if ( !$(this).hasClass('greenBack') ) {
+               $(this).css('background-color', '#E3E3E3');
+            }
+         }
+      );
+
+   
       $(this).click(function() {
          $('.wrapper-productTab-content').slideUp();
          $('.productTabLink').css({
@@ -70,6 +101,8 @@ var productDescriptionTabsLogic = function () {
                      'background-color': '#546E7A',
                      'color': 'white'
                      });
+         $('.productTabLink').removeClass('greenBack');
+         $(this).addClass('greenBack');
          var tabText = $(this).text().toLowerCase();
          switch (tabText) {
             case 'descrição geral':

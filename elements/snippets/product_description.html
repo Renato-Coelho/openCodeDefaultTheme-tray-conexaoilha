@@ -6,7 +6,7 @@
 
       {% if tab.container_id %}
          <li  style="max-width: {{_tabWidth}}%" id="{{ tab.id }}" class="productTab">
-            <a class="productTabLink" href="#" data-tab-container-id="{{ tab.container_id }}">{{ tab.description }}</a>
+            <a class="productTabLink" data-tab-container-id="{{ tab.container_id }}">{{ tab.description }}</a>
          </li><!--
       -->   
       {% endif %}
