@@ -54,24 +54,6 @@ $('.board ul li p').mouseleave(function() {
 	$(this).animate( {width: '-=20px'} );
 });
 
-
-// $('.singleProduct').fadeIn(5000);
-
-
-// $(this).hover(
-//    function() {
-//       $(this).css('background-color', '#ccc');
-//    },
-//    function() {
-//       $(this).css('background-color', '#E3E3E3');
-//    };
-// );
-
-
-
-
-
-
 var productDescriptionTabsLogic = function () {
    
    $('.productTabLink').each(function() {
@@ -79,7 +61,6 @@ var productDescriptionTabsLogic = function () {
       $(this).hover(
          function() {
             if ( !$(this).hasClass('greenBack') ) {
-               console.log('falsseee.. theres no class');
                $(this).css('background-color', '#ccc');
             }
          },
@@ -159,6 +140,16 @@ var productDescriptionTabsLogic = function () {
 
 
 $(document).ready(function() {
+   $('.installments-hoverTriger').hover(
+      function() {
+         $('.installment-price-table').slideDown();
+      },
+      function() {
+         console.log('fs');
+         $('.installment-price-table').slideUp('slow');
+      }
+   );
+
    productDescriptionTabsLogic();
 	$('.menu-category').hover(
 		function(event) {

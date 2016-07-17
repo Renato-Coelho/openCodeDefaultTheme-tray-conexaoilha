@@ -5,18 +5,48 @@
 #}
 
 <div class="breadcrumb">
-  <span class="breadcrumb-item"><a href="/">Página inicial</a></span>
-  <span class="icon-breadcrumb">
-      	<span class="glyphicon glyphicon-chevron-right"></span>
-      </span>
-  {% if breadcrumb %}
-    {% for item in breadcrumb %}
-      <span class="breadcrumb-item"><a href="{{ item.link}}" title="{{ item.name }}">{{ item.name }}</a></span>
-      <span class="icon-breadcrumb">
-      	<span class="glyphicon glyphicon-chevron-right"></span>
-      </span>
-    {% endfor %}
-    <span class="breadcrumb-item-current">{{ pages.current == 'product' ? product.additional_message : category.name }}</span>
-  {% endif %}
-  <h5 class="separator-breadcrumb"></h5>
+   <span class="breadcrumb-item">
+      <a href="/">Página inicial</a>
+   </span>
+   
+   <span class="icon-breadcrumb">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+   </span>
+   
+   {% if breadcrumb %}
+      {% for item in breadcrumb %}
+         <span class="breadcrumb-item"><a href="{{ item.link}}" title="{{ item.name }}">{{ item.name }}</a></span>
+         <span class="icon-breadcrumb">
+         	<span class="glyphicon glyphicon-chevron-right"></span>
+         </span>
+      {% endfor %}
+         <span class="breadcrumb-item-current">
+            {{ pages.current == 'product' ? product.additional_message : category.name }}
+         </span>
+   {% endif %}
+   <h5 class="separator-seventyFive"></h5>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

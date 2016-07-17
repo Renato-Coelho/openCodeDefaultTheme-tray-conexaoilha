@@ -1,4 +1,4 @@
-.menuCategories_showcaseHorizontalDivider, .price-separator, .separator-breadcrumb {
+.menuCategories_showcaseHorizontalDivider, .price-separator, .separator-seventyFive {
   background: white;
   background: -moz-linear-gradient(left, white 0%, #5a7682 38%, #5a7682 63%, white 100%);
   background: -webkit-gradient(left top, right top, color-stop(0%, white), color-stop(38%, #5a7682), color-stop(63%, #5a7682), color-stop(100%, white));
@@ -835,6 +835,92 @@ li.menu-category ~ li.menu-category {
 .menu-category ~ .menu-category.hidePseudoElements:after {
   opacity: 0; }
 
+.products_row {
+  width: 100%;
+  display: flex !important;
+  justify-content: space-between; }
+
+.products_row {
+  margin-top: 30px; }
+
+.products_row:last-child {
+  margin-bottom: 40px; }
+
+.wrapper-singleProductLink {
+  display: flex;
+  justify-content: space-between;
+  max-width: 31%; }
+
+.wrapper-singleProductContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  border: solid 0.07rem rgba(204, 204, 204, 0);
+  border-radius: 10px;
+  padding: 10px;
+  color: #333;
+  text-align: center;
+  transition: border .2s linear; }
+  .wrapper-singleProductContent:hover {
+    border: solid .07rem #aaa; }
+
+.productPrice,
+.productPrice-discounted,
+.productPrice-twelveInstallmentsInfo {
+  text-align: left; }
+
+.productPrice {
+  margin-top: 20px; }
+
+.productPrice-discounted,
+.productPrice-twelveInstallmentsInfo,
+.product-name {
+  margin-top: 8px; }
+
+.productPrice-discounted {
+  font-size: 22px; }
+
+.productPrice-discountPrice {
+  font-weight: bold; }
+
+.productPrice-twelveInstallmentsInfo {
+  font-size: 14px; }
+
+.productPrice-full,
+.productPrice-discountPrice,
+.productPrice-installmentsPrice_twelve {
+  color: #FF7300; }
+
+.productPrice-fullInfo,
+.productPrice-discountInfo {
+  font-size: 12px;
+  display: block; }
+
+.singleProduct-buyButton {
+  display: block;
+  width: 100%;
+  background-color: #04A85A;
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: .15ch;
+  padding: 10px;
+  margin-top: 30px;
+  border-radius: 3px;
+  font-size: 18px;
+  transition: background-color 0.2s linear; }
+  .singleProduct-buyButton:hover {
+    background-color: #008C4F; }
+  .singleProduct-buyButton .text {
+    margin-left: 8px; }
+
+.category-title {
+  height: auto; }
+  .category-title .category-name {
+    float: left; }
+  .category-title .category-pagination {
+    float: right; }
+
 /**
  * Brand
  */
@@ -943,9 +1029,7 @@ li.menu-category ~ li.menu-category {
 .breadcrumb {
   margin-top: 6px;
   width: 100%;
-  padding: 4px;
-  border-left: solid 2px white;
-  border-right: solid 2px white; }
+  padding: 4px; }
   .breadcrumb .breadcrumb-item {
     color: #FF7300; }
     .breadcrumb .breadcrumb-item:hover {
@@ -1045,7 +1129,7 @@ li.menu-category ~ li.menu-category {
 .price-separator-installments {
   margin-top: 3px; }
 
-.separator-breadcrumb {
+.separator-seventyFive {
   background: white;
   background: -moz-linear-gradient(to right, rgba(90, 118, 130, 0.6) 8%, white 70%);
   background: -webkit-gradient(to right, rgba(90, 118, 130, 0.6) 8%, white 70%);
@@ -1137,6 +1221,7 @@ li.menu-category ~ li.menu-category {
 .installment-price-table {
   position: absolute;
   visibility: hidden;
+  z-index: 999999999;
   top: -10px;
   width: 100%;
   height: 140px;
@@ -1230,84 +1315,5 @@ div.installment-price-right {
 
 .rem {
   display: block; }
-
-.products_row {
-  width: 100%;
-  display: flex !important;
-  justify-content: space-between; }
-
-.products_row {
-  margin-top: 30px; }
-
-.products_row:last-child {
-  margin-bottom: 40px; }
-
-.wrapper-singleProductLink {
-  display: flex;
-  justify-content: space-between;
-  max-width: 31%; }
-
-.wrapper-singleProductContent {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: white;
-  border: solid 0.07rem rgba(204, 204, 204, 0);
-  border-radius: 10px;
-  padding: 10px;
-  color: #333;
-  text-align: center;
-  transition: border .2s linear; }
-  .wrapper-singleProductContent:hover {
-    border: solid .07rem #aaa; }
-
-.productPrice,
-.productPrice-discounted,
-.productPrice-twelveInstallmentsInfo {
-  text-align: left; }
-
-.productPrice {
-  margin-top: 20px; }
-
-.productPrice-discounted,
-.productPrice-twelveInstallmentsInfo,
-.product-name {
-  margin-top: 8px; }
-
-.productPrice-discounted {
-  font-size: 22px; }
-
-.productPrice-discountPrice {
-  font-weight: bold; }
-
-.productPrice-twelveInstallmentsInfo {
-  font-size: 14px; }
-
-.productPrice-full,
-.productPrice-discountPrice,
-.productPrice-installmentsPrice_twelve {
-  color: #FF7300; }
-
-.productPrice-fullInfo,
-.productPrice-discountInfo {
-  font-size: 12px;
-  display: block; }
-
-.singleProduct-buyButton {
-  display: block;
-  width: 100%;
-  background-color: #04A85A;
-  color: #FFF;
-  text-transform: uppercase;
-  letter-spacing: .15ch;
-  padding: 10px;
-  margin-top: 30px;
-  border-radius: 3px;
-  font-size: 18px;
-  transition: background-color 0.2s linear; }
-  .singleProduct-buyButton:hover {
-    background-color: #008C4F; }
-  .singleProduct-buyButton .text {
-    margin-left: 8px; }
 
 /*# sourceMappingURL=theme.css.map */
