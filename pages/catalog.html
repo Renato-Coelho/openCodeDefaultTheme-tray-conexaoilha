@@ -1,5 +1,17 @@
 <div class="outerContainer">
    <div class="outerContent">
+   
+   <!-- {{ links.cart_add }} -->
+   {{ links.search_featured }}
+   <a href="{{ links.search_featured }}">destaques</a>
+
+   <ul>
+      {% for brand in brands %}
+         <li>
+            <a href="{{ links.search_by_brand ~ brand.name }}" title="{{ brand.name }}" alt="[{{brand.name}}]">{{ brand.name }}</a>
+         </li>
+      {% endfor %}
+   </ul>
 
       {% if breadcrumb %}
 
@@ -10,10 +22,7 @@
       {% endif %}
       <div class="category-title">
          <h1 class="category-name">{{ category.name }}</h1>
-
-         <div class="category-pagination">
-            {% element 'snippets/pagination' %}
-         </div>
+         {% element 'snippets/pagination' %}
       </div>
       <div class="clear"></div>
       <h5 class="separator-seventyFive"></h5>
